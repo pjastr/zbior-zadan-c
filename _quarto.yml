@@ -9,6 +9,8 @@ book:
   chapters:
     - index.qmd
     - part: "Podstawy języka C"
+      chapters: 
+       - operacjewejsciawyjscia.qmd
     - part: "Dodatki"
     - references.qmd
   downloads: pdf

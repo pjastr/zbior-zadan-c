@@ -1,0 +1,16 @@
+# Operacje wejścia, wyjścia.
+
+1.  Napisz program, który prosi użytkownika o wprowadzenie jednej liczby całkowitej, a następnie wyświetla ją na ekranie.
+2.  Stwórz program, który wczytuje od użytkownika dwie liczby zmiennoprzecinkowe i wypisuje ich różnicę.
+3.  Zaprojektuj aplikację, która pyta użytkownika o jego rok urodzenia, a następnie wypisuje rok poprzedni (o jeden mniejszy).
+4.  Napisz program, który wczytuje od użytkownika trzy liczby całkowite i wypisuje ich średnią jako wartość zmiennoprzecinkową.
+5.  Utwórz program, który prosi użytkownika o wprowadzenie dwóch liter (znaków), a następnie wypisuje je w odwrotnej kolejności.
+6.  Napisz program, który prosi użytkownika o wprowadzenie jednej liczby zmiennoprzecinkowej, a następnie podwaja jej wartość i wypisuje wynik.
+7.  Utwórz program, który wczytuje od użytkownika liczbę zmiennoprzecinkową reprezentującą kwotę w dolarach, a następnie wypisuje, ile to jest euro, przyjmując stały kurs wymiany (np. 1 dolar = 0.85 euro).
+8.  Napisz program, który wyświetla na ekranie tekst: `To jest cytat: "Często używam języka C."`. Upewnij się, że znaki cudzysłowu są poprawnie wyświetlane jako część napisu.
+9.  Stwórz program, który wypisuje na standardowe wyjście ścieżkę do folderu w systemie Windows, np. `C:\Program Files\MojaAplikacja\` (na sztywno, bez pobierania czegoś z systemu) lub `C:\\Program Files\\MojaAplikacja\\`.
+10. Zaprojektuj program, który pokazuje, jak wypisać na ekranie następujący tekst: `Specjalne znaki: \t (tabulacja), \n (nowa linia), % (procent), \\ (ukośnik wsteczny).`.
+11. Napisz program, który wczytuje ze standardowego wejścia dwie liczby wymierne reprezentujące długości boków trójkąta prostokątnego. Następnie oblicz i wyświetl długość przeciwprostokątnej.
+12. Napisz program, który wczytuje ze standardowego wejścia całkowitą i wypisuje na standardowym wyjściu jej wartość bezwzględną.
+13. Napisz program, który wczytuje ze standardowego wejścia zmiennoprzecinkową i wypisuje na standardowym wyjściu jej wartość bezwzględną.
+14. Znajdź przykład i wyświetl na standardowym wyjściu, kiedy dodawanie liczb zmiennoprzecinowych nie jest łączne.

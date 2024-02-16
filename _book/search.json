@@ -10,6 +10,17 @@
     ]
   },
   {
+    "objectID": "operacjewejsciawyjscia.html",
+    "href": "operacjewejsciawyjscia.html",
+    "title": "1  Operacje wejścia, wyjścia.",
+    "section": "",
+    "text": "Napisz program, który prosi użytkownika o wprowadzenie jednej liczby całkowitej, a następnie wyświetla ją na ekranie.\nStwórz program, który wczytuje od użytkownika dwie liczby zmiennoprzecinkowe i wypisuje ich różnicę.\nZaprojektuj aplikację, która pyta użytkownika o jego rok urodzenia, a następnie wypisuje rok poprzedni (o jeden mniejszy).\nNapisz program, który wczytuje od użytkownika trzy liczby całkowite i wypisuje ich średnią jako wartość zmiennoprzecinkową.\nUtwórz program, który prosi użytkownika o wprowadzenie dwóch liter (znaków), a następnie wypisuje je w odwrotnej kolejności.\nNapisz program, który prosi użytkownika o wprowadzenie jednej liczby zmiennoprzecinkowej, a następnie podwaja jej wartość i wypisuje wynik.\nUtwórz program, który wczytuje od użytkownika liczbę zmiennoprzecinkową reprezentującą kwotę w dolarach, a następnie wypisuje, ile to jest euro, przyjmując stały kurs wymiany (np. 1 dolar = 0.85 euro).\nNapisz program, który wyświetla na ekranie tekst: To jest cytat: \"Często używam języka C.\". Upewnij się, że znaki cudzysłowu są poprawnie wyświetlane jako część napisu.\nStwórz program, który wypisuje na standardowe wyjście ścieżkę do folderu w systemie Windows, np. C:\\Program Files\\MojaAplikacja\\ (na sztywno, bez pobierania czegoś z systemu) lub C:\\\\Program Files\\\\MojaAplikacja\\\\.\nZaprojektuj program, który pokazuje, jak wypisać na ekranie następujący tekst: Specjalne znaki: \\t (tabulacja), \\n (nowa linia), % (procent), \\\\ (ukośnik wsteczny)..\nNapisz program, który wczytuje ze standardowego wejścia dwie liczby wymierne reprezentujące długości boków trójkąta prostokątnego. Następnie oblicz i wyświetl długość przeciwprostokątnej.\nNapisz program, który wczytuje ze standardowego wejścia całkowitą i wypisuje na standardowym wyjściu jej wartość bezwzględną.\nNapisz program, który wczytuje ze standardowego wejścia zmiennoprzecinkową i wypisuje na standardowym wyjściu jej wartość bezwzględną.\nZnajdź przykład i wyświetl na standardowym wyjściu, kiedy dodawanie liczb zmiennoprzecinowych nie jest łączne.",
+    "crumbs": [
+      "Podstawy języka C",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Operacje wejścia, wyjścia.</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "Bibliografia i inne zbiory zadań",

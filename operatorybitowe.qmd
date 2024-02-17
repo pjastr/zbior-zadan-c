@@ -1,0 +1,10 @@
+# Operatory bitowe
+
+1.  Zamień wartości dwóch zmiennych całkowitych bez użycia dodatkowej zmiennej.
+2.  Sprawdź, czy liczba całkowita jest parzysta czy nieparzysta bez użycia instrukcji warunkowych.
+3.  Wyznacz wartość bitu na określonej pozycji w liczbie całkowitej.
+4.  Zeruj wartość bitu na określonej pozycji w liczbie całkowitej.
+5.  Odwróć wartość wszystkich bitów w liczbie całkowitej.
+6.  Przesuń bity liczby całkowitej o określoną liczbę pozycji w lewo.
+7.  Przesuń bity liczby całkowitej o określoną liczbę pozycji w prawo.
+8.  Wyznacz "XOR" dwóch liczb całkowitych.

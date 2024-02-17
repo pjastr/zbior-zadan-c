@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - Bibliografia i inne zbiory zadań</title>
+<title>Zbiór zadań - C - 2&nbsp; Formatowanie zmiennych liczbowych w printf</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./changelog.html" rel="next">
-<link href="./operatorybitowe.html" rel="prev">
+<link href="./operatoryarytmetyczne.html" rel="next">
+<link href="./operacjewejsciawyjscia.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -102,7 +83,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">Bibliografia i inne zbiory zadań</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html">Dodatki</a></li><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -166,7 +147,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./printf-formatowanieliczb.html" class="sidebar-item-text sidebar-link">
+  <a href="./printf-formatowanieliczb.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span></a>
   </div>
 </li>
@@ -186,7 +167,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografia i inne zbiory zadań</span></a>
   </div>
 </li>
@@ -207,9 +188,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html">Dodatki</a></li><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Bibliografia i inne zbiory zadań</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></h1>
 </div>
 
 
@@ -226,12 +207,28 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-krzaczkowski_zadania_z_programowania_w_jezyku_c_cpp_cz_i" class="csl-entry" role="listitem">
-Krzaczkowski, Jacek. 2011. <em>Zadania z Programowania w Języku c/c++,
-Cz. I</em>. Instytut Informatyki UMCS Lublin.
-</div>
-</div>
+<ol type="1">
+<li>Napisz program, który wyświetla liczbę całkowitą w formacie dziesiętnym.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą w formacie szesnastkowym z małymi literami.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą w formacie szesnastkowym z dużymi literami.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą w formacie ósemkowym.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą z wiodącymi zerami, zakładając, że szerokość pola wynosi 8 znaków.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą z wyrównaniem do prawej w polu o szerokości 10 znaków.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą z wyrównaniem do lewej w polu o szerokości 10 znaków.</li>
+<li>Napisz program, który wyświetla dodatnią liczbę całkowitą z dodanym znakiem plus na początku.</li>
+<li>Napisz program, który wyświetla liczbę całkowitą z użyciem notacji naukowej (z małymi literami).</li>
+<li>Napisz program, który wyświetla liczbę całkowitą, dodając separator tysięcy.</li>
+<li>Napisz program, który wyświetla liczbę zmiennoprzecinkową 123.456789 z dokładnością do dwóch miejsc po przecinku.</li>
+<li>Stwórz program, który formatuje i wyświetla liczbę zmiennoprzecinkową -9876.54321, tak aby była przedstawiona z co najmniej 10 miejscami przed przecinkiem, dopełniając brakujące miejsca spacjami.</li>
+<li>Utwórz program, który prezentuje liczbę zmiennoprzecinkową 0.000789 w notacji naukowej z dokładnością do czterech miejsc po przecinku.</li>
+<li>Zaprojektuj program, który wyświetla liczbę zmiennoprzecinkową 12345.6789 z użyciem notacji naukowej i dokładnością do jednego miejsca po przecinku.</li>
+<li>Stwórz program, który wyświetla liczbę zmiennoprzecinkową 3.14159 w formacie, gdzie przed liczbą znajduje się znak plus, z dokładnością do trzech miejsc po przecinku.</li>
+<li>Napisz program, który formatuje i wyświetla liczbę zmiennoprzecinkową 123456.789 z dokładnością do pięciu miejsc po przecinku, zapewniając, że przed liczbą pojawi się miejsce na znak.</li>
+<li>Utwórz program, który wyświetla liczbę zmiennoprzecinkową -0.0025 z dokładnością do sześciu miejsc po przecinku, zawsze zaczynając od znaku minus.</li>
+<li>Zaprojektuj program, który przedstawia liczbę zmiennoprzecinkową 0.00123456789 w notacji naukowej z dokładnością do dwóch miejsc po przecinku i zawsze z przedrostkiem plus dla dodatnich wartości.</li>
+<li>Stwórz program, który wyświetla liczbę zmiennoprzecinkową 9999999.99999 z dokładnością do trzech miejsc po przecinku, używając notacji naukowej, gdy jest to konieczne.</li>
+<li>Napisz program, który formatuje i wyświetla liczbę zmiennoprzecinkową -123.456 w taki sposób, że zawsze zajmuje ona dokładnie 12 miejsc, w tym znak, liczby przed i po przecinku, dopełniając niewykorzystane miejsca spacjami.</li>
+</ol>
 
 
 
@@ -769,13 +766,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./operatorybitowe.html" class="pagination-link  aria-label=" &lt;span="" bitowe&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Operatory bitowe</span></span>
+      <a href="./operacjewejsciawyjscia.html" class="pagination-link  aria-label=" &lt;span="" wejścia,="" wyjścia.&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./changelog.html" class="pagination-link" aria-label="Historia zmian">
-        <span class="nav-page-text">Historia zmian</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./operatoryarytmetyczne.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Operatory arytmetyczne</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operatory arytmetyczne</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

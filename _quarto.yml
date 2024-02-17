@@ -12,7 +12,12 @@ book:
       chapters: 
        - operacjewejsciawyjscia.qmd
     - part: "Dodatki"
+      chapters: 
+        - printf-formatowanieliczb.qmd
+        - operatoryarytmetyczne.qmd
+        - operatorybitowe.qmd
     - references.qmd
+    - changelog.qmd
   downloads: pdf
   repo-url: https://github.com/pjastr/zbior-zadan-c
   repo-actions: [issue]

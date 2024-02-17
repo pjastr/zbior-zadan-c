@@ -1,0 +1,22 @@
+# Formatowanie zmiennych liczbowych w `printf`
+
+1.  Napisz program, który wyświetla liczbę całkowitą w formacie dziesiętnym.
+2.  Napisz program, który wyświetla liczbę całkowitą w formacie szesnastkowym z małymi literami.
+3.  Napisz program, który wyświetla liczbę całkowitą w formacie szesnastkowym z dużymi literami.
+4.  Napisz program, który wyświetla liczbę całkowitą w formacie ósemkowym.
+5.  Napisz program, który wyświetla liczbę całkowitą z wiodącymi zerami, zakładając, że szerokość pola wynosi 8 znaków.
+6.  Napisz program, który wyświetla liczbę całkowitą z wyrównaniem do prawej w polu o szerokości 10 znaków.
+7.  Napisz program, który wyświetla liczbę całkowitą z wyrównaniem do lewej w polu o szerokości 10 znaków.
+8.  Napisz program, który wyświetla dodatnią liczbę całkowitą z dodanym znakiem plus na początku.
+9.  Napisz program, który wyświetla liczbę całkowitą z użyciem notacji naukowej (z małymi literami).
+10. Napisz program, który wyświetla liczbę całkowitą, dodając separator tysięcy.
+11. Napisz program, który wyświetla liczbę zmiennoprzecinkową 123.456789 z dokładnością do dwóch miejsc po przecinku.
+12. Stwórz program, który formatuje i wyświetla liczbę zmiennoprzecinkową -9876.54321, tak aby była przedstawiona z co najmniej 10 miejscami przed przecinkiem, dopełniając brakujące miejsca spacjami.
+13. Utwórz program, który prezentuje liczbę zmiennoprzecinkową 0.000789 w notacji naukowej z dokładnością do czterech miejsc po przecinku.
+14. Zaprojektuj program, który wyświetla liczbę zmiennoprzecinkową 12345.6789 z użyciem notacji naukowej i dokładnością do jednego miejsca po przecinku.
+15. Stwórz program, który wyświetla liczbę zmiennoprzecinkową 3.14159 w formacie, gdzie przed liczbą znajduje się znak plus, z dokładnością do trzech miejsc po przecinku.
+16. Napisz program, który formatuje i wyświetla liczbę zmiennoprzecinkową 123456.789 z dokładnością do pięciu miejsc po przecinku, zapewniając, że przed liczbą pojawi się miejsce na znak.
+17. Utwórz program, który wyświetla liczbę zmiennoprzecinkową -0.0025 z dokładnością do sześciu miejsc po przecinku, zawsze zaczynając od znaku minus.
+18. Zaprojektuj program, który przedstawia liczbę zmiennoprzecinkową 0.00123456789 w notacji naukowej z dokładnością do dwóch miejsc po przecinku i zawsze z przedrostkiem plus dla dodatnich wartości.
+19. Stwórz program, który wyświetla liczbę zmiennoprzecinkową 9999999.99999 z dokładnością do trzech miejsc po przecinku, używając notacji naukowej, gdy jest to konieczne.
+20. Napisz program, który formatuje i wyświetla liczbę zmiennoprzecinkową -123.456 w taki sposób, że zawsze zajmuje ona dokładnie 12 miejsc, w tym znak, liczby przed i po przecinku, dopełniając niewykorzystane miejsca spacjami.

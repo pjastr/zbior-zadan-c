@@ -1,0 +1,18 @@
+# Operatory arytmetyczne
+
+1.  Napisz program, który oblicza resztę z dzielenia sumy dwóch liczb całkowitych przez trzecią liczbę całkowitą.
+2.  Stwórz program, który oblicza różnicę kwadratów dwóch podanych liczb całkowitych.
+3.  Opracuj program, który oblicza iloczyn różnicy dwóch liczb całkowitych i trzeciej liczby całkowitej.
+4.  Zaprojektuj program, który oblicza średnią geometryczną bezwzględnych wartości trzech podanych liczb całkowitych.
+5.  Napisz program, który oblicza kwadrat sumy dwóch podanych liczb całkowitych.
+6.  Stwórz program, który oblicza sumę kwadratów trzech podanych liczb całkowitych.
+7.  Opracuj program, który oblicza, ile razy jedna podana liczba całkowita mieści się w drugiej podanej liczbie całkowitej.
+8.  Zaprojektuj program, który oblicza kwadrat różnicy dwóch podanych liczb całkowitych.
+9.  Napisz program, który oblicza iloraz sumy dwóch liczb całkowitych przez ich różnicę.
+10. Stwórz program, który oblicza sumę trzech kolejnych liczb całkowitych, zaczynając od podanej liczby całkowitej.
+11. Znajdź średnią arytmetyczną trzech liczb zmiennoprzecinkowych.
+12. Oblicz wartość wyrażenia $\frac{1}{\frac{1}{a} + \frac{1}{b} + \frac{1}{c}}$, gdzie $a$, $b$, $c$ są różne od zera.
+13. Wylicz wartość $e^x$ dla małych wartości $x$ np. $\|x\| < 0.01$ przybliżając $e^x$ jako $1 + x$, bez użycia funkcji eksponencjalnych.
+14. Oblicz pole trójkąta o bokach $a$, $b$ i kącie między nimi $C$ w stopniach, używając wzoru $0.5 \cdot a \cdot b \cdot \sin C$, przyjmując $\sin C \approx C$ dla małych kątów w radianach.
+15. Oblicz $\sqrt[3]{x}$ dla małych wartości $x$ np. $\|x\| < 0.01$ przybliżając $\sqrt[3]{x} \approx 1 + \frac{1}{3}x$, bez użycia funkcji pierwiastkowania.
+

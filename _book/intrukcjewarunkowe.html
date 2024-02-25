@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 1&nbsp; Operacje wejścia, wyjścia.</title>
+<title>Zbiór zadań - C - 2&nbsp; Instrukcje warunkowe, operator warunkowy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intrukcjewarunkowe.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./petle.html" rel="next">
+<link href="./operacjewejsciawyjscia.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,13 +159,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./operacjewejsciawyjscia.html" class="sidebar-item-text sidebar-link active">
+  <a href="./operacjewejsciawyjscia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
+  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span></a>
   </div>
 </li>
@@ -200,9 +229,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></h1>
 </div>
 
 
@@ -219,21 +248,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>W poniższych zadaniach jako instrukcję warunkową należy wykorzystać <code>if</code>, <code>if else</code>, <code>switch case</code>. Przez operator warunkowy rozumie się <code>?</code>.</p>
 <ol type="1">
-<li>Napisz program, który prosi użytkownika o wprowadzenie jednej liczby całkowitej, a następnie wyświetla ją na ekranie.</li>
-<li>Stwórz program, który wczytuje od użytkownika dwie liczby zmiennoprzecinkowe i wypisuje ich różnicę.</li>
-<li>Zaprojektuj aplikację, która pyta użytkownika o jego rok urodzenia, a następnie wypisuje rok poprzedni (o jeden mniejszy).</li>
-<li>Napisz program, który wczytuje od użytkownika trzy liczby całkowite i wypisuje ich średnią jako wartość zmiennoprzecinkową.</li>
-<li>Utwórz program, który prosi użytkownika o wprowadzenie dwóch liter (znaków), a następnie wypisuje je w odwrotnej kolejności.</li>
-<li>Napisz program, który prosi użytkownika o wprowadzenie jednej liczby zmiennoprzecinkowej, a następnie podwaja jej wartość i wypisuje wynik.</li>
-<li>Utwórz program, który wczytuje od użytkownika liczbę zmiennoprzecinkową reprezentującą kwotę w dolarach, a następnie wypisuje, ile to jest euro, przyjmując stały kurs wymiany (np. 1 dolar = 0.85 euro).</li>
-<li>Napisz program, który wyświetla na ekranie tekst: <code>To jest cytat: "Często używam języka C."</code>. Upewnij się, że znaki cudzysłowu są poprawnie wyświetlane jako część napisu.</li>
-<li>Stwórz program, który wypisuje na standardowe wyjście ścieżkę do folderu w systemie Windows, np. <code>C:\Program Files\MojaAplikacja\</code> (na sztywno, bez pobierania czegoś z systemu) lub <code>C:\\Program Files\\MojaAplikacja\\</code>.</li>
-<li>Zaprojektuj program, który pokazuje, jak wypisać na ekranie następujący tekst: <code>Specjalne znaki: \t (tabulacja), \n (nowa linia), % (procent), \\ (ukośnik wsteczny).</code>.</li>
-<li>Napisz program, który wczytuje ze standardowego wejścia dwie liczby wymierne reprezentujące długości boków trójkąta prostokątnego. Następnie oblicz i wyświetl długość przeciwprostokątnej.</li>
-<li>Napisz program, który wczytuje ze standardowego wejścia całkowitą i wypisuje na standardowym wyjściu jej wartość bezwzględną.</li>
-<li>Napisz program, który wczytuje ze standardowego wejścia zmiennoprzecinkową i wypisuje na standardowym wyjściu jej wartość bezwzględną.</li>
-<li>Znajdź przykład i wyświetl na standardowym wyjściu, kiedy dodawanie liczb zmiennoprzecinowych nie jest łączne.</li>
+<li><p>Napisz program, który prosi użytkownika o wprowadzenie liczby całkowitej. Program powinien wyświetlić informację, czy wprowadzona liczba jest dodatnia, ujemna czy równa zero.</p></li>
+<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla większą z nich.</p></li>
+<li><p>Napisz program, który prosi o wprowadzenie oceny w skali od 1 do 5. Program powinien wyświetlić opis oceny: niedostateczny (1), dopuszczający (2), dostateczny (3), dobry (4), bardzo dobry (5). Dla liczby spoza zakresu, program powinien wyświetlić komunikat o błędzie.</p></li>
+<li><p>Napisz program, który prosi użytkownika o wprowadzenie trzech różnych liczb całkowitych i wyświetla najmniejszą z nich.</p></li>
+<li><p>Napisz program, który pyta użytkownika o rok i sprawdza, czy podany rok jest rokiem przestępnym. Rok przestępny to taki, który jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest też podzielny przez 400.</p></li>
+<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla informację, czy suma obu liczb jest parzysta czy nieparzysta.</p></li>
+<li><p>Napisz program, który przyjmuje od użytkownika trzy liczby zmiennoprzecinkowe <code>a, b, c</code>. Potrakuj je jako współczynniki równania kwadratowego <span class="math inline">\(ax^2+bx+c=0\)</span>. Na standardowym wyjściu wypisz wszystkie warianty rozwiązań tego równania.</p></li>
+<li><p>Napisz program, który przyjmuje dwie liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić największą z nich.</p></li>
+<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić najmniejszą z nich.</p></li>
+<li><p>Używając operatora warunkowego <code>?</code>, napisz program, który przyjmuje od użytkownika jedną liczbę całkowitą i wyświetla “parzysta” lub “nieparzysta” w zależności od wartości liczby.</p></li>
+<li><p>Stwórz program, który prosi o wprowadzenie dwóch liczb zmiennoprzecinkowych i używa operatora warunkowego, aby wyświetlić, która z nich jest większa, lub czy są równe z dokładnością do dwóch miejsc po przecinku.</p></li>
+<li><p>Używając operatora warunkowego, napisz program, który prosi użytkownika o wprowadzenie oceny w skali od 0 do 100 i wyświetla “Zdane”, jeśli ocena jest większa lub równa 51, lub “Nie zdane” w przeciwnym przypadku.</p></li>
+<li><p>Napisz program, który przyjmuje rok jako wejście od użytkownika i za pomocą operatora warunkowego sprawdza, czy jest to rok przestępny. Program powinien wyświetlać “Rok przestępny” lub “Rok nieprzestępny” w zależności od wyniku.</p></li>
 </ol>
 
 
@@ -772,13 +801,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Zbiór zadań - C">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Zbiór zadań - C</span>
+      <a href="./operacjewejsciawyjscia.html" class="pagination-link" aria-label="Operacje wejścia, wyjścia.">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intrukcjewarunkowe.html" class="pagination-link" aria-label="Instrukcje warunkowe, operator warunkowy">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./petle.html" class="pagination-link" aria-label="Pętle">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

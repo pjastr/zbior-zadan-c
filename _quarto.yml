@@ -11,6 +11,8 @@ book:
     - part: "Podstawy języka C"
       chapters: 
        - operacjewejsciawyjscia.qmd
+       - intrukcjewarunkowe.qmd
+       - petle.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd

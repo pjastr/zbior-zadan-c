@@ -1,0 +1,29 @@
+# Instrukcje warunkowe, operator warunkowy
+
+W poniższych zadaniach jako instrukcję warunkową należy wykorzystać `if`, `if else`, `switch case`. Przez operator warunkowy rozumie się `?`.
+
+1. Napisz program, który prosi użytkownika o wprowadzenie liczby całkowitej. Program powinien wyświetlić informację, czy wprowadzona liczba jest dodatnia, ujemna czy równa zero.
+
+2. Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla większą z nich.
+
+3. Napisz program, który prosi o wprowadzenie oceny w skali od 1 do 5. Program powinien wyświetlić opis oceny: niedostateczny (1), dopuszczający (2), dostateczny (3), dobry (4), bardzo dobry (5). Dla liczby spoza zakresu, program powinien wyświetlić komunikat o błędzie.
+
+4. Napisz program, który prosi użytkownika o wprowadzenie trzech różnych liczb całkowitych i wyświetla najmniejszą z nich.
+
+5. Napisz program, który pyta użytkownika o rok i sprawdza, czy podany rok jest rokiem przestępnym. Rok przestępny to taki, który jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest też podzielny przez 400.
+
+6. Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla informację, czy suma obu liczb jest parzysta czy nieparzysta.
+
+7. Napisz program, który przyjmuje od użytkownika trzy liczby zmiennoprzecinkowe `a, b, c`. Potrakuj je jako współczynniki równania kwadratowego $ax^2+bx+c=0$. Na standardowym wyjściu wypisz wszystkie warianty rozwiązań tego równania.
+
+8. Napisz program, który przyjmuje dwie liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić największą z nich.
+
+9. Napisz program, który przyjmuje trzy liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić najmniejszą z nich.
+
+10. Używając operatora warunkowego `?`, napisz program, który przyjmuje od użytkownika jedną liczbę całkowitą i wyświetla "parzysta" lub "nieparzysta" w zależności od wartości liczby.
+
+11. Stwórz program, który prosi o wprowadzenie dwóch liczb zmiennoprzecinkowych i używa operatora warunkowego, aby wyświetlić, która z nich jest większa, lub czy są równe z dokładnością do dwóch miejsc po przecinku.
+
+12. Używając operatora warunkowego, napisz program, który prosi użytkownika o wprowadzenie oceny w skali od 0 do 100 i wyświetla "Zdane", jeśli ocena jest większa lub równa 51, lub "Nie zdane" w przeciwnym przypadku.
+
+13. Napisz program, który przyjmuje rok jako wejście od użytkownika i za pomocą operatora warunkowego sprawdza, czy jest to rok przestępny. Program powinien wyświetlać "Rok przestępny" lub "Rok nieprzestępny" w zależności od wyniku.

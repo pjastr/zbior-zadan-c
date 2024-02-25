@@ -1,0 +1,21 @@
+# Pętle
+
+Zadania należy rozwiązać bez tablic, napisów, wskaźników, napisów, wbudowanych funkcji matematycznych. Nie twórz samodzielnie też własnych funkcji.
+
+1. Napisz program, który wyświetla wszystkie liczby całkowite od 1 do 100, używając pętli `for`.
+
+2. Utwórz program, który prosi użytkownika o wprowadzenie liczby całkowitej `n`, a następnie wyświetla sumę wszystkich liczb całkowitych od 1 do `n` używając pętli `while`.
+
+3. Napisz program, który czyta od użytkownika liczby całkowite do momentu wprowadzenia zera i następnie wyświetla sumę wszystkich wprowadzonych liczb pozytywnych oraz sumę wszystkich liczb negatywnych, używając pętli `do-while`.
+
+4. Stwórz program, który oblicza i wyświetla silnię podanej przez użytkownika nieujemnej liczby całkowitej, używając pętli `for`.
+
+5. Napisz program, który wyświetla pierwszych 10 liczb ciągu Fibonacciego, używając pętli `while`.
+
+6.  Napisz program, który prosi użytkownika o wprowadzenie dodatniej liczby całkowitej `n`, a następnie oblicza i wyświetla $\lfloor \sqrt{n} \rfloor$ (część całkowita/podłoga pierwiastka kwadratowego).
+
+7.  Napisz program, który prosi użytkownika o wprowadzenie dodatniej liczby całkowitej `n`, a następnie oblicza i wyświetla $\lceil \sqrt{n} \rceil$ (sufit pierwiastka kwadratowego).
+
+8. Napisz program, który prosi użytkownika o wprowadzenie 10 dodatnich liczb całkowitych i ustawia je w ciąg $a_1, \ldots, a_{10}$. Oblicz i wyświetl ile elementów ciągu spełnia nierówność $a_k < \frac{a_{k-1}+a_{k+1}}{2}$ dla $1<k<10$.
+
+9. Napisz program, który prosi użytkownika o wprowadzenie dodatniej liczby całkowitej $n$, a następnie $n$ dodatnich liczb całkowitych i ustawia je w ciąg $a_1, \ldots, a_n$. Oblicz i wyświetl ile elementów ciągu spełnia nierówność $a_k < \frac{a_{k-1}+a_{k+1}}{2}$ dla $1<k<n$.

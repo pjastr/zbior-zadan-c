@@ -1,3 +1,5 @@
 # Historia zmian {.unnumbered}
 
 * 17.02.2024 - dodano część: Formatowanie zmiennych liczbowych w `printf`, Operatory arytmetyczne, Operatory bitowe
+
+* 25.02.2024 - dodano część: Instrukcje warunkowe, operator warunkowy, Pętle

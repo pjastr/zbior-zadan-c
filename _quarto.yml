@@ -13,6 +13,7 @@ book:
        - operacjewejsciawyjscia.qmd
        - intrukcjewarunkowe.qmd
        - petle.qmd
+       - funkcje.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd

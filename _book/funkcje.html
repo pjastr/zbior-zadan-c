@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 2&nbsp; Instrukcje warunkowe, operator warunkowy</title>
+<title>Zbiór zadań - C - 4&nbsp; Funkcje</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./petle.html" rel="next">
-<link href="./operacjewejsciawyjscia.html" rel="prev">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./petle.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -112,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./funkcje.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span></a>
   </div>
 </li>
@@ -177,7 +177,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./funkcje.html" class="sidebar-item-text sidebar-link">
+  <a href="./funkcje.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></span></a>
   </div>
 </li>
@@ -235,9 +235,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./funkcje.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></h1>
 </div>
 
 
@@ -254,21 +254,26 @@ window.Quarto = {
 </header>
 
 
-<p>W poniższych zadaniach jako instrukcję warunkową należy wykorzystać <code>if</code>, <code>if else</code>, <code>switch case</code>. Przez operator warunkowy rozumie się <code>?</code>.</p>
+<p>Zadania należy rozwiązać bez tablic, napisów, wskaźników, napisów, wbudowanych funkcji matematycznych. W zadaniach można stworzyć kilka funkcji pomocniczych. Do każdej funkcji z polecenia należy wywołać przypadek testowy (wywołać co najmniej jeden raz na poprawnym argumencie). W poleceniach używana jest konwencja <code>camelCase</code>. Zwróć uwagę, czy funkcja ma coś zwrócić czy wyświetlić.</p>
 <ol type="1">
-<li><p>Napisz program, który prosi użytkownika o wprowadzenie liczby całkowitej. Program powinien wyświetlić informację, czy wprowadzona liczba jest dodatnia, ujemna czy równa zero.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla większą z nich.</p></li>
-<li><p>Napisz program, który prosi o wprowadzenie oceny w skali od 1 do 5. Program powinien wyświetlić opis oceny: niedostateczny (1), dopuszczający (2), dostateczny (3), dobry (4), bardzo dobry (5). Dla liczby spoza zakresu, program powinien wyświetlić komunikat o błędzie.</p></li>
-<li><p>Napisz program, który prosi użytkownika o wprowadzenie trzech różnych liczb całkowitych i wyświetla najmniejszą z nich.</p></li>
-<li><p>Napisz program, który pyta użytkownika o rok i sprawdza, czy podany rok jest rokiem przestępnym. Rok przestępny to taki, który jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest też podzielny przez 400.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla informację, czy suma obu liczb jest parzysta czy nieparzysta.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika trzy liczby zmiennoprzecinkowe <code>a, b, c</code>. Potrakuj je jako współczynniki równania kwadratowego <span class="math inline">\(ax^2+bx+c=0\)</span>. Na standardowym wyjściu wypisz wszystkie warianty rozwiązań tego równania.</p></li>
-<li><p>Napisz program, który przyjmuje dwie liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić największą z nich.</p></li>
-<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić najmniejszą z nich.</p></li>
-<li><p>Używając operatora warunkowego <code>?</code>, napisz program, który przyjmuje od użytkownika jedną liczbę całkowitą i wyświetla “parzysta” lub “nieparzysta” w zależności od wartości liczby.</p></li>
-<li><p>Stwórz program, który prosi o wprowadzenie dwóch liczb zmiennoprzecinkowych i używa operatora warunkowego, aby wyświetlić, która z nich jest większa, lub czy są równe z dokładnością do dwóch miejsc po przecinku.</p></li>
-<li><p>Używając operatora warunkowego, napisz program, który prosi użytkownika o wprowadzenie oceny w skali od 0 do 100 i wyświetla “Zdane”, jeśli ocena jest większa lub równa 51, lub “Nie zdane” w przeciwnym przypadku.</p></li>
-<li><p>Napisz program, który przyjmuje rok jako wejście od użytkownika i za pomocą operatora warunkowego sprawdza, czy jest to rok przestępny. Program powinien wyświetlać “Rok przestępny” lub “Rok nieprzestępny” w zależności od wyniku.</p></li>
+<li><p>Napisz funkcję <code>sumTwoNumbers</code>, której argumentami są dwie liczby całkowite. Funkcja ma wyświetlać sumę liczb przekazany jako argument funkcji. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateAbsoluteValue</code>, której argumentem jest liczba zmiennoprzecinkowa. Funkcja ma zwracać wartość bezwzględną liczby przekazanej jako argument funkcji. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateFactorial</code>, której argumentem jest liczba całkowita nieujemna. Funkcja ma zwracać wartość silni liczby przekazanej jako argument funkcji, obliczoną metodą nierekurencyjną. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sumNumbers</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać sumę liczb od 1 do <span class="math inline">\(n\)</span> włącznie. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sumSquares</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać sumę kwadratów liczb od 1 do <span class="math inline">\(n\)</span> włącznie. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculatePowerOfTwo</code>, której argumentem jest liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość <span class="math inline">\(2^n\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateSquareRootFloor</code>, której argumentem jest nieujemna liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać część całkowitą pierwiastka kwadratowego z <span class="math inline">\(n\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>countFunctionCalls</code>, która nie przyjmuje żadnych argumentów. Funkcja ma zliczać i wypisywać na standardowym wyjściu liczbę swoich wywołań od momentu uruchomienia programu. Stwórz przypadek testowy. Wykorzystaj zmienne statyczne.</p></li>
+<li><p>Napisz funkcję <code>calculateFactorialRecursively</code>, której argumentem jest liczba całkowita nieujemna <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość silni liczby <span class="math inline">\(n\)</span>, obliczoną metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateFibonacciRecursively</code>, której argumentem jest liczba całkowita nieujemna <span class="math inline">\(n\)</span>. Funkcja ma zwracać <span class="math inline">\(n\)</span>-ty wyraz ciągu Fibonacciego, obliczony metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateArithmeticSequenceRecursively</code>, której argumentami są dwie liczby całkowite: dodatnie <span class="math inline">\(n\)</span> (numer wyrazu ciągu do obliczenia) oraz <span class="math inline">\(d\)</span> (różnica ciągu arytmetycznego), przy założeniu, że wyraz początkowy ciągu <span class="math inline">\(a_1\)</span> wynosi 1. Funkcja ma zwracać <span class="math inline">\(n\)</span>-ty wyraz ciągu arytmetycznego, obliczony metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateGeometricSequenceRecursively</code>, której argumentami są dwie liczby całkowite: dodatnie <span class="math inline">\(n\)</span> (numer wyrazu ciągu do obliczenia) oraz <span class="math inline">\(d\)</span> (iloraz ciągu geometrycznego), przy założeniu, że wyraz początkowy ciągu <span class="math inline">\(a_1\)</span> wynosi 1. Funkcja ma zwracać <span class="math inline">\(n\)</span>-ty wyraz ciągu geometrycznego, obliczony metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculate13</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = 2f(n-1) + 3\)</span>, gdzie <span class="math inline">\(f(1) = 1\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculate14</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = 3f(n-1) - 1\)</span>, gdzie <span class="math inline">\(f(1) = 2\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculate15</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = f(n-1) + 2f(n-2)\)</span>, gdzie <span class="math inline">\(f(1) = 1\)</span> i <span class="math inline">\(f(2) = 2\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculate16</code>, której argumentem jest dodania liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = 2f(n-1) + 3f(n-2)\)</span>, gdzie <span class="math inline">\(f(1) = 2\)</span> i <span class="math inline">\(f(2) = 3\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculate17</code>, której argumentem jest nieujemna liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = f(0)+f(1)+\ldots +f(n)\)</span>, gdzie <span class="math inline">\(f(0) = f(1) = 1\)</span>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>calculateGCD</code>, której argumentami są dwie dodatnie liczby całkowite <span class="math inline">\(n\)</span> i <span class="math inline">\(m\)</span>. Funkcja ma obliczyć największy wspólny dzielnik (NWD) tych liczb algorytmem Euklidesa. Stwórz przypadek testowy.</p></li>
 </ol>
 
 
@@ -807,13 +812,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./operacjewejsciawyjscia.html" class="pagination-link" aria-label="Operacje wejścia, wyjścia.">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span>
+      <a href="./petle.html" class="pagination-link" aria-label="Pętle">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./petle.html" class="pagination-link" aria-label="Pętle">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

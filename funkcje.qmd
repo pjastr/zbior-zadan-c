@@ -1,6 +1,6 @@
 # Funkcje
 
-Zadania należy rozwiązać bez tablic, napisów, wskaźników, napisów, wbudowanych funkcji matematycznych. W zadaniach można stworzyć kilka funkcji pomocniczych. Do każdej funkcji z polecenia należy wywołać przypadek testowy (wywołać co najmniej jeden raz na poprawnym argumencie). W poleceniach używana jest konwencja `camelCase`. Zwróć uwagę, czy funkcja ma coś zwrócić czy wyświetlić.
+Zadania należy rozwiązać bez tablic, napisów, wskaźników, wbudowanych funkcji matematycznych. W zadaniach można stworzyć kilka funkcji pomocniczych. Do każdej funkcji z polecenia należy wywołać przypadek testowy (wywołać co najmniej jeden raz na poprawnym argumencie). W poleceniach używana jest konwencja `camelCase`. Zwróć uwagę, czy funkcja ma coś zwrócić czy wyświetlić.
 
 1. Napisz funkcję `sumTwoNumbers`, której argumentami są dwie liczby całkowite. Funkcja ma wyświetlać sumę liczb przekazany jako argument funkcji. Stwórz przypadek testowy.
 
@@ -34,7 +34,7 @@ Zadania należy rozwiązać bez tablic, napisów, wskaźników, napisów, wbudow
 
 16. Napisz funkcję `calculate16`, której argumentem jest dodania liczba całkowita $n$. Funkcja ma zwracać wartość wyrażoną wzorem $f(n) = 2f(n-1) + 3f(n-2)$, gdzie $f(1) = 2$ i $f(2) = 3$. Stwórz przypadek testowy.
 
-17. Napisz funkcję `calculate17`, której argumentem jest nieujemna liczba całkowita $n$. Funkcja ma zwracać wartość wyrażoną wzorem $f(n) = f(0)+f(1)+\ldots +f(n)$, gdzie $f(0) = f(1) = 1$. Stwórz przypadek testowy.
+17. Napisz rekurencyjną funkcję `calculate17`, której argumentem jest nieujemna liczba całkowita $n$. Funkcja ma zwracać wartość wyrażoną wzorem $f(n) = f(0)+f(1)+\ldots +f(n-1)$, gdzie $f(0) = f(1) = 1$. Stwórz przypadek testowy.
 
 18. Napisz funkcję `calculateGCD`, której argumentami są dwie dodatnie liczby całkowite $n$ i $m$. Funkcja ma obliczyć największy wspólny dzielnik (NWD) tych liczb algorytmem Euklidesa. Stwórz przypadek testowy.
 

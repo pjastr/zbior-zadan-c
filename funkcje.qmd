@@ -36,7 +36,7 @@ Zadania należy rozwiązać bez tablic, napisów, wskaźników, wbudowanych funk
 
 17. Napisz rekurencyjną funkcję `calculate17`, której argumentem jest nieujemna liczba całkowita $n$. Funkcja ma zwracać wartość wyrażoną wzorem $f(n) = f(0)+f(1)+\ldots +f(n-1)$, gdzie $f(0) = f(1) = 1$. Stwórz przypadek testowy.
 
-18. Napisz funkcję `calculateGCD`, której argumentami są dwie dodatnie liczby całkowite $n$ i $m$. Funkcja ma obliczyć największy wspólny dzielnik (NWD) tych liczb algorytmem Euklidesa. Stwórz przypadek testowy.
+18. Napisz rekrurencyjną funkcję `calculateGCD`, której argumentami są dwie dodatnie liczby całkowite $n$ i $m$. Funkcja ma zwracać największy wspólny dzielnik (NWD) tych liczb algorytmem Euklidesa. Stwórz przypadek testowy.
 
 
 

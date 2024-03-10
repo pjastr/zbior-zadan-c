@@ -5,3 +5,5 @@
 * 25.02.2024 - dodano część: Instrukcje warunkowe, operator warunkowy, Pętle
 
 * 3.03.2024 - dodano część: Funkcje
+
+* 10.03.2024 - dodano część: Wskaźniki

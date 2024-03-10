@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Piotr Jastrzębski">
 
-<title>Zbiór zadań - C</title>
+<title>Zbiór zadań - C - 5&nbsp; Wskaźniki</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,27 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,7 +64,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./operacjewejsciawyjscia.html" rel="next">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./funkcje.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,7 +117,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Zbiór zadań - C</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./wskazniki.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -135,7 +149,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Zbiór zadań - C</span></a>
   </div>
 </li>
@@ -174,7 +188,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wskazniki.html" class="sidebar-item-text sidebar-link">
+  <a href="./wskazniki.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></span></a>
   </div>
 </li>
@@ -227,39 +241,21 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Spis treści</h2>
-   
-  <ul>
-  <li><a href="#zbiór-zadań---c" id="toc-zbiór-zadań---c" class="nav-link active" data-scroll-target="#zbiór-zadań---c">Zbiór zadań - C</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./wskazniki.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Zbiór zadań - C</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Autor</div>
-    <div class="quarto-title-meta-contents">
-             <p>Piotr Jastrzębski </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Opublikowano</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">10 marca 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -269,19 +265,46 @@ div.csl-indent {
 </header>
 
 
+<p>Zadania należy rozwiązać bez interpretacji wskaźników jako tablic.</p>
+<ol type="1">
+<li>Skopiuj lub przepisz kod i sprawdź wyniki na standardowym wyjściu:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdlib.h&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">"%Iu</span><span class="sc">\n</span><span class="st">"</span><span class="op">,</span> <span class="kw">sizeof</span><span class="op">(</span><span class="dt">int</span><span class="op">));</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">"%Iu</span><span class="sc">\n</span><span class="st">"</span><span class="op">,</span> <span class="kw">sizeof</span><span class="op">(</span><span class="dt">int</span><span class="op">*));</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>W jednym pliku wykonaj czynności”</li>
+</ol>
+<ul>
+<li><p>Napisz funkcję <code>sum</code> z dwoma argumentami typu <code>int</code>. Funkcja ma zwracać sumę wartości przekazanych przez argumenty. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sumVals</code> z dwoma argumentami, które są wskaźnikami do zmiennych typu <code>int</code>. Funkcja powinna zwracać sumę wartości, na które wskazują te argumenty. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>addPtr</code> z trzema argumentami, które są wskaźnikami do zmiennych typu <code>int</code>. Funkcja ma być procedurą (typ zwracany <code>void</code>). Funkcja ma ustawić wartość zmiennej wskazywanej przez trzeci argument funkcji jako sumę wartości wskazywanych przez dwa wcześniejsze argumenty. Utwórz przypadek testowy.</p></li>
+</ul>
+<ol start="3" type="1">
+<li><p>Napisz funkcję <code>copyInt</code> z argumentami: <code>x</code> typu <code>int</code> oraz <code>w</code>, który jest wskaźnikiem do <code>int</code>. Funkcja ma przepisać wartość <code>x</code> do zmiennej wskazywanej przez <code>w</code>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>findMax</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>double</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>double</code>. Funkcja ma zwracać większą wartość spośród tych, na które wskazują <code>num1</code> i <code>num2</code>. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>initInts</code>, która nie przyjmuje argumentów i rezerwuje blok trzech zmiennych typu <code>int</code>, ustawiając ich wartości kolejno na 5, -12, 33. Funkcja zwraca wskaźnik na środkową zmienną. Utwórz przypadek testowy w funkcji <code>main</code>, który wyświetla wartości z bloku stworzonego przez funkcję.</p></li>
+<li><p>Napisz funkcję <code>initFloats</code>, która nie przyjmuje argumentów i rezerwuje blok trzech zmiennych typu <code>float</code>, ustawiając ich wartości kolejno na 4.5, 2.3, -4.2. Funkcja zwraca wskaźnik na pierwszą ze zmiennych w bloku. Utwórz przypadek testowy w funkcji <code>main</code>, który wyświetla wartości z bloku stworzonego przez funkcję.</p></li>
+<li><p>Napisz funkcję <code>initFlts</code>, która nie przyjmuje argumentów i rezerwuje blok czterech zmiennych typu <code>float</code>, ustawiając ich wartości kolejno na 0.5, 1.5, 2.5, i 3.5. Funkcja zwraca wskaźnik na ostatnią zmienną w bloku. Utwórz przypadek testowy w <code>main</code>, aby wyświetlić wartości z bloku stworzonego przez funkcję.</p></li>
+<li><p>Napisz funkcję <code>sumToPtr</code> z trzema argumentami: dwoma wskaźnikami na stałe typu <code>int</code> i wskaźnikiem na zmienną typu <code>int</code>. Funkcja ma przepisać do zmiennej wskazywanej przez trzeci argument sumę wartości stałych wskazywanych przez pierwszy i drugi argument. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sqrCopy</code> z dwoma argumentami: wskaźnikiem na stałą typu <code>int</code> i wskaźnikiem na zmienną typu <code>int</code>. Funkcja ma przepisać kwadrat wartości stałej do zmiennej wskazywanej przez drugi argument. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>subPtrs</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>double</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>double</code>. Funkcja ma zwracać różnicę wartości, na które wskazują <code>num1</code> i <code>num2</code>. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sumSqrs</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>int</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>int</code>. Funkcja ma zwracać sumę kwadratów wartości wskazywanych przez <code>num1</code> i <code>num2</code>. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>linFuncVal</code> z trzema argumentami: wskaźnikiem <code>a</code> na stałą wartość typu <code>float</code>, stałym wskaźnikiem <code>b</code> na zmienną typu <code>float</code>, i wskaźnikiem <code>x</code> na stałą wartość typu <code>float</code>. Funkcja ma obliczać wartość funkcji liniowej <code>y=ax+b</code> dla argumentu <code>x</code>, gdzie <code>a</code> i <code>b</code> są wskazywane przez odpowiednie wskaźniki. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>minPtr</code> z trzema argumentami, które są wskaźnikami na zmienne typu <code>int</code>. Funkcja zwraca wskaźnik na zmienną o najmniejszej wartości spośród tych, na które wskazują argumenty. Utwórz przypadek testowy w <code>main</code>, aby wyświetlić najmniejszą wartość spośród trzech zmiennych.</p></li>
+<li><p>Napisz funkcję <code>multPtrs</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>double</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>double</code>. Funkcja zwraca iloczyn wartości wskazywanych przez te wskaźniki. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>absVal</code> z jednym argumentem, którym jest wskaźnik na zmienną typu <code>int</code>. Funkcja oblicza wartość bezwzględną zmiennej wskazywanej przez wskaźnik i aktualizuje tę zmienną. Utwórz przypadek testowy w <code>main</code>, aby wyświetlić wartość zaktualizowanej zmiennej.</p></li>
+<li><p>Napisz funkcję <code>swap</code> z dwoma argumentami: wskaźnikiem <code>ptr1</code> na zmienną typu <code>int</code> i wskaźnikiem <code>ptr2</code> na inną zmienną tego samego typu. Funkcja zamienia miejscami wartości wskazywane przez wskaźniki. Utwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>swapSign</code> z dwoma argumentami: wskaźnikiem <code>ptr1</code> na zmienną typu <code>double</code> i wskaźnikiem <code>ptr2</code> na inną zmienną tego samego typu. Funkcja zamienia miejscami wartości wskazywane przez wskaźniki, jeśli mają one różne znaki. W przeciwnym razie nie robi nic. Utwórz przypadek testowy.</p></li>
+</ol>
 
-<section id="zbiór-zadań---c" class="level1 unnumbered">
-<h1 class="unnumbered">Zbiór zadań - C</h1><p><img src="logo-c.jpg" title="Zbiór zadań - C" class="quarto-cover-image img-fluid"></p>
-<p>Tu będzie zbiór zadań z programowania w języku C. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.</p>
-<p>Rozwiązania wybranych zadań dostępne są <strong>to do</strong>.</p>
 
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-krzaczkowski_zadania_z_programowania_w_jezyku_c_cpp_cz_i" class="csl-entry" role="listitem">
-Krzaczkowski, Jacek. 2011. <em>Zadania z programowania w języku C/C++, cz. I</em>. Instytut Informatyki UMCS Lublin.
-</div>
-</div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -817,10 +840,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./funkcje.html" class="pagination-link" aria-label="Funkcje">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./operacjewejsciawyjscia.html" class="pagination-link" aria-label="Operacje wejścia, wyjścia.">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -829,4 +855,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></div></div></footer></body></html>

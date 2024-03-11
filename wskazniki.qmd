@@ -16,7 +16,7 @@ int main()
 }
 ```
 
-2.  W jednym pliku wykonaj czynności"
+2.  W jednym pliku wykonaj czynności:
 
 -   Napisz funkcję `sum` z dwoma argumentami typu `int`. Funkcja ma zwracać sumę wartości przekazanych przez argumenty. Stwórz przypadek testowy.
 

@@ -2,7 +2,7 @@
 
 Tu będzie zbiór zadań z programowania w języku C. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.
 
-Rozwiązania wybranych zadań dostępne są <https://github.com/pjastr/zbior-zadan-c-rozw>.
+Rozwiązania wybranych zadań dostępne są tutaj: <https://github.com/pjastr/zbior-zadan-c-rozw>.
 
 
 ---

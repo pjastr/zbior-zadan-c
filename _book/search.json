@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Zbiór zadań - C",
     "section": "",
-    "text": "Zbiór zadań - C\nTu będzie zbiór zadań z programowania w języku C. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.\nRozwiązania wybranych zadań dostępne są to do.\n\n\n\n\nKrzaczkowski, Jacek. 2011. Zadania z programowania w języku C/C++, cz. I. Instytut Informatyki UMCS Lublin.",
+    "text": "Zbiór zadań - C\nTu będzie zbiór zadań z programowania w języku C. Inspiracją było zebranie zadań powstałych w trakcie prowadzenia zajęć dydaktycznych realizowanych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie.\nRozwiązania wybranych zadań dostępne są https://github.com/pjastr/zbior-zadan-c-rozw.\n\n\n\n\nKrzaczkowski, Jacek. 2011. Zadania z programowania w języku C/C++, cz. I. Instytut Informatyki UMCS Lublin.",
     "crumbs": [
       "Zbiór zadań - C"
     ]
@@ -112,7 +112,7 @@
     "href": "changelog.html",
     "title": "Historia zmian",
     "section": "",
-    "text": "17.02.2024 - dodano część: Formatowanie zmiennych liczbowych w printf, Operatory arytmetyczne, Operatory bitowe\n25.02.2024 - dodano część: Instrukcje warunkowe, operator warunkowy, Pętle\n3.03.2024 - dodano część: Funkcje\n10.03.2024 - dodano część: Wskaźniki",
+    "text": "17.02.2024 - dodano część: Formatowanie zmiennych liczbowych w printf, Operatory arytmetyczne, Operatory bitowe\n25.02.2024 - dodano część: Instrukcje warunkowe, operator warunkowy, Pętle\n3.03.2024 - dodano część: Funkcje\n10.03.2024 - dodano część: Wskaźniki\n11.03.2024 - dodano link do repozytorium na wybrane rozwiązania",
     "crumbs": [
       "Historia zmian"
     ]

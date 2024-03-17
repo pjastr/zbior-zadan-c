@@ -42,7 +42,7 @@ int main()
 
 11. Napisz funkcję `sumSqrs` z dwoma argumentami: wskaźnikiem `num1` na stałą wartość typu `int` i stałym wskaźnikiem `num2` na zmienną typu `int`. Funkcja ma zwracać sumę kwadratów wartości wskazywanych przez `num1` i `num2`. Utwórz przypadek testowy.
 
-12. Napisz funkcję `linFuncVal` z trzema argumentami: wskaźnikiem `a` na stałą wartość typu `float`, stałym wskaźnikiem `b` na zmienną typu `float`, i wskaźnikiem `x` na stałą wartość typu `float`. Funkcja ma obliczać wartość funkcji liniowej `y=ax+b` dla argumentu `x`, gdzie `a` i `b` są wskazywane przez odpowiednie wskaźniki. Utwórz przypadek testowy.
+12. Napisz funkcję `linFuncVal` z trzema argumentami: wskaźnikiem `a` na stałą wartość typu `float`, stałym wskaźnikiem `b` na zmienną typu `float`, i wskaźnikiem `x` na stałą wartość typu `float`. Funkcja ma obliczać i zwracać wartość funkcji liniowej `y=ax+b` dla argumentu `x`, gdzie `a` i `b` są wskazywane przez odpowiednie wskaźniki. Utwórz przypadek testowy.
 
 13. Napisz funkcję `minPtr` z trzema argumentami, które są wskaźnikami na zmienne typu `int`. Funkcja zwraca wskaźnik na zmienną o najmniejszej wartości spośród tych, na które wskazują argumenty. Utwórz przypadek testowy w `main`, aby wyświetlić najmniejszą wartość spośród trzech zmiennych.
 

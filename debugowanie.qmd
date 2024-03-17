@@ -1,0 +1,47 @@
+# Debugowanie
+
+1. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10; // a = , b =
+    int b = 5;  // a = , b =
+    a = a + b;  // a = , b =
+    b = a - b;  // a = , b =
+    a = a - b;  // a = , b =
+    b = a * b;  // a = , b =
+    a = b / a;  // a = , b =
+    b = a << 2; // a = , b =
+    a = b >> 1; // a = , b =
+    b = a & b;  // a = , b =
+    a = a ^ b;  // a = , b =
+    b = ~a;     // a = , b =
+    return 0;
+}
+```
+
+2. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int a = 10; // a = , b = , c =
+    int b = 5;  // a = , b = , c =
+    int c = 0;  // a = , b = , c =
+    a = a + b;  // a = , b = , c =
+    b = a - b;  // a = , b = , c =
+    a = a - b;  // a = , b = , c =
+    c = a;      // a = , b = , c =
+    a = b * c;  // a = , b = , c =
+    b = a / c;  // a = , b = , c =
+    c = b << 2; // a = , b = , c =
+    b = c >> 1; // a = , b = , c =
+    a = b & c;  // a = , b = , c =
+    c = a ^ b;  // a = , b = , c =
+    b = ~c;     // a = , b = , c =
+    return 0;
+}
+```

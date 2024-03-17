@@ -9,3 +9,5 @@
 * 10.03.2024 - dodano część: Wskaźniki
 
 * 11.03.2024 - dodano link do repozytorium na wybrane rozwiązania
+
+* 17.03.2024 - dodano część: Wskaźniki na funkcję, Debugowanie

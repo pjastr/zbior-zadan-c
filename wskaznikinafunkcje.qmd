@@ -1,0 +1,18 @@
+# Wskaźniki na funkcję
+
+1.  Napisz funkcję `calculate`, która przyjmuje dwa argumenty: wskaźnik na funkcję `operation` oraz liczbę całkowitą `number`. Funkcja `operation` ma przyjmować jeden argument typu `int` i zwracać wartość typu `int`. Funkcja `calculate` powinna wywołać funkcję `operation` z argumentem `number` i zwrócić jej wynik. Stwórz przypadek testowy.
+
+2.  Napisz funkcję o nazwie `applyFunction`, która przyjmuje trzy argumenty: wskaźnik na funkcję `func`, która przyjmuje jeden argument typu `int` i zwraca `int`, oraz dwie liczby całkowite: `start` i `end`. Funkcja `applyFunction` powinna wywołać funkcję `func` dla każdej liczby w zakresie od `start` do `end` (włącznie) i wydrukować wyniki na standardowe wyjście. Stwórz przypadek testowy.
+
+3.  Napisz funkcję, która otrzymuje trzy argumenty:
+
+-   dwa wskaźniki na funkcje z jednym argumentem typu `int` zwracające wartość typu `int`,
+-   dodatnią wartość `n` typu `int`,
+
+i zwraca 1, jeżeli otrzymane w argumentach funkcje mają ten sam znak dla wartości dla liczb całkowitych od 0 do $n$, a zwraca 0 w przeciwnym wypadku. Stwórz przypadek testowy.
+
+4.  Napisz funkcję `calculateOperation`, która przyjmuje jako argumenty: wskaźnik na funkcję `operation`, która przyjmuje dwa argumenty typu `double` i zwraca `double`, oraz dwa argumenty typu `double` - `number1` i `number2`. Funkcja `calculateOperation` ma zwracać wynik wywołania funkcji `operation` na argumentach `number1` i `number2`. Stwórz przypadek testowy.
+
+5.  Napisz funkcję `modifyAndSum`, która ma przyjmować jako argument wskaźnik na funkcję `modifier`, która przyjmuje jeden argument typu `int` i zwraca `int`, oraz dwa argumenty typu `int`: `number1` i `number2`. Funkcja `modifyAndSum` powinna modyfikować obie liczby za pomocą funkcji `modifier` i zwracać ich sumę. Przykładem funkcji `modifier` może być funkcja, która zwiększa liczbę o 1 lub zmienia znak liczby. Stwórz przypadek testowy.
+
+6.  Stwórz funkcję `applyCondition`, która przyjmuje trzy argumenty: wskaźnik na funkcję `condition` zwracającą wartość typu `int` i przyjmującą `int`, wskaźnik na funkcję `action` również przyjmującą i zwracającą `int`, oraz wartość całkowitą `value`. Funkcja `applyCondition` powinna najpierw wywołać `condition` z `value` jako argumentem. Jeśli wynik to 1, `applyCondition` powinna następnie wywołać `action` na `value` i zwrócić wynik. W przeciwnym wypadku powinna zwrócić `value` bez zmian.

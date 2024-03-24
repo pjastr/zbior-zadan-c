@@ -87,3 +87,25 @@ int main()
 17. Napisz funkcję o nazwie `findElement`, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy, liczbę całkowitą `val` do znalezienia oraz wskaźnik na funkcję `isEqual`. Funkcja `isEqual` przyjmuje jako argumenty dwie liczby całkowite i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczby są równe. Funkcja `findElement` powinna przeszukiwać tablicę w celu znalezienia wartości `val` zgodnie z zasadami określonymi przez funkcję `isEqual`, a następnie zwrócić indeks tego elementu w tablicy (pierwszego napotkanego) lub `-1`, jeśli element nie istnieje. Stwórz przypadek testowy dla funkcji `findElement`.
 
 18. Napisz funkcję `findWithCondition`, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy oraz wskaźnik na funkcję `condition`. Funkcja `condition` przyjmuje jako argument liczbę całkowitą i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczba spełnia określony warunek. Funkcja `findWithCondition` powinna przeszukać tablicę w celu znalezienia ostatniej liczby spełniającej warunek określony przez funkcję `condition`, a następnie zwrócić indeks tego elementu w tablicy lub `-1`, jeśli taki element nie istnieje. Stwórz przypadek testowy dla funkcji `findWithCondition`.
+
+19. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić wartość `1`, gdy tablica `tab` jest symetryczna (tzn. czy początkowy element jest równy ostatniemu, kolejny przedostatniemu itd.) oraz zwróćić zero w pozostałych przypadkach. Stwórz przypadek testowy dla funkcji.
+
+
+20. Napisz funkcję, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą $n$ oraz dwie $n$-elementowe tablice `tab1` i `tab2` o elementach typu `int`. Funkcja powinna sprawdzić, czy obie tablice są identyczne. Jeśli tak, funkcja powinna zwrócić 1, w przeciwnym razie zwrócić 0. Stwórz przypadek testowy dla funkcji.
+
+21. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int` i zwraca indeks pierwszego wystąpienia największej wartości bezwzględnej elementów przechowywanych w tablicy `tab`. Stwórz przypadek testowy dla funkcji.
+
+22. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` ($n>3$) oraz `n`-elementową tablicę `tab` o elementach typu `double` i 
+przesuwa o dwa w lewo wszystkie elementy tablicy (tak, żeby wartość elementu o indeksie `n-1` znalazła się w elemencie o indeksie `n-3`, wartość elementu o indeksie `n-2` znalazła się w elemencie o indeksie `n-4`, zaś wartość elementu o indeksie `0` w elemencie o indeksie `n-2`, a wartość elementu o indeksie `1` w elemencie o indeksie `n-1`). Stwórz przypadek testowy dla funkcji.
+
+23. Napisz funkcję, która otrzymuje cztery argumenty: dodatnią liczbę całkowitą `n`, `n`-elementowe tablice `tab1` i `tab2` oraz `n`-elementową tablicę `tab3` o elementach typu `double`. Funkcja powinna obliczać iloczyn elementów tablic `tab1` i `tab2` o tych samych indeksach i zapisywać wyniki do tablicy `tab3`. Stwórz przypadek testowy dla funkcji.
+
+24. Napisz funkcję `sum_odd_indices`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić sumę elementów znajdujących się na nieparzystych indeksach. Stwórz przypadek testowy.
+
+25. Napisz funkcję `count_positive_elements`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić liczbę dodatnich elementów w tablicy. Stwórz przypadek testowy.
+
+Przykład. Dla tablicy zawierającej elementy 3,-4,5 powinno być zwrócone 2.
+
+26. Napisz funkcję `double_odd_elements`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma podwoić elementy nieparzyste znajdujące się w tablicy. Stwórz przypadek testowy.
+
+27. Napisz funkcję `increase_by_index`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwiększyć wartość każdego elementu tablicy o jego indeks. Stwórz przypadek testowy.

@@ -1,0 +1,111 @@
+# Zadanie różne cz.1
+
+1. Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą $n$ oraz liczbę wymierną $x$. Funkcja ma zwrócić jako liczbę wartość wyrażenia będącego sumą szeregu:
+
+$$\frac{x}{1!}+\frac{x^2}{2!}+\ldots+\frac{x^n}{n!}.$$
+
+W zadaniu nie korzystaj z wbudowanych funkcji matematycznych. Stwórz przypadek testowy dla funkcji.
+
+2. Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą $n$ oraz liczbę wymierną $x$. Funkcja ma zwrócić jako liczbę wartość wyrażenia będącego sumą szeregu:
+
+$$(x+1)+(x^2+2)+\ldots+(x^n+n).$$
+
+W zadaniu nie korzystaj z funkcji matematycznych. Stwórz przypadek testowy dla funkcji.
+
+3. Napisz rekurencyjną funkcję, której argumentem jest dodatnia liczba całkowita $n$. Funkcja ma zwracać sumę:
+
+$$5+55+555+\ldots+\underbrace{5\ldots5}_{n \ razy}.$$
+
+Stwórz przypadek testowy.
+
+4. Napisz funkcję rekurencyjną, która wypisze wszystkie liczby naturalne od $n$ do $2n$ (włącznie) dla pewnej dodatniej liczby całkowitej $n$. Możesz samodzielnie ustalić liczbę i typ argumentów pamiętając, że funkcja ma być rekurencyjna. Stwórz przypadek testowy.
+
+5. Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą $n$ oraz dodatnią liczbę wymierną $x$. Funkcja ma zwrócić obliczoną wartość wyrażenia:
+
+
+$$1+x+\frac{x^2}{2!}+ \frac{x^3}{3!} +\ldots + \frac{x^n}{n!}$$
+
+W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych. Stwórz przypadek testowy.
+
+6. Napisz funkcję, której argumentem jest jest dodatnia liczba całkowita $n$. Funkcja ma wyświetlać wszystkie możliwe liczby Nivena mniejsze lub równe $n$ (bez rozkładów). Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.
+
+Liczby Nivena – liczby naturalne, które są podzielne przez sumę tworzących je cyfr. Początkowe liczby Nivena: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 18, 20, 21, 24, 27, 30, 36, 40. 
+
+7. Napisz funkcję, której argumentem są dodatnia liczba całkowita $n$. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby $n$ jest automorficzna. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na string/wektor. Stwórz przypadek testowy.
+
+Liczba automorficzna – liczba, która podniesiona do kwadratu zawierają w końcówce same siebie. Np. $76 \cdot 76=5776$.
+
+Przykłady: 0, 1, 5, 6, 25, 76, 376, 625.
+
+8. Napisz funkcję, której argumentem są dodatnia liczba całkowita $n$. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby $n$ jest wesoła. Stwórz przypadek testowy.
+
+Liczba wesoła – liczba naturalna zdefiniowana jako obliczanie sumy kwadratów cyfr składających się na liczbę. Powtarzamy tę operację dla kolejnych wyników tak długo, aż uzyskamy liczbę 1 lub wyniki zaczną się powtarzać. Jeżeli w wyniku procesu otrzymaliśmy 1, pierwotna liczba jest liczbą wesołą. W przeciwnym przypadku jest liczbą niewesołą.
+
+Przykładowo 7 jest liczbą wesołą:
+
+$$7^2 = 49,\quad  4^2 + 9^2 = 97,\quad  9^2 + 7^2 = 130$$
+$$1^2 + 3^2 + 0^2 = 10, \quad 1^2 + 0^2 = 1.$$
+Przykładowo 85 jest liczbą niewesołą:
+
+$$8^2 + 5^2 = 89, \quad 
+8^2 + 9^2 = 145, \quad 
+1^2 + 4^2 + 5^2 = 42, \quad 
+4^2 + 2^2 = 20$$
+$$2^2 + 0^2 = 4, \quad
+4^2 = 16, \quad
+1^2 + 6^2 = 37, \quad
+3^2 + 7^2 = 58, \quad
+5^2 + 8^2 = 89$$
+
+9. Napisz funkcję, której argumentem są dodatnia liczba całkowita $a$. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby $a$ jest narcystyczna. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na string/wektor. Stwórz przypadek testowy.
+
+Liczba narcystyczna - $n$-cyfrowa liczba naturalna, która jest sumą swoich cyfr podniesionych do potęgi $n$.
+
+Przykład: 153 jest liczbą narcystyczną. 3 to liczba cyfr oraz $153=1^3+5^3+3^3$.
+
+10. Napisz funkcję, której argumentem jest dodatnia liczba całkowita $n$. Funkcja ma zwrócić ile cyfr 1 występuje w zapisie dziesiętnym tej liczby. W zadaniu nie korzystaj z konwersji liczby na napis. Stwórz przypadek testowy dla funkcji
+
+11. Napisz funkcję, która ma dwa argumenty: dwie dodatnie liczby całkowite $m$ i $n$ ($n>1$). Funkcja ma zwrócić wartość wyrażenia:
+
+$f(m,n) = \lfloor \sqrt[n]{m} \rfloor$
+
+Symbol $\lfloor x \rfloor$ - oznacza część całkowitą z $x$. Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.
+
+12. Napisz funkcję, której argumentem są dwie dodatnie liczby całkowite $a$ i $b$. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby $a$ i $b$ są swoim lustrzanym odbiciem. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na napis. Stwórz przypadek testowy.
+
+
+Dwie liczby $a$ i $b$ są swoim lustrzanym odbicie, jeśli jedna z liczb powstaje poprzez odwrócenie kolejności cyfr z drugiej liczby. Przykład 345 i 543 są swoim lustrzanym odbicie.
+
+13. Napisz program dokonujący rozkładu danej dodatniej liczby naturalnej $n$ na czynniki
+pierwsze. Na przykład dla $n = 24$ sa to czynniki 2 2 2 3. Liczba $n$ ma być pobrana ze standardowego wejścia, rozkład wyświetlony na standardowym wyjściu.
+
+14. Napisz program obliczający tzw. jednocyfrową sumę cyfr liczby $n$. Na
+początku oblicza się sumę cyfr liczby $n$; jeśli wynikiem jest liczba wielocyfrowa,
+to znowu oblicza się sumę cyfr tej poprzedniej sumy i tak
+powtarza, aż do uzyskania liczby jednocyfrowej, która jest wynikiem
+końcowym. Na przykład dla $n = 48$ suma jednocyfrowa wynosi 3. Liczba $n$ ma być pobrana ze standardowego wejścia, wynik końcowy wyświetlony na standardowym wyjściu.
+
+15. Napisz funkcję, której argumentem jest jest dodatnia liczba całkowita $n$. Funkcja ma wyświetlać wszystkie możliwe liczby Armstronga mniejsze lub równe $n$ (bez rozkładów). Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.
+
+Liczba Armstronga to dodatnia liczba naturalna, której suma sześcianów poszczególnych cyfr jest równa tej liczbie. Przykładowo: $153=1^3+5^3+3^3$.
+
+16. Napisz funkcję, której argumentem jest dodatnia liczba całkowita $n$. Funkcja ma zwrócić ile liczb całkowitych dodatnich mniejszych lub równych $n$ ma cyfry, które stanowią palindrom. Stwórz przypadek testowy. W zadaniu nie korzystaj z konwersji na napis.
+
+Przykłady:
+
+* liczba 12321 jest palindromem
+* liczby jednocyfrowe są palindromami
+* liczba 4556 nie jest palindromem
+* liczba 44 jest palindromem
+
+17. Napisz funkcję, która ma dwa argumenty: dwie dodatnie liczby całkowite $m$ i $n$ ($m<n$). Funkcja ma zwrócić ile liczb pierwszych jest w przedziale $[2m, 3n]$. Stwórz przypadek testowy dla funkcji.
+
+18. Napisz funkcję `czyBliskie`, której argumentami są trzy liczby wymierne $x,y,\varepsilon.$ Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) po sprawdzeniu czy wartość bezwzględna różnicy $x$ i $y$ jest mniejsza od $\varepsilon$. Następnie pobierz od użytkownika 5 liczb wymiernych i wyświetl informację, ile z nich jest bliskich spośród wprowadzonych wzajemnie między sobą dla $\varepsilon=2$. Przykładowy komunikat na koniec:
+
+```
+Liczba 1: ... Ile liczb bliskich: ..
+Liczba 2: ... Ile liczb bliskich: ..
+Liczba 3: ... Ile liczb bliskich: ..
+Liczba 4: ... Ile liczb bliskich: ..
+Liczba 5: ... Ile liczb bliskich: ..
+```

@@ -17,11 +17,13 @@ book:
        - wskazniki.qmd
        - wskaznikinafunkcje.qmd
        - debugowanie.qmd
+       - tablice.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd
         - operatoryarytmetyczne.qmd
         - operatorybitowe.qmd
+        - zadaniarozne1.qmd
     - references.qmd
     - changelog.qmd
   downloads: pdf

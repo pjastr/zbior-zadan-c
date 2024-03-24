@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 2&nbsp; Instrukcje warunkowe, operator warunkowy</title>
+<title>Zbiór zadań - C - 8&nbsp; Tablice jednowymiarowe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./petle.html" rel="next">
-<link href="./operacjewejsciawyjscia.html" rel="prev">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./debugowanie.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -112,7 +146,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./tablice.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -165,7 +199,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span></a>
   </div>
 </li>
@@ -201,7 +235,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tablice.html" class="sidebar-item-text sidebar-link">
+  <a href="./tablice.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></span></a>
   </div>
 </li>
@@ -265,9 +299,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./tablice.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></h1>
 </div>
 
 
@@ -284,21 +318,74 @@ window.Quarto = {
 </header>
 
 
-<p>W poniższych zadaniach jako instrukcję warunkową należy wykorzystać <code>if</code>, <code>if else</code>, <code>switch case</code>. Przez operator warunkowy rozumie się <code>?</code>.</p>
+<p>Zadania należy rozwiązać bez konwersji liczb na napisy.</p>
 <ol type="1">
-<li><p>Napisz program, który prosi użytkownika o wprowadzenie liczby całkowitej. Program powinien wyświetlić informację, czy wprowadzona liczba jest dodatnia, ujemna czy równa zero.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla większą z nich.</p></li>
-<li><p>Napisz program, który prosi o wprowadzenie oceny w skali od 1 do 5. Program powinien wyświetlić opis oceny: niedostateczny (1), dopuszczający (2), dostateczny (3), dobry (4), bardzo dobry (5). Dla liczby spoza zakresu, program powinien wyświetlić komunikat o błędzie.</p></li>
-<li><p>Napisz program, który prosi użytkownika o wprowadzenie trzech różnych liczb całkowitych i wyświetla najmniejszą z nich.</p></li>
-<li><p>Napisz program, który pyta użytkownika o rok i sprawdza, czy podany rok jest rokiem przestępnym. Rok przestępny to taki, który jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest też podzielny przez 400.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla informację, czy suma obu liczb jest parzysta czy nieparzysta.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika trzy liczby zmiennoprzecinkowe <code>a, b, c</code>. Potrakuj je jako współczynniki równania kwadratowego <span class="math inline">\(ax^2+bx+c=0\)</span>. Na standardowym wyjściu wypisz wszystkie warianty rozwiązań tego równania.</p></li>
-<li><p>Napisz program, który przyjmuje dwie liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić największą z nich.</p></li>
-<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić najmniejszą z nich.</p></li>
-<li><p>Używając operatora warunkowego <code>?</code>, napisz program, który przyjmuje od użytkownika jedną liczbę całkowitą i wyświetla “parzysta” lub “nieparzysta” w zależności od wartości liczby.</p></li>
-<li><p>Stwórz program, który prosi o wprowadzenie dwóch liczb zmiennoprzecinkowych i używa operatora warunkowego, aby wyświetlić, która z nich jest większa, lub czy są równe z dokładnością do dwóch miejsc po przecinku.</p></li>
-<li><p>Używając operatora warunkowego, napisz program, który prosi użytkownika o wprowadzenie oceny w skali od 0 do 100 i wyświetla “Zdane”, jeśli ocena jest większa lub równa 51, lub “Nie zdane” w przeciwnym przypadku.</p></li>
-<li><p>Napisz program, który przyjmuje rok jako wejście od użytkownika i za pomocą operatora warunkowego sprawdza, czy jest to rok przestępny. Program powinien wyświetlać “Rok przestępny” lub “Rok nieprzestępny” w zależności od wyniku.</p></li>
+<li><p>Napisz funkcję <code>findMaxValue</code>, która przyjmuje jako argumenty tablicę liczb całkowitych <code>numbers</code> oraz jej rozmiar <code>size</code> (dodatnia liczba całkowita). Funkcja powinna przeszukać tablicę i wyświetlić maksymalną wartość znalezioną w tej tablicy. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>average</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span> oraz <span class="math inline">\(n\)</span>-elementowa tablica <code>tab</code> o elementach typu <code>int</code> oraz zwraca średnią arytmetyczną jako liczbę zmiennoprzecinkową. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sumSquares</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span> oraz <span class="math inline">\(n\)</span>-elementowa tablica <code>tab</code> o elementach typu <code>int</code> oraz zwraca sumę kwadratów elementów tablicy. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>copyArr</code>, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą <code>n</code> oraz dwie <code>n</code>-elementowe tablice <code>tab1</code>, <code>tab2</code> o elementach typu int i przepisuje kolejno elementy tablicy <code>tab1</code> do tablicy <code>tab2</code>. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>revCopy</code>, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą <code>n</code> oraz dwie <code>n</code>-elementowe tablice <code>tab1</code>, <code>tab2</code> o elementach typu int i przepisuje elementy tablicy <code>tab1</code> do tablicy <code>tab2</code> w odwrotnej kolejności. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>reverseArr</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ta ma odwrócić kolejność elementów w tablicy <code>tab</code> bezpośrednio w niej (w miejscu), nie używając dodatkowej tablicy do przechowywania wyników. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>maxValue</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ta ma przeszukać tablicę i zwrócić największą znalezioną w niej wartość. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>minValue</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ta ma przeszukać tablicę i zwrócić najmniejszą znalezioną w niej wartość. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>maxIdx</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ta ma znaleźć i zwrócić indeks największego elementu w tablicy. W przypadku wystąpienia więcej niż jednego elementu o maksymalnej wartości, funkcja powinna zwrócić indeks pierwszego z nich (czyli najmniejszy możliwy indeks). Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>minIdxMax</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ta ma przeszukać tablicę i zwrócić indeks najmniejszego elementu w tablicy. W przypadku wystąpienia kilku takich samych najmniejszych elementów, zwróć największy z możliwych indeksów tych elementów. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>shiftLeft</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>float</code>. Funkcja ta ma przesunąć wszystkie elementy tablicy o jedną pozycję w lewo, a ostatni element w tablicy powinien zostać zastąpiony przez pierwszy element oryginalnej tablicy. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>shiftRight2</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ta ma przesunąć wszystkie elementy tablicy o dwa miejsca w prawo. Elementy, które “wypadną” poza tablicę, powinny pojawić się na jej początku w tej samej kolejności. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>shiftLeft</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ma zwrócić wskaźnik do nowo utworzonej dynamicznej tablicy, w której wszystkie elementy zostały przesunięte o jedną pozycję w lewo w stosunku do oryginalnej tablicy, a ostatni element nowej tablicy jest równy początkowemu elementowi oryginalnej tablicy. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>shiftRight</code>, której argumentami są dodatnia liczba całkowita <code>n</code> reprezentująca rozmiar tablicy oraz <code>n</code>-elementowa tablica <code>tab</code> o elementach typu <code>int</code>. Funkcja ma zwrócić wskaźnik do nowo utworzonej dynamicznej tablicy, w której wszystkie elementy zostały przesunięte o jedną pozycję w prawo w stosunku do oryginalnej tablicy, a pierwszy element nowej tablicy jest równy ostatniemu elementowi oryginalnej tablicy. Stwórz przypadek testowy.</p></li>
+<li><p>Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.</p></li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdlib.h&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> foo<span class="op">(</span><span class="dt">int</span><span class="op">*</span>a<span class="op">,</span><span class="dt">int</span><span class="op">*</span>b<span class="op">)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">*</span>a<span class="op">-*</span>b<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> tab<span class="op">[]</span> <span class="op">=</span> <span class="op">{</span><span class="dv">3</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">3</span><span class="op">,-</span><span class="dv">4</span><span class="op">,-</span><span class="dv">4</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">1</span><span class="op">};</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> <span class="op">*</span>wsk<span class="op">=</span>tab<span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> b <span class="op">=</span> <span class="op">*(</span>wsk<span class="op">+=</span><span class="dv">4</span><span class="op">);</span> <span class="co">//b=</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> c <span class="op">=</span> b<span class="op">+</span><span class="dv">3</span><span class="op">;</span> <span class="co">// b=  , c=</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> d <span class="op">=</span> foo<span class="op">(&amp;</span>b<span class="op">,&amp;</span>c<span class="op">);</span> <span class="co">// b=  , c=  , d=</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> e <span class="op">=</span> <span class="op">(</span>wsk<span class="op">+=-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">4</span><span class="op">];</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    e <span class="op">=</span> <span class="op">(</span>d <span class="op">*=</span> <span class="dv">2</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span>c <span class="op">+=</span> <span class="dv">2</span><span class="op">);</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> d <span class="op">+</span> <span class="op">(</span>b<span class="op">+=</span><span class="dv">4</span><span class="op">);</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    e<span class="op">=</span> <span class="op">(--</span>c<span class="op">)-(</span>d<span class="op">++);</span>  <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="op">*</span>wsk <span class="op">+</span> e<span class="op">;</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="16" type="1">
+<li>Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdlib.h&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> foo<span class="op">(</span><span class="dt">int</span><span class="op">*</span>a<span class="op">,</span><span class="dt">int</span><span class="op">*</span>b<span class="op">)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">*</span>a<span class="op">-*</span>b<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> tab<span class="op">[]</span> <span class="op">=</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span><span class="dv">5</span><span class="op">,</span><span class="dv">5</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">3</span><span class="op">,-</span><span class="dv">4</span><span class="op">,-</span><span class="dv">4</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">1</span><span class="op">};</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> <span class="op">*</span>wsk<span class="op">=</span>tab<span class="op">-</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> b <span class="op">=</span> <span class="op">*(</span>wsk<span class="op">+=</span><span class="dv">4</span><span class="op">);</span> <span class="co">//b=</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> c <span class="op">=</span> b<span class="op">+</span><span class="dv">3</span><span class="op">;</span> <span class="co">// b=  , c=</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> d <span class="op">=</span> foo<span class="op">(&amp;</span>b<span class="op">,&amp;</span>c<span class="op">);</span> <span class="co">// b=  , c=  , d=</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> e <span class="op">=</span> <span class="op">(</span>wsk<span class="op">+=-</span><span class="dv">1</span><span class="op">)[</span><span class="dv">4</span><span class="op">];</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    e <span class="op">=</span> <span class="op">(</span>d <span class="op">-=</span> <span class="dv">2</span><span class="op">)</span> <span class="op">-</span> <span class="op">(</span>c <span class="op">+=</span> <span class="dv">2</span><span class="op">);</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> d <span class="op">+</span> <span class="op">(</span>b<span class="op">+=</span><span class="dv">4</span><span class="op">);</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    e<span class="op">=</span> <span class="op">(--</span>c<span class="op">)-(</span>d<span class="op">++);</span>  <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="op">*</span>wsk <span class="op">+</span> e<span class="op">;</span> <span class="co">// b=  , c=  , d=  , e=</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="17" type="1">
+<li><p>Napisz funkcję o nazwie <code>findElement</code>, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy, liczbę całkowitą <code>val</code> do znalezienia oraz wskaźnik na funkcję <code>isEqual</code>. Funkcja <code>isEqual</code> przyjmuje jako argumenty dwie liczby całkowite i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczby są równe. Funkcja <code>findElement</code> powinna przeszukiwać tablicę w celu znalezienia wartości <code>val</code> zgodnie z zasadami określonymi przez funkcję <code>isEqual</code>, a następnie zwrócić indeks tego elementu w tablicy (pierwszego napotkanego) lub <code>-1</code>, jeśli element nie istnieje. Stwórz przypadek testowy dla funkcji <code>findElement</code>.</p></li>
+<li><p>Napisz funkcję <code>findWithCondition</code>, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy oraz wskaźnik na funkcję <code>condition</code>. Funkcja <code>condition</code> przyjmuje jako argument liczbę całkowitą i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczba spełnia określony warunek. Funkcja <code>findWithCondition</code> powinna przeszukać tablicę w celu znalezienia ostatniej liczby spełniającej warunek określony przez funkcję <code>condition</code>, a następnie zwrócić indeks tego elementu w tablicy lub <code>-1</code>, jeśli taki element nie istnieje. Stwórz przypadek testowy dla funkcji <code>findWithCondition</code>.</p></li>
 </ol>
 
 
@@ -837,13 +924,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./operacjewejsciawyjscia.html" class="pagination-link" aria-label="Operacje wejścia, wyjścia.">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span>
+      <a href="./debugowanie.html" class="pagination-link" aria-label="Debugowanie">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Debugowanie</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./petle.html" class="pagination-link" aria-label="Pętle">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

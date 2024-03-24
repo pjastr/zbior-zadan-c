@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 2&nbsp; Instrukcje warunkowe, operator warunkowy</title>
+<title>Zbiór zadań - C - 12&nbsp; Zadanie różne cz.1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./petle.html" rel="next">
-<link href="./operacjewejsciawyjscia.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./operatorybitowe.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -112,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html">Dodatki</a></li><li class="breadcrumb-item"><a href="./zadaniarozne1.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span></a>
   </div>
 </li>
@@ -236,7 +236,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zadaniarozne1.html" class="sidebar-item-text sidebar-link">
+  <a href="./zadaniarozne1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></span></a>
   </div>
 </li>
@@ -265,9 +265,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./intrukcjewarunkowe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html">Dodatki</a></li><li class="breadcrumb-item"><a href="./zadaniarozne1.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></h1>
 </div>
 
 
@@ -284,22 +284,90 @@ window.Quarto = {
 </header>
 
 
-<p>W poniższych zadaniach jako instrukcję warunkową należy wykorzystać <code>if</code>, <code>if else</code>, <code>switch case</code>. Przez operator warunkowy rozumie się <code>?</code>.</p>
 <ol type="1">
-<li><p>Napisz program, który prosi użytkownika o wprowadzenie liczby całkowitej. Program powinien wyświetlić informację, czy wprowadzona liczba jest dodatnia, ujemna czy równa zero.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla większą z nich.</p></li>
-<li><p>Napisz program, który prosi o wprowadzenie oceny w skali od 1 do 5. Program powinien wyświetlić opis oceny: niedostateczny (1), dopuszczający (2), dostateczny (3), dobry (4), bardzo dobry (5). Dla liczby spoza zakresu, program powinien wyświetlić komunikat o błędzie.</p></li>
-<li><p>Napisz program, który prosi użytkownika o wprowadzenie trzech różnych liczb całkowitych i wyświetla najmniejszą z nich.</p></li>
-<li><p>Napisz program, który pyta użytkownika o rok i sprawdza, czy podany rok jest rokiem przestępnym. Rok przestępny to taki, który jest podzielny przez 4, ale nie jest podzielny przez 100, chyba że jest też podzielny przez 400.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika dwie liczby całkowite i wyświetla informację, czy suma obu liczb jest parzysta czy nieparzysta.</p></li>
-<li><p>Napisz program, który przyjmuje od użytkownika trzy liczby zmiennoprzecinkowe <code>a, b, c</code>. Potrakuj je jako współczynniki równania kwadratowego <span class="math inline">\(ax^2+bx+c=0\)</span>. Na standardowym wyjściu wypisz wszystkie warianty rozwiązań tego równania.</p></li>
-<li><p>Napisz program, który przyjmuje dwie liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić największą z nich.</p></li>
-<li><p>Napisz program, który przyjmuje trzy liczby całkowite jako wejście od użytkownika i używa operatora warunkowego, aby znaleźć i wyświetlić najmniejszą z nich.</p></li>
-<li><p>Używając operatora warunkowego <code>?</code>, napisz program, który przyjmuje od użytkownika jedną liczbę całkowitą i wyświetla “parzysta” lub “nieparzysta” w zależności od wartości liczby.</p></li>
-<li><p>Stwórz program, który prosi o wprowadzenie dwóch liczb zmiennoprzecinkowych i używa operatora warunkowego, aby wyświetlić, która z nich jest większa, lub czy są równe z dokładnością do dwóch miejsc po przecinku.</p></li>
-<li><p>Używając operatora warunkowego, napisz program, który prosi użytkownika o wprowadzenie oceny w skali od 0 do 100 i wyświetla “Zdane”, jeśli ocena jest większa lub równa 51, lub “Nie zdane” w przeciwnym przypadku.</p></li>
-<li><p>Napisz program, który przyjmuje rok jako wejście od użytkownika i za pomocą operatora warunkowego sprawdza, czy jest to rok przestępny. Program powinien wyświetlać “Rok przestępny” lub “Rok nieprzestępny” w zależności od wyniku.</p></li>
+<li>Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> oraz liczbę wymierną <span class="math inline">\(x\)</span>. Funkcja ma zwrócić jako liczbę wartość wyrażenia będącego sumą szeregu:</li>
 </ol>
+<p><span class="math display">\[\frac{x}{1!}+\frac{x^2}{2!}+\ldots+\frac{x^n}{n!}.\]</span></p>
+<p>W zadaniu nie korzystaj z wbudowanych funkcji matematycznych. Stwórz przypadek testowy dla funkcji.</p>
+<ol start="2" type="1">
+<li>Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> oraz liczbę wymierną <span class="math inline">\(x\)</span>. Funkcja ma zwrócić jako liczbę wartość wyrażenia będącego sumą szeregu:</li>
+</ol>
+<p><span class="math display">\[(x+1)+(x^2+2)+\ldots+(x^n+n).\]</span></p>
+<p>W zadaniu nie korzystaj z funkcji matematycznych. Stwórz przypadek testowy dla funkcji.</p>
+<ol start="3" type="1">
+<li>Napisz rekurencyjną funkcję, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać sumę:</li>
+</ol>
+<p><span class="math display">\[5+55+555+\ldots+\underbrace{5\ldots5}_{n \ razy}.\]</span></p>
+<p>Stwórz przypadek testowy.</p>
+<ol start="4" type="1">
+<li><p>Napisz funkcję rekurencyjną, która wypisze wszystkie liczby naturalne od <span class="math inline">\(n\)</span> do <span class="math inline">\(2n\)</span> (włącznie) dla pewnej dodatniej liczby całkowitej <span class="math inline">\(n\)</span>. Możesz samodzielnie ustalić liczbę i typ argumentów pamiętając, że funkcja ma być rekurencyjna. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> oraz dodatnią liczbę wymierną <span class="math inline">\(x\)</span>. Funkcja ma zwrócić obliczoną wartość wyrażenia:</p></li>
+</ol>
+<p><span class="math display">\[1+x+\frac{x^2}{2!}+ \frac{x^3}{3!} +\ldots + \frac{x^n}{n!}\]</span></p>
+<p>W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych. Stwórz przypadek testowy.</p>
+<ol start="6" type="1">
+<li>Napisz funkcję, której argumentem jest jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma wyświetlać wszystkie możliwe liczby Nivena mniejsze lub równe <span class="math inline">\(n\)</span> (bez rozkładów). Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.</li>
+</ol>
+<p>Liczby Nivena – liczby naturalne, które są podzielne przez sumę tworzących je cyfr. Początkowe liczby Nivena: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 18, 20, 21, 24, 27, 30, 36, 40.</p>
+<ol start="7" type="1">
+<li>Napisz funkcję, której argumentem są dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(n\)</span> jest automorficzna. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na string/wektor. Stwórz przypadek testowy.</li>
+</ol>
+<p>Liczba automorficzna – liczba, która podniesiona do kwadratu zawierają w końcówce same siebie. Np. <span class="math inline">\(76 \cdot 76=5776\)</span>.</p>
+<p>Przykłady: 0, 1, 5, 6, 25, 76, 376, 625.</p>
+<ol start="8" type="1">
+<li>Napisz funkcję, której argumentem są dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(n\)</span> jest wesoła. Stwórz przypadek testowy.</li>
+</ol>
+<p>Liczba wesoła – liczba naturalna zdefiniowana jako obliczanie sumy kwadratów cyfr składających się na liczbę. Powtarzamy tę operację dla kolejnych wyników tak długo, aż uzyskamy liczbę 1 lub wyniki zaczną się powtarzać. Jeżeli w wyniku procesu otrzymaliśmy 1, pierwotna liczba jest liczbą wesołą. W przeciwnym przypadku jest liczbą niewesołą.</p>
+<p>Przykładowo 7 jest liczbą wesołą:</p>
+<p><span class="math display">\[7^2 = 49,\quad  4^2 + 9^2 = 97,\quad  9^2 + 7^2 = 130\]</span> <span class="math display">\[1^2 + 3^2 + 0^2 = 10, \quad 1^2 + 0^2 = 1.\]</span> Przykładowo 85 jest liczbą niewesołą:</p>
+<p><span class="math display">\[8^2 + 5^2 = 89, \quad
+8^2 + 9^2 = 145, \quad
+1^2 + 4^2 + 5^2 = 42, \quad
+4^2 + 2^2 = 20\]</span> <span class="math display">\[2^2 + 0^2 = 4, \quad
+4^2 = 16, \quad
+1^2 + 6^2 = 37, \quad
+3^2 + 7^2 = 58, \quad
+5^2 + 8^2 = 89\]</span></p>
+<ol start="9" type="1">
+<li>Napisz funkcję, której argumentem są dodatnia liczba całkowita <span class="math inline">\(a\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(a\)</span> jest narcystyczna. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na string/wektor. Stwórz przypadek testowy.</li>
+</ol>
+<p>Liczba narcystyczna - <span class="math inline">\(n\)</span>-cyfrowa liczba naturalna, która jest sumą swoich cyfr podniesionych do potęgi <span class="math inline">\(n\)</span>.</p>
+<p>Przykład: 153 jest liczbą narcystyczną. 3 to liczba cyfr oraz <span class="math inline">\(153=1^3+5^3+3^3\)</span>.</p>
+<ol start="10" type="1">
+<li><p>Napisz funkcję, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić ile cyfr 1 występuje w zapisie dziesiętnym tej liczby. W zadaniu nie korzystaj z konwersji liczby na napis. Stwórz przypadek testowy dla funkcji</p></li>
+<li><p>Napisz funkcję, która ma dwa argumenty: dwie dodatnie liczby całkowite <span class="math inline">\(m\)</span> i <span class="math inline">\(n\)</span> (<span class="math inline">\(n&gt;1\)</span>). Funkcja ma zwrócić wartość wyrażenia:</p></li>
+</ol>
+<p><span class="math inline">\(f(m,n) = \lfloor \sqrt[n]{m} \rfloor\)</span></p>
+<p>Symbol <span class="math inline">\(\lfloor x \rfloor\)</span> - oznacza część całkowitą z <span class="math inline">\(x\)</span>. Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.</p>
+<ol start="12" type="1">
+<li>Napisz funkcję, której argumentem są dwie dodatnie liczby całkowite <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span> są swoim lustrzanym odbiciem. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na napis. Stwórz przypadek testowy.</li>
+</ol>
+<p>Dwie liczby <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span> są swoim lustrzanym odbicie, jeśli jedna z liczb powstaje poprzez odwrócenie kolejności cyfr z drugiej liczby. Przykład 345 i 543 są swoim lustrzanym odbicie.</p>
+<ol start="13" type="1">
+<li><p>Napisz program dokonujący rozkładu danej dodatniej liczby naturalnej <span class="math inline">\(n\)</span> na czynniki pierwsze. Na przykład dla <span class="math inline">\(n = 24\)</span> sa to czynniki 2 2 2 3. Liczba <span class="math inline">\(n\)</span> ma być pobrana ze standardowego wejścia, rozkład wyświetlony na standardowym wyjściu.</p></li>
+<li><p>Napisz program obliczający tzw. jednocyfrową sumę cyfr liczby <span class="math inline">\(n\)</span>. Na początku oblicza się sumę cyfr liczby <span class="math inline">\(n\)</span>; jeśli wynikiem jest liczba wielocyfrowa, to znowu oblicza się sumę cyfr tej poprzedniej sumy i tak powtarza, aż do uzyskania liczby jednocyfrowej, która jest wynikiem końcowym. Na przykład dla <span class="math inline">\(n = 48\)</span> suma jednocyfrowa wynosi 3. Liczba <span class="math inline">\(n\)</span> ma być pobrana ze standardowego wejścia, wynik końcowy wyświetlony na standardowym wyjściu.</p></li>
+<li><p>Napisz funkcję, której argumentem jest jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma wyświetlać wszystkie możliwe liczby Armstronga mniejsze lub równe <span class="math inline">\(n\)</span> (bez rozkładów). Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.</p></li>
+</ol>
+<p>Liczba Armstronga to dodatnia liczba naturalna, której suma sześcianów poszczególnych cyfr jest równa tej liczbie. Przykładowo: <span class="math inline">\(153=1^3+5^3+3^3\)</span>.</p>
+<ol start="16" type="1">
+<li>Napisz funkcję, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić ile liczb całkowitych dodatnich mniejszych lub równych <span class="math inline">\(n\)</span> ma cyfry, które stanowią palindrom. Stwórz przypadek testowy. W zadaniu nie korzystaj z konwersji na napis.</li>
+</ol>
+<p>Przykłady:</p>
+<ul>
+<li>liczba 12321 jest palindromem</li>
+<li>liczby jednocyfrowe są palindromami</li>
+<li>liczba 4556 nie jest palindromem</li>
+<li>liczba 44 jest palindromem</li>
+</ul>
+<ol start="17" type="1">
+<li><p>Napisz funkcję, która ma dwa argumenty: dwie dodatnie liczby całkowite <span class="math inline">\(m\)</span> i <span class="math inline">\(n\)</span> (<span class="math inline">\(m&lt;n\)</span>). Funkcja ma zwrócić ile liczb pierwszych jest w przedziale <span class="math inline">\([2m, 3n]\)</span>. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>czyBliskie</code>, której argumentami są trzy liczby wymierne <span class="math inline">\(x,y,\varepsilon.\)</span> Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) po sprawdzeniu czy wartość bezwzględna różnicy <span class="math inline">\(x\)</span> i <span class="math inline">\(y\)</span> jest mniejsza od <span class="math inline">\(\varepsilon\)</span>. Następnie pobierz od użytkownika 5 liczb wymiernych i wyświetl informację, ile z nich jest bliskich spośród wprowadzonych wzajemnie między sobą dla <span class="math inline">\(\varepsilon=2\)</span>. Przykładowy komunikat na koniec:</p></li>
+</ol>
+<pre><code>Liczba 1: ... Ile liczb bliskich: ..
+Liczba 2: ... Ile liczb bliskich: ..
+Liczba 3: ... Ile liczb bliskich: ..
+Liczba 4: ... Ile liczb bliskich: ..
+Liczba 5: ... Ile liczb bliskich: ..</code></pre>
 
 
 
@@ -837,13 +905,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./operacjewejsciawyjscia.html" class="pagination-link" aria-label="Operacje wejścia, wyjścia.">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Operacje wejścia, wyjścia.</span></span>
+      <a href="./operatorybitowe.html" class="pagination-link" aria-label="Operatory bitowe">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Operatory bitowe</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./petle.html" class="pagination-link" aria-label="Pętle">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="Bibliografia i inne zbiory zadań">
+        <span class="nav-page-text">Bibliografia i inne zbiory zadań</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

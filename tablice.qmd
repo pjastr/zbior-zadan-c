@@ -1,0 +1,89 @@
+# Tablice jednowymiarowe
+
+Zadania należy rozwiązać bez konwersji liczb na napisy.
+
+1. Napisz funkcję `findMaxValue`, która przyjmuje jako argumenty tablicę liczb całkowitych `numbers` oraz jej rozmiar `size` (dodatnia liczba całkowita). Funkcja powinna przeszukać tablicę i wyświetlić maksymalną wartość znalezioną w tej tablicy. Stwórz przypadek testowy.
+
+2. Napisz funkcję `average`, której argumentem jest dodatnia liczba całkowita $n$ oraz $n$-elementowa tablica `tab` o elementach typu `int` oraz zwraca średnią arytmetyczną jako liczbę zmiennoprzecinkową. Stwórz przypadek testowy. 
+
+3.  Napisz funkcję `sumSquares`, której argumentem jest dodatnia liczba całkowita $n$ oraz $n$-elementowa tablica `tab` o elementach typu `int` oraz zwraca sumę kwadratów elementów tablicy. Stwórz przypadek testowy. 
+
+4. Napisz funkcję `copyArr`, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą `n` oraz dwie `n`-elementowe tablice `tab1`, `tab2` o elementach typu int i przepisuje kolejno elementy tablicy `tab1` do tablicy `tab2`. Stwórz przypadek testowy. 
+
+5. Napisz funkcję `revCopy`, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą `n` oraz dwie `n`-elementowe tablice `tab1`, `tab2` o elementach typu int i przepisuje elementy tablicy `tab1` do tablicy `tab2` w odwrotnej kolejności. Stwórz przypadek testowy. 
+
+6. Napisz funkcję `reverseArr`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ta ma odwrócić kolejność elementów w tablicy `tab` bezpośrednio w niej (w miejscu), nie używając dodatkowej tablicy do przechowywania wyników. Stwórz przypadek testowy.
+
+7. Napisz funkcję `maxValue`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ta ma przeszukać tablicę i zwrócić największą znalezioną w niej wartość. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.
+
+8. Napisz funkcję `minValue`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ta ma przeszukać tablicę i zwrócić najmniejszą znalezioną w niej wartość. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.
+
+9. Napisz funkcję `maxIdx`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ta ma znaleźć i zwrócić indeks największego elementu w tablicy. W przypadku wystąpienia więcej niż jednego elementu o maksymalnej wartości, funkcja powinna zwrócić indeks pierwszego z nich (czyli najmniejszy możliwy indeks). Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.
+
+10. Napisz funkcję `minIdxMax`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ta ma przeszukać tablicę i zwrócić indeks najmniejszego elementu w tablicy. W przypadku wystąpienia kilku takich samych najmniejszych elementów, zwróć największy z możliwych indeksów tych elementów. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.
+
+11. Napisz funkcję `shiftLeft`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `float`. Funkcja ta ma przesunąć wszystkie elementy tablicy o jedną pozycję w lewo, a ostatni element w tablicy powinien zostać zastąpiony przez pierwszy element oryginalnej tablicy. Zakładamy, że tablica nie jest pusta. Stwórz przypadek testowy.
+
+12. Napisz funkcję `shiftRight2`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ta ma przesunąć wszystkie elementy tablicy o dwa miejsca w prawo. Elementy, które "wypadną" poza tablicę, powinny pojawić się na jej początku w tej samej kolejności. Stwórz przypadek testowy.
+
+13. Napisz funkcję `shiftLeft`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ma zwrócić wskaźnik do nowo utworzonej dynamicznej tablicy, w której wszystkie elementy zostały przesunięte o jedną pozycję w lewo w stosunku do oryginalnej tablicy, a ostatni element nowej tablicy jest równy początkowemu elementowi oryginalnej tablicy. Stwórz przypadek testowy.
+
+14. Napisz funkcję `shiftRight`, której argumentami są dodatnia liczba całkowita `n` reprezentująca rozmiar tablicy oraz `n`-elementowa tablica `tab` o elementach typu `int`. Funkcja ma zwrócić wskaźnik do nowo utworzonej dynamicznej tablicy, w której wszystkie elementy zostały przesunięte o jedną pozycję w prawo w stosunku do oryginalnej tablicy, a pierwszy element nowej tablicy jest równy ostatniemu elementowi oryginalnej tablicy. Stwórz przypadek testowy.
+
+15. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int foo(int*a,int*b)
+{
+    return *a-*b;
+}
+
+int main()
+{
+    int tab[] = {3,3,0,0,3,3,-4,-4,0,1};
+    int *wsk=tab-1;
+    int b = *(wsk+=4); //b=
+    int c = b+3; // b=  , c=
+    int d = foo(&b,&c); // b=  , c=  , d=
+    int e = (wsk+=-1)[4]; // b=  , c=  , d=  , e=
+    e = (d *= 2) + (c += 2); // b=  , c=  , d=  , e=
+    c = d + (b+=4); // b=  , c=  , d=  , e=
+    e= (--c)-(d++);  // b=  , c=  , d=  , e=
+    b = *wsk + e; // b=  , c=  , d=  , e=
+    return 0;
+}
+```
+
+16. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int foo(int*a,int*b)
+{
+    return *a-*b;
+}
+
+int main()
+{
+    int tab[] = {1,5,5,2,3,3,-4,-4,0,1};
+    int *wsk=tab-1;
+    int b = *(wsk+=4); //b=
+    int c = b+3; // b=  , c=
+    int d = foo(&b,&c); // b=  , c=  , d=
+    int e = (wsk+=-1)[4]; // b=  , c=  , d=  , e=
+    e = (d -= 2) - (c += 2); // b=  , c=  , d=  , e=
+    c = d + (b+=4); // b=  , c=  , d=  , e=
+    e= (--c)-(d++);  // b=  , c=  , d=  , e=
+    b = *wsk + e; // b=  , c=  , d=  , e=
+    return 0;
+}
+```
+
+17. Napisz funkcję o nazwie `findElement`, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy, liczbę całkowitą `val` do znalezienia oraz wskaźnik na funkcję `isEqual`. Funkcja `isEqual` przyjmuje jako argumenty dwie liczby całkowite i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczby są równe. Funkcja `findElement` powinna przeszukiwać tablicę w celu znalezienia wartości `val` zgodnie z zasadami określonymi przez funkcję `isEqual`, a następnie zwrócić indeks tego elementu w tablicy (pierwszego napotkanego) lub `-1`, jeśli element nie istnieje. Stwórz przypadek testowy dla funkcji `findElement`.
+
+18. Napisz funkcję `findWithCondition`, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy oraz wskaźnik na funkcję `condition`. Funkcja `condition` przyjmuje jako argument liczbę całkowitą i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczba spełnia określony warunek. Funkcja `findWithCondition` powinna przeszukać tablicę w celu znalezienia ostatniej liczby spełniającej warunek określony przez funkcję `condition`, a następnie zwrócić indeks tego elementu w tablicy lub `-1`, jeśli taki element nie istnieje. Stwórz przypadek testowy dla funkcji `findWithCondition`.

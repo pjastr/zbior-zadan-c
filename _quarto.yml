@@ -18,6 +18,7 @@ book:
        - wskaznikinafunkcje.qmd
        - debugowanie.qmd
        - tablice.qmd
+       - napisy.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd

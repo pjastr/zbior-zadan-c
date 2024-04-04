@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 4&nbsp; Funkcje</title>
+<title>Zbiór zadań - C - 9&nbsp; Napisy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wskazniki.html" rel="next">
-<link href="./petle.html" rel="prev">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./tablice.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -112,7 +83,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./funkcje.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./napisy.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -177,7 +148,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./funkcje.html" class="sidebar-item-text sidebar-link active">
+  <a href="./funkcje.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></span></a>
   </div>
 </li>
@@ -207,7 +178,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./napisy.html" class="sidebar-item-text sidebar-link">
+  <a href="./napisy.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></span></a>
   </div>
 </li>
@@ -271,9 +242,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./funkcje.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./napisy.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></h1>
 </div>
 
 
@@ -290,26 +261,20 @@ window.Quarto = {
 </header>
 
 
-<p>Zadania należy rozwiązać bez tablic, napisów, wskaźników, wbudowanych funkcji matematycznych. W zadaniach można stworzyć kilka funkcji pomocniczych. Do każdej funkcji z polecenia należy wywołać przypadek testowy (wywołać co najmniej jeden raz na poprawnym argumencie). W poleceniach używana jest konwencja <code>camelCase</code>. Zwróć uwagę, czy funkcja ma coś zwrócić czy wyświetlić.</p>
 <ol type="1">
-<li><p>Napisz funkcję <code>sumTwoNumbers</code>, której argumentami są dwie liczby całkowite. Funkcja ma wyświetlać sumę liczb przekazany jako argument funkcji. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculateAbsoluteValue</code>, której argumentem jest liczba zmiennoprzecinkowa. Funkcja ma zwracać wartość bezwzględną liczby przekazanej jako argument funkcji. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculateFactorial</code>, której argumentem jest liczba całkowita nieujemna. Funkcja ma zwracać wartość silni liczby przekazanej jako argument funkcji, obliczoną metodą nierekurencyjną. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>sumNumbers</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać sumę liczb od 1 do <span class="math inline">\(n\)</span> włącznie. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>sumSquares</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać sumę kwadratów liczb od 1 do <span class="math inline">\(n\)</span> włącznie. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculatePowerOfTwo</code>, której argumentem jest liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość <span class="math inline">\(2^n\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculateSquareRootFloor</code>, której argumentem jest nieujemna liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać część całkowitą pierwiastka kwadratowego z <span class="math inline">\(n\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>countFunctionCalls</code>, która nie przyjmuje żadnych argumentów. Funkcja ma zliczać i wypisywać na standardowym wyjściu liczbę swoich wywołań od momentu uruchomienia programu. Stwórz przypadek testowy. Wykorzystaj zmienne statyczne.</p></li>
-<li><p>Napisz funkcję <code>calculateFactorialRecursively</code>, której argumentem jest liczba całkowita nieujemna <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość silni liczby <span class="math inline">\(n\)</span>, obliczoną metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculateFibonacciRecursively</code>, której argumentem jest liczba całkowita nieujemna <span class="math inline">\(n\)</span>. Funkcja ma zwracać <span class="math inline">\(n\)</span>-ty wyraz ciągu Fibonacciego, obliczony metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculateArithmeticSequenceRecursively</code>, której argumentami są dwie liczby całkowite: dodatnie <span class="math inline">\(n\)</span> (numer wyrazu ciągu do obliczenia) oraz <span class="math inline">\(d\)</span> (różnica ciągu arytmetycznego), przy założeniu, że wyraz początkowy ciągu <span class="math inline">\(a_1\)</span> wynosi 1. Funkcja ma zwracać <span class="math inline">\(n\)</span>-ty wyraz ciągu arytmetycznego, obliczony metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculateGeometricSequenceRecursively</code>, której argumentami są dwie liczby całkowite: dodatnie <span class="math inline">\(n\)</span> (numer wyrazu ciągu do obliczenia) oraz <span class="math inline">\(d\)</span> (iloraz ciągu geometrycznego), przy założeniu, że wyraz początkowy ciągu <span class="math inline">\(a_1\)</span> wynosi 1. Funkcja ma zwracać <span class="math inline">\(n\)</span>-ty wyraz ciągu geometrycznego, obliczony metodą rekurencyjną. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculate13</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = 2f(n-1) + 3\)</span>, gdzie <span class="math inline">\(f(1) = 1\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculate14</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = 3f(n-1) - 1\)</span>, gdzie <span class="math inline">\(f(1) = 2\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculate15</code>, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = f(n-1) + 2f(n-2)\)</span>, gdzie <span class="math inline">\(f(1) = 1\)</span> i <span class="math inline">\(f(2) = 2\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>calculate16</code>, której argumentem jest dodania liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = 2f(n-1) + 3f(n-2)\)</span>, gdzie <span class="math inline">\(f(1) = 2\)</span> i <span class="math inline">\(f(2) = 3\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz rekurencyjną funkcję <code>calculate17</code>, której argumentem jest nieujemna liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać wartość wyrażoną wzorem <span class="math inline">\(f(n) = f(0)+f(1)+\ldots +f(n-1)\)</span>, gdzie <span class="math inline">\(f(0) = f(1) = 1\)</span>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz rekrurencyjną funkcję <code>calculateGCD</code>, której argumentami są dwie dodatnie liczby całkowite <span class="math inline">\(n\)</span> i <span class="math inline">\(m\)</span>. Funkcja ma zwracać największy wspólny dzielnik (NWD) tych liczb algorytmem Euklidesa. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>length</code>, która jako argument otrzymuje napis i zwraca jako wartość jego długość. Użyj typu <code>char</code> i nie korzystaj ze wbudowanych funkcji poza operacjami wejścia/wyjścia. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>countNums</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i zwraca liczbę znaków w tej tablicy, które są cyframi. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla swojej funkcji.</p></li>
+<li><p>Napisz funkcję <code>countVow</code> przyjmującą jako argument tablicę znaków typu <code>char</code> i zwracającą liczbę znaków w tej tablicy, które są samogłoskami z alfabetu łacińskiego. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>cmpStrNew</code> przyjmującą dwa argumenty typu <code>char[]</code> (tablice znaków) i zwracającą 1, jeśli napisy są identyczne, oraz 0 w pozostałych przypadkach. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>lexComp</code> przyjmującą dwa argumenty typu <code>char[]</code> (tablice znaków) i zwracającą 1, jeśli pierwszy napis jest wcześniej w porządku leksykograficznym niż drugi, oraz 0 w pozostałych przypadkach. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>toLowerNew</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i zamienia w niej wszystkie duże litery na małe. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>toUpperNew</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i zamienia w niej wszystkie małe litery na duże. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>strCopyNew</code>, która otrzymuje dwa argumenty typu <code>char[]</code> (tablice znaków): źródłową i docelową. Funkcja przepisuje napis znajdujący się w tablicy źródłowej do tablicy docelowej. Zakładamy, że w tablicy docelowej jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>strNcopy</code>, która otrzymuje trzy argumenty: dwie tablice znaków <code>nap1</code>, <code>nap2</code> oraz dodatnią liczbę całkowitą <code>n</code>. Funkcja przekopiuje n pierwszych znaków z napisu przechowywanego w tablicy <code>nap1</code> do tablicy <code>nap2</code>. Jeśli napis w tablicy <code>nap1</code> jest krótszy niż <code>n</code> znaków, funkcja przepisuje cały napis. Funkcja gwarantuje, że na końcu napisu w tablicy <code>nap2</code> znajdzie się znak null-terminujący (<code>'\0'</code>). Zakładamy, że w tablicy <code>nap2</code> jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>strConcat</code>, która otrzymuje jako argumenty trzy tablice znaków: <code>nap1</code>, <code>nap2</code> oraz <code>nap3</code>. Funkcja zapisuje do tablicy <code>nap3</code> konkatenację (połączenie) napisów znajdujących się w tablicach <code>nap1</code> i <code>nap2</code>. Zakładamy, że w tablicy <code>nap3</code> jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>rmLower</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i usuwa z niej wszystkie znaki będące małymi literami. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>rmDigits</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i usuwa z niej wszystkie znaki będące cyframi. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>cutStr</code>, która otrzymuje jako argumenty tablicę znaków typu <code>char</code> oraz dwie liczby całkowite <code>n</code> i <code>m</code>, i wycina z otrzymanego napisu znaki o indeksach od <code>n</code> do <code>m</code> (przy założeniu, że <code>n&lt;m</code>). Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
 </ol>
 
 
@@ -848,13 +813,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./petle.html" class="pagination-link" aria-label="Pętle">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span>
+      <a href="./tablice.html" class="pagination-link" aria-label="Tablice jednowymiarowe">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wskazniki.html" class="pagination-link" aria-label="Wskaźniki">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

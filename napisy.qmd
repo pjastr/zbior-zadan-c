@@ -1,0 +1,30 @@
+# Napisy
+
+1. Napisz funkcję `length`, która jako argument otrzymuje napis
+i zwraca jako wartość jego długość. Użyj typu `char` i nie korzystaj ze wbudowanych funkcji poza operacjami wejścia/wyjścia. Stwórz przypadek testowy.
+
+2. Napisz funkcję `countNums`, która przyjmuje jako argument tablicę znaków typu `char` i zwraca liczbę znaków w tej tablicy, które są cyframi. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla swojej funkcji.
+
+3. Napisz funkcję `countVow` przyjmującą jako argument tablicę znaków typu `char` i zwracającą liczbę znaków w tej tablicy, które są samogłoskami z alfabetu łacińskiego. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+4. Napisz funkcję `cmpStrNew` przyjmującą dwa argumenty typu `char[]` (tablice znaków) i zwracającą 1, jeśli napisy są identyczne, oraz 0 w pozostałych przypadkach. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+5. Napisz funkcję `lexComp` przyjmującą dwa argumenty typu `char[]` (tablice znaków) i zwracającą 1, jeśli pierwszy napis jest wcześniej w porządku leksykograficznym niż drugi, oraz 0 w pozostałych przypadkach. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+6. Napisz funkcję `toLowerNew`, która przyjmuje jako argument tablicę znaków typu `char` i zamienia w niej wszystkie duże litery na małe. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+7. Napisz funkcję `toUpperNew`, która przyjmuje jako argument tablicę znaków typu `char` i zamienia w niej wszystkie małe litery na duże. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+8. Napisz funkcję `strCopyNew`, która otrzymuje dwa argumenty typu `char[]` (tablice znaków): źródłową i docelową. Funkcja przepisuje napis znajdujący się w tablicy źródłowej do tablicy docelowej. Zakładamy, że w tablicy docelowej jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+9. Napisz funkcję `strNcopy`, która otrzymuje trzy argumenty: dwie tablice znaków `nap1`, `nap2` oraz dodatnią liczbę całkowitą `n`. Funkcja przekopiuje n pierwszych znaków z napisu przechowywanego w tablicy `nap1` do tablicy `nap2`. Jeśli napis w tablicy `nap1` jest krótszy niż `n` znaków, funkcja przepisuje cały napis. Funkcja gwarantuje, że na końcu napisu w tablicy `nap2` znajdzie się znak null-terminujący (`'\0'`). Zakładamy, że w tablicy `nap2` jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+10. Napisz funkcję `strConcat`, która otrzymuje jako argumenty trzy tablice znaków: `nap1`, `nap2` oraz `nap3`. Funkcja zapisuje do tablicy `nap3` konkatenację (połączenie) napisów znajdujących się w tablicach `nap1` i `nap2`. Zakładamy, że w tablicy `nap3` jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+11. Napisz funkcję `rmLower`, która przyjmuje jako argument tablicę znaków typu `char` i usuwa z niej wszystkie znaki będące małymi literami. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+12. Napisz funkcję `rmDigits`, która przyjmuje jako argument tablicę znaków typu `char` i usuwa z niej wszystkie znaki będące cyframi. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+13. Napisz funkcję `cutStr`, która otrzymuje jako argumenty tablicę znaków typu `char` oraz dwie liczby całkowite `n` i `m`, i wycina z otrzymanego napisu znaki o indeksach od `n` do `m` (przy założeniu, że `n<m`). Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+

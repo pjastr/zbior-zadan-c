@@ -27,4 +27,19 @@ i zwraca jako wartość jego długość. Użyj typu `char` i nie korzystaj ze wb
 
 13. Napisz funkcję `cutStr`, która otrzymuje jako argumenty tablicę znaków typu `char` oraz dwie liczby całkowite `n` i `m`, i wycina z otrzymanego napisu znaki o indeksach od `n` do `m` (przy założeniu, że `n<m`). Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
 
+14. Napisz funkcję `wStrCopyNew`, która otrzymuje dwa argumenty typu `wchar_t[]` (tablice znaków): źródłową i docelową. Funkcja przepisuje napis znajdujący się w tablicy źródłowej do tablicy docelowej. Zakładamy, że w tablicy docelowej jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
 
+15. Napisz funkcję `wStrConcat`, która otrzymuje jako argumenty trzy tablice znaków: `nap1`, `nap2` oraz `nap3` (użyj typu znakowego `wchar_t`). Funkcja zapisuje do tablicy `nap3` konkatenację (połączenie) napisów znajdujących się w tablicach `nap1` i `nap2`. Zakładamy, że w tablicy `nap3` jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.
+
+
+16. Napisz funkcję `w16`, której argumentem jest napis. Jeśli napis zawiera inne znaki niż cyfr, to funkcja ma zwracać zero. Jeśli napis zawiera tylko cyfry, funkcja ma zwrócić liczbę całkowitą powstałą z przepisania kolejno znaków cyfr. Załóż, że napis jest długości dokładnie 3. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Wykorzystaj w rozwiązaniu typ `wchar_t`.
+
+17. Napisz funkcję `rmOdd`, której argumentem jest napis. Funkcja ma za zadanie usunąć znaki z napisu o nieparzystych indeksach. Stwórz przypadek testowy.
+
+18. Napisz funkcję `copyEveryThird`, której argumentem jest napis. Funkcja ma za zadanie zwrócić nowy napis, który zawiera tylko co trzeci znak z oryginalnego napisu. Stwórz przypadek testowy.
+
+Przykład: Dla napisu `"ABCXYZ"` funkcja powinna zwrócić `"AX"`.
+
+19. Napisz funkcję `indexLower`, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje pierwsza od lewej mała litera. W przypadku pustego napisu lub braku małych liter, funkcja powinna zwracać zero. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy.
+
+20. Napisz funkcję `countOdds`, której argumentem jest napis. Funkcja ma zwrócić liczbę znaków cyfr nieparzystych występujących w napisie. Stwórz przypadek testowy.

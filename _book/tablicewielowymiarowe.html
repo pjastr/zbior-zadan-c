@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 9&nbsp; Napisy</title>
+<title>Zbiór zadań - C - 10&nbsp; Tablice wielowymiarowe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tablicewielowymiarowe.html" rel="next">
-<link href="./tablice.html" rel="prev">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./napisy.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -83,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./napisy.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./tablicewielowymiarowe.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -178,13 +207,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./napisy.html" class="sidebar-item-text sidebar-link active">
+  <a href="./napisy.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tablicewielowymiarowe.html" class="sidebar-item-text sidebar-link">
+  <a href="./tablicewielowymiarowe.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></span></a>
   </div>
 </li>
@@ -248,9 +277,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./napisy.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./tablicewielowymiarowe.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></h1>
 </div>
 
 
@@ -268,29 +297,56 @@ ul.task-list li input[type="checkbox"] {
 
 
 <ol type="1">
-<li><p>Napisz funkcję <code>length</code>, która jako argument otrzymuje napis i zwraca jako wartość jego długość. Użyj typu <code>char</code> i nie korzystaj ze wbudowanych funkcji poza operacjami wejścia/wyjścia. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>countNums</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i zwraca liczbę znaków w tej tablicy, które są cyframi. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla swojej funkcji.</p></li>
-<li><p>Napisz funkcję <code>countVow</code> przyjmującą jako argument tablicę znaków typu <code>char</code> i zwracającą liczbę znaków w tej tablicy, które są samogłoskami z alfabetu łacińskiego. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>cmpStrNew</code> przyjmującą dwa argumenty typu <code>char[]</code> (tablice znaków) i zwracającą 1, jeśli napisy są identyczne, oraz 0 w pozostałych przypadkach. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>lexComp</code> przyjmującą dwa argumenty typu <code>char[]</code> (tablice znaków) i zwracającą 1, jeśli pierwszy napis jest wcześniej w porządku leksykograficznym niż drugi, oraz 0 w pozostałych przypadkach. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>toLowerNew</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i zamienia w niej wszystkie duże litery na małe. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>toUpperNew</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i zamienia w niej wszystkie małe litery na duże. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>strCopyNew</code>, która otrzymuje dwa argumenty typu <code>char[]</code> (tablice znaków): źródłową i docelową. Funkcja przepisuje napis znajdujący się w tablicy źródłowej do tablicy docelowej. Zakładamy, że w tablicy docelowej jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>strNcopy</code>, która otrzymuje trzy argumenty: dwie tablice znaków <code>nap1</code>, <code>nap2</code> oraz dodatnią liczbę całkowitą <code>n</code>. Funkcja przekopiuje n pierwszych znaków z napisu przechowywanego w tablicy <code>nap1</code> do tablicy <code>nap2</code>. Jeśli napis w tablicy <code>nap1</code> jest krótszy niż <code>n</code> znaków, funkcja przepisuje cały napis. Funkcja gwarantuje, że na końcu napisu w tablicy <code>nap2</code> znajdzie się znak null-terminujący (<code>'\0'</code>). Zakładamy, że w tablicy <code>nap2</code> jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>strConcat</code>, która otrzymuje jako argumenty trzy tablice znaków: <code>nap1</code>, <code>nap2</code> oraz <code>nap3</code>. Funkcja zapisuje do tablicy <code>nap3</code> konkatenację (połączenie) napisów znajdujących się w tablicach <code>nap1</code> i <code>nap2</code>. Zakładamy, że w tablicy <code>nap3</code> jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>rmLower</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i usuwa z niej wszystkie znaki będące małymi literami. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>rmDigits</code>, która przyjmuje jako argument tablicę znaków typu <code>char</code> i usuwa z niej wszystkie znaki będące cyframi. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>cutStr</code>, która otrzymuje jako argumenty tablicę znaków typu <code>char</code> oraz dwie liczby całkowite <code>n</code> i <code>m</code>, i wycina z otrzymanego napisu znaki o indeksach od <code>n</code> do <code>m</code> (przy założeniu, że <code>n&lt;m</code>). Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>wStrCopyNew</code>, która otrzymuje dwa argumenty typu <code>wchar_t[]</code> (tablice znaków): źródłową i docelową. Funkcja przepisuje napis znajdujący się w tablicy źródłowej do tablicy docelowej. Zakładamy, że w tablicy docelowej jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>wStrConcat</code>, która otrzymuje jako argumenty trzy tablice znaków: <code>nap1</code>, <code>nap2</code> oraz <code>nap3</code> (użyj typu znakowego <code>wchar_t</code>). Funkcja zapisuje do tablicy <code>nap3</code> konkatenację (połączenie) napisów znajdujących się w tablicach <code>nap1</code> i <code>nap2</code>. Zakładamy, że w tablicy <code>nap3</code> jest wystarczająco dużo miejsca. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia. Stwórz przypadek testowy dla tej funkcji.</p></li>
-<li><p>Napisz funkcję <code>w16</code>, której argumentem jest napis. Jeśli napis zawiera inne znaki niż cyfr, to funkcja ma zwracać zero. Jeśli napis zawiera tylko cyfry, funkcja ma zwrócić liczbę całkowitą powstałą z przepisania kolejno znaków cyfr. Załóż, że napis jest długości dokładnie 3. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Wykorzystaj w rozwiązaniu typ <code>wchar_t</code>.</p></li>
-<li><p>Napisz funkcję <code>rmOdd</code>, której argumentem jest napis. Funkcja ma za zadanie usunąć znaki z napisu o nieparzystych indeksach. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>copyEveryThird</code>, której argumentem jest napis. Funkcja ma za zadanie zwrócić nowy napis, który zawiera tylko co trzeci znak z oryginalnego napisu. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sumMatrix</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span> i zwraca jako wartość sumę wartości elementów tablicy. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>sumArray</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span> i zwraca jako wartość sumę wartości elementów tablicy. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>maxRowIdx</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zwrócić indeks wiersza, w którym znajduje się największy element (w przypadku kilku możliwych indeksów, zwróć najmniejszy z możliwych). Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>minColIdx</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zwrócić indeks kolumny, w którym znajduje się najmniejszy element (w przypadku kilku możliwych indeksów, zwróć najmniejszy z możliwych). Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>copyMat</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwie dwumiarowe tablice o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma przepisać zawartość drugiej tablicy do pierwszej tablicy. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>copyArr2D</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwie dwumiarowe tablice tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma przepisać zawartość drugiej tablicy do pierwszej tablicy. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>swapElems</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwie dwumiarowe tablice o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zamienić odpowiednie elementy obu tablic między sobą. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>swapItems</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwie dwumiarowe tablice tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zamienić odpowiednie elementy obu tablic między sobą. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>revRows</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma odwrócić kolejność elementów w każdym wierszu. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>revRowArr</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma odwrócić kolejność elementów w każdym wierszu. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>revCols</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma odwrócić kolejność elementów w każdej kolumnie. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>revColArr</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma odwrócić kolejność elementów w każdej kolumnie. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>transpose</code>, która dostaje jako argumenty dodatnią liczbę całkowitą <code>n</code> i dwuwymiarową kwadratową tablicę o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times n\)</span>. Funkcja ma transponować elementy tablicy (zamienić wiersze na kolumny). Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>transArr</code>, która dostaje jako argumenty dodatnią liczbę całkowitą <code>n</code> i dwuwymiarową kwadratową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times n\)</span>. Funkcja ma transponować elementy tablicy (zamienić wiersze na kolumny). Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>oddAvg</code>, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu <code>int</code>) oraz jej wymiary <span class="math inline">\(n, n&gt;1\)</span> i <span class="math inline">\(m, m&gt;1\)</span>. Funkcja ma zwrócić średnią elementów stojących na nieparzystych indeksach (oba mają być jednocześnie nieparzyste). Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>evenSum</code>, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu <code>int</code>) oraz jej wymiary <span class="math inline">\(n, n&gt;1\)</span> i <span class="math inline">\(m, m&gt;1\)</span>. Funkcja powinna zwrócić sumę elementów stojących na parzystych indeksach (zarówno indeksy wierszy jak i kolumn są parzyste). Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>swap2nd</code>, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu <code>int</code>) oraz jej wymiary <span class="math inline">\(n\)</span> i <span class="math inline">\(m\)</span>. Funkcja ma zamienić miejscami drugi wiersz z przedostatnim. Jeśli tablica ma mniej niż cztery wiersze, funkcja ma nic nie robić. Stwórz przypadek testowy.</p></li>
 </ol>
-<p>Przykład: Dla napisu <code>"ABCXYZ"</code> funkcja powinna zwrócić <code>"AX"</code>.</p>
+<p>Przykład:</p>
+<p><span class="math display">\[\left[\begin{array}{ccc} 2 &amp; 3 &amp; -3\\ 1 &amp; 4 &amp; 7 \\ -3 &amp; -6 &amp; 11 \\ -2 &amp; 8 &amp; 23\end{array}\right] \longrightarrow\left[\begin{array}{ccc} 2 &amp; 3 &amp; -3\\ -3 &amp; -6 &amp; 11 \\ 1 &amp; 4 &amp; 7 \\ -2 &amp; 8 &amp; 23\end{array}\right]\]</span></p>
+<ol start="18" type="1">
+<li>Napisz funkcję <code>flipDiag</code>, której argumentem jest dwuwymiarowa tablica elementów (zawierająca zmienne typu int) oraz jej wymiary <span class="math inline">\(n\)</span> i <span class="math inline">\(m\)</span>. Funkcja ma zamienić kolejność elementów leżących na głównej przekątnej. Funkcja powinna działać tylko dla macierzy kwadratowych, w przeciwnym przypadku nie powinna nic robić. Stwórz przypadek testowy.</li>
+</ol>
+<p>Przykład:</p>
+<p><span class="math display">\[\left[\begin{array}{ccc} 2 &amp; 3 &amp; -3\\ 1 &amp; 4 &amp; 7 \\ -3 &amp; -6 &amp; 11 \end{array}\right] \longrightarrow\left[\begin{array}{ccc} 11&amp; 3 &amp; -3\\ 1 &amp; 4 &amp; 7 \\ -3 &amp; -6 &amp; 2 \end{array}\right]\]</span></p>
 <ol start="19" type="1">
-<li><p>Napisz funkcję <code>indexLower</code>, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje pierwsza od lewej mała litera. W przypadku pustego napisu lub braku małych liter, funkcja powinna zwracać zero. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>countOdds</code>, której argumentem jest napis. Funkcja ma zwrócić liczbę znaków cyfr nieparzystych występujących w napisie. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>swapColumns</code>, która przyjmuje jako argumenty dwuwymiarową tablicę tablic liczb całkowitych, jej wymiary oraz dwa indeksy kolumn do zamiany miejscami. Funkcja powinna przestawić wskazane kolumny i zwrócić zmodyfikowaną tablicę. Uwzględnij sytuację, jeśli podane indeksy są nieprawidłowe - wtedy funkcja ma nic nie robić. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>revOddCol</code>, której argumentem jest dwuwymiarowa tablica elementów (zawierająca zmienne typu <code>int</code>) oraz jej wymiary <span class="math inline">\(n\)</span> i <span class="math inline">\(m\)</span>. Funkcja ma odwrócić kolejność elementów w kolumnach o nieparzystych indeksach. Stwórz przypadek testowy.</p></li>
+</ol>
+<p>Przykład.</p>
+<p><span class="math display">\[\left[\begin{array}{ccc} 2 &amp; 3 &amp; -3\\ 1 &amp; 4 &amp; 7 \\ -3 &amp; -6 &amp; 11 \\ -2 &amp; 8 &amp; 23\end{array}\right] \longrightarrow\left[\begin{array}{ccc} 2 &amp; 8 &amp; -3\\ 1 &amp; -6 &amp; 7 \\ -3 &amp; 4 &amp; 11 \\ -2 &amp; 3 &amp; 23\end{array}\right]\]</span></p>
+<ol start="21" type="1">
+<li><p>Stwórz funkcję <code>idxDiff</code>, której argumentem jest dwuwymiarowa kwadratowa tablica tablic (zawierająca elementy typu <code>int</code>) oraz jej wymiar <span class="math inline">\(n, n&gt;0\)</span>. Funkcja powinna zwracać różnicę między sumą indeksów najmniejszego a sumą indeksów największego elementu w tablicy. W przypadku kilku elementów o najmniejszej lub największej wartości, powinny to być najmniejsze możliwe sumy indeksów. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz funkcję <code>sqEndCols</code>, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu <code>int</code>) oraz jej wymiary <span class="math inline">\(n\)</span> i <span class="math inline">\(m\)</span> (<span class="math inline">\(n&gt;0, m&gt;1\)</span>). Funkcja ma podnieść do kwadratu element z pierwszej i ostatniej kolumny. Stwórz przypadek testowy.</p></li>
+</ol>
+<p>Przykład:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 2 &amp; 3\\
+0 &amp; 5 &amp; 8 \\
+9 &amp; 8 &amp; -2 \\
+-2 &amp; 3 &amp; 4
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 &amp; 2 &amp; 9\\
+0 &amp; 5 &amp; 64 \\
+81 &amp; 8 &amp; 4 \\
+4 &amp; 3 &amp; 16
+\end{bmatrix}\]</span></p>
+<ol start="23" type="1">
+<li><p>Napisz funkcję <code>transCopy</code>, która dostaje jako argumenty dodatnią liczbę całkowitą <code>n</code> i dwuwymiarową kwadratową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times n\)</span>. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę powstałą z przekazanego argumentu poprzez transponowanie jej elementów. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Napisz funkcję <code>newArrOneD</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zwrócić wskaźnik nowo-utworzoną dynamiczną jednowymiarową tablicę powstało z argumentu poprzez przepisanie elementów kolejno wierszami. Stwórz przypadek testowy dla funkcji.</p></li>
 </ol>
 
 
@@ -829,13 +885,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./tablice.html" class="pagination-link" aria-label="Tablice jednowymiarowe">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></span>
+      <a href="./napisy.html" class="pagination-link" aria-label="Napisy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./tablicewielowymiarowe.html" class="pagination-link" aria-label="Tablice wielowymiarowe">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

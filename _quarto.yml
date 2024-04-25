@@ -19,6 +19,7 @@ book:
        - debugowanie.qmd
        - tablice.qmd
        - napisy.qmd
+       - tablicewielowymiarowe.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd

@@ -1,0 +1,97 @@
+# Tablice wielowymiarowe
+
+1. Napisz funkcję `sumMatrix`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę
+o elementach typu `int` o wymiarach $n\times m$  i zwraca jako
+wartość sumę wartości elementów tablicy. Stwórz przypadek testowy dla funkcji.
+
+2. Napisz funkcję `sumArray`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$ i zwraca jako
+wartość sumę wartości elementów tablicy. Stwórz przypadek testowy dla funkcji.
+
+3. Napisz funkcję `maxRowIdx`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zwrócić indeks wiersza, w którym znajduje się największy element (w przypadku kilku możliwych indeksów, zwróć najmniejszy z możliwych). Stwórz przypadek testowy dla funkcji.
+
+4. Napisz funkcję `minColIdx`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zwrócić indeks kolumny, w którym znajduje się najmniejszy element (w przypadku kilku możliwych indeksów, zwróć najmniejszy z możliwych). Stwórz przypadek testowy dla funkcji.
+
+5. Napisz funkcję `copyMat`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwie dwumiarowe tablice
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma przepisać
+zawartość drugiej tablicy do pierwszej tablicy. Stwórz przypadek testowy dla funkcji.
+
+6. Napisz funkcję `copyArr2D`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwie dwumiarowe tablice tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma przepisać
+zawartość drugiej tablicy do pierwszej tablicy. Stwórz przypadek testowy dla funkcji.
+
+7. Napisz funkcję `swapElems`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwie dwumiarowe tablice
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zamienić odpowiednie elementy obu tablic między sobą. Stwórz przypadek testowy dla funkcji.
+
+8. Napisz funkcję `swapItems`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwie dwumiarowe tablice tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zamienić odpowiednie elementy obu tablic między sobą. Stwórz przypadek testowy dla funkcji.
+
+9. Napisz funkcję `revRows`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę 
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma odwrócić kolejność elementów w każdym wierszu. Stwórz przypadek testowy dla funkcji.
+
+10. Napisz funkcję `revRowArr`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma odwrócić kolejność elementów w każdym wierszu. Stwórz przypadek testowy dla funkcji.
+
+11. Napisz funkcję `revCols`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę 
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma odwrócić kolejność elementów w każdej kolumnie. Stwórz przypadek testowy dla funkcji.
+
+12. Napisz funkcję `revColArr`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma odwrócić kolejność elementów w każdej kolumnie. Stwórz przypadek testowy dla funkcji.
+
+13. Napisz funkcję `transpose`, która dostaje jako argumenty dodatnią liczbę całkowitą `n` i  dwuwymiarową kwadratową tablicę 
+o elementach typu `int` o wymiarach $n\times n$. Funkcja ma transponować elementy tablicy (zamienić wiersze na kolumny). Stwórz przypadek testowy dla funkcji.
+
+14. Napisz funkcję `transArr`, która dostaje jako argumenty dodatnią liczbę całkowitą `n` i  dwuwymiarową kwadratową tablicę tablic
+o elementach typu `int` o wymiarach $n\times n$. Funkcja ma transponować elementy tablicy (zamienić wiersze na kolumny). Stwórz przypadek testowy dla funkcji.
+
+15. Napisz funkcję `oddAvg`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n, n>1$  i $m, m>1$. Funkcja ma zwrócić średnią elementów stojących na nieparzystych indeksach (oba mają być jednocześnie nieparzyste). Stwórz przypadek testowy.
+
+16. Napisz funkcję `evenSum`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n, n>1$ i $m, m>1$. Funkcja powinna zwrócić sumę elementów stojących na parzystych indeksach (zarówno indeksy wierszy jak i kolumn są parzyste). Stwórz przypadek testowy.
+
+
+17. Napisz funkcję `swap2nd`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$. Funkcja ma zamienić miejscami drugi wiersz z przedostatnim. Jeśli tablica ma mniej niż cztery wiersze, funkcja ma nic nie robić. Stwórz przypadek testowy.
+
+Przykład:
+
+$$\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 11 \\ -2 & 8 & 23\end{array}\right] \longrightarrow\left[\begin{array}{ccc} 2 & 3 & -3\\ -3 & -6 & 11 \\ 1 & 4 & 7 \\ -2 & 8 & 23\end{array}\right]$$
+
+18. Napisz funkcję `flipDiag`, której argumentem jest dwuwymiarowa tablica elementów (zawierająca zmienne typu int) oraz jej wymiary $n$ i $m$. Funkcja ma zamienić kolejność elementów leżących na głównej przekątnej. Funkcja powinna działać tylko dla macierzy kwadratowych, w przeciwnym przypadku nie powinna nic robić. Stwórz przypadek testowy.
+
+Przykład:
+
+$$\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 11 \end{array}\right] \longrightarrow\left[\begin{array}{ccc} 11& 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 2 \end{array}\right]$$
+
+
+19. Napisz funkcję `swapColumns`, która przyjmuje jako argumenty dwuwymiarową tablicę tablic liczb całkowitych, jej wymiary oraz dwa indeksy kolumn do zamiany miejscami. Funkcja powinna przestawić wskazane kolumny i zwrócić zmodyfikowaną tablicę. Uwzględnij sytuację, jeśli podane indeksy są nieprawidłowe - wtedy funkcja ma nic nie robić. Stwórz przypadek testowy dla funkcji.
+
+20. Napisz funkcję `revOddCol`, której argumentem jest dwuwymiarowa tablica elementów (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$. Funkcja ma odwrócić kolejność elementów w kolumnach o nieparzystych indeksach. Stwórz przypadek testowy.
+
+Przykład.
+
+$$\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 11 \\ -2 & 8 & 23\end{array}\right] \longrightarrow\left[\begin{array}{ccc} 2 & 8 & -3\\ 1 & -6 & 7 \\ -3 & 4 & 11 \\ -2 & 3 & 23\end{array}\right]$$
+
+21. Stwórz funkcję `idxDiff`, której argumentem jest dwuwymiarowa kwadratowa tablica tablic (zawierająca elementy typu `int`) oraz jej wymiar $n, n>0$. Funkcja powinna zwracać różnicę między sumą indeksów najmniejszego a sumą indeksów największego elementu w tablicy. W przypadku kilku elementów o najmniejszej lub największej wartości, powinny to być najmniejsze możliwe sumy indeksów. Stwórz przypadek testowy.
+
+22. Napisz funkcję `sqEndCols`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$ ($n>0, m>1$). Funkcja ma podnieść do kwadratu element z pierwszej i ostatniej kolumny. Stwórz przypadek testowy.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & 5 & 8 \\
+9 & 8 & -2 \\
+-2 & 3 & 4
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 & 2 & 9\\
+0 & 5 & 64 \\
+81 & 8 & 4 \\
+4 & 3 & 16
+\end{bmatrix}$$
+
+23. Napisz funkcję `transCopy`, która dostaje jako argumenty dodatnią liczbę całkowitą `n` i  dwuwymiarową kwadratową tablicę tablic
+o elementach typu `int` o wymiarach $n\times n$. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę powstałą z przekazanego argumentu poprzez transponowanie jej elementów. Stwórz przypadek testowy dla funkcji.
+
+24. Napisz funkcję `newArrOneD`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zwrócić wskaźnik nowo-utworzoną dynamiczną jednowymiarową tablicę powstało z argumentu poprzez przepisanie elementów kolejno wierszami. Stwórz przypadek testowy dla funkcji.

@@ -95,3 +95,96 @@ o elementach typu `int` o wymiarach $n\times n$. Funkcja ma zwrócić wskaźnik 
 
 24. Napisz funkcję `newArrOneD`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
 o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zwrócić wskaźnik nowo-utworzoną dynamiczną jednowymiarową tablicę powstało z argumentu poprzez przepisanie elementów kolejno wierszami. Stwórz przypadek testowy dla funkcji.
+
+25. Napisz funkcję `sortRows`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma posortować elementy osobno każdego wiersza od najmniejszego do największego. Stwórz przypadek testowy dla funkcji.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & -5 & 8 \\
+9 & 8 & -2 \\
+-3 & 5 & 4
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 & 2 & 3\\
+-5 & 0 & 8 \\
+-2 & 8 & 9 \\
+-3 & 4 & 5
+\end{bmatrix}$$
+
+26. Napisz funkcję `sortCols`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma posortować elementy osobno każdej kolumny od największej do najmniejszej. Stwórz przypadek testowy dla funkcji.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & -5 & 8 \\
+9 & 8 & -2 \\
+-3 & 5 & 4
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+9 & 8 & 8\\
+1 & 5 & 4 \\
+0 & 2 & 3 \\
+-3 & -5 & -2
+\end{bmatrix}$$
+
+27. Napisz funkcję `showRows`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma wyświetlić elementy tablicy w następujący sposób: elementy każdego wiersza mają być rozdzielone przecinkiem, a kolejne wiersze między osobą rozdzielone znakiem końca linii, na końcu każdej linii nie powinno być przecinka. Stwórz przypadek testowy dla funkcji.
+
+Przykład: Dla tablicy
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & -5 & 8 \\
+9 & 8 & -2 \\
+-3 & 5 & 4
+\end{bmatrix}$$
+
+ma być wyświetlone dokładnie:
+
+```bash
+1,2,3
+0,-5,8
+9,8,-2
+-3,5,4
+```
+
+28. Napisz funkcję `showCols`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma wyświetlić elementy tablicy w następujący sposób: elementy każdej kolumny mają być rozdzielone przecinkiem w jednej linii, a kolejne kolumny między osobą rozdzielone znakiem końca linii, na końcu każdej linii nie powinno być przecinka. Stwórz przypadek testowy dla funkcji.
+
+Przykład: Dla tablicy
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & -5 & 8 \\
+9 & 8 & -2 \\
+-3 & 5 & 4
+\end{bmatrix}$$
+
+ma być wyświetlone dokładnie:
+
+```bash
+1,0,9,-3
+2,-5,8,5
+3,8,-2,4
+```
+
+29. Napisz funkcję `snkPrint`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę tablic
+o elementach typu `int` o wymiarach $n\times m$. Funkcja ma wyświetlić elementy tablicy w jednym wierszu rozdzielone spacją na zasadzie "ślimaka,węża" (spójrz na przykład). Stwórz przypadek testowy dla funkcji.
+
+Przykład: Dla tablicy
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & -5 & 8 \\
+9 & 8 & -2 \\
+-3 & 5 & 4
+\end{bmatrix}$$
+
+ma być wyświetlone dokładnie:
+
+```bash
+1 2 3 8 -2 4 5 -3 9 0 -5 8
+```

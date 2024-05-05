@@ -1,0 +1,53 @@
+# Złożone typy danych
+
+W poniższych zadaniach o ile nie zaznaczono inaczej pojęcia nazwa i alias struktury można używać zamiennie.
+
+1. Zdefiniuj strukturę `Car` z polami: `brand` (napis), `model` (tablica znaków o rozmiarze 20), `year` (liczba całkowita) i `isAvailable` (wartość 0 lub 1), która reprezentuje informację o dostępności samochodu na sprzedaż. W `main` stwórz kilka zmiennych w typie `Car`.
+
+2. Utwórz strukturę `Student`, która zawiera: `firstName` (łańcuch znaków), `lastName` (łańcuch znaków), `id` (liczba całkowita) oraz `gpa` (liczba zmiennoprzecinkowa), reprezentującą średnią ocen studenta. W `main` stwórz trzy zmienne w typie `Student`. Następnie z tych trzech zmiennych stwórz tablicę.
+
+3. Zaplanuj strukturę `Rectangle`, mającą pola: `width` (liczba zmiennoprzecinkowa), `height` (liczba zmiennoprzecinkowa) i `color` (łańcuch znaków), która ma służyć do przechowywania informacji o wymiarach i kolorze prostokąta. W `main` stwórz 4-elementową tablicę zmiennych typu `Rectangle`.
+
+4. Stwórz strukturę `WeatherInfo` zawierającą: `temperature` (liczba zmiennoprzecinkowa), `humidity` (liczba zmiennoprzecinkowa) i `windSpeed` (liczba zmiennoprzecinkowa), która będzie używana do przechowywania danych meteorologicznych. W `main` stwórz kilka zmiennych w typie `WeatherInfo`.
+
+5. Zaprojektuj strukturę `Book` z polami: `title` (łańcuch znaków), `author` (łańcuch znaków), `publishedYear` (liczba całkowita) i `pages` (liczba całkowita), która ma opisywać podstawowe informacje o książce. W `main` stwórz 5-elementową tablicę zmiennych typu `Book`.
+
+6. Napisz strukturę `Person` z polami `name` (tablica znaków długości 20) oraz `age` (typu `int`). Następnie napisz funkcje i wywołają każdą z nich co najmniej jeden raz:
+
+a) `initPerson` - funkcja przyjmuje dwa argumentem imię i wiek i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.
+b) `showPerson` - funkcja, której argumentem jest zmienna w typie `Person`. Funkcja ma wypisać opis przekazanego argumentu (wpisać wiek i imię na standardowym wyjściu).
+c) `birthday` - funkcja, której argumentem jest wskaźnik do struktury typu `Person`. Funkcja ma powiększyć wiek o 1 w przekazanym argumencie.
+
+Stwórz przypadek testowy dla każdej z funkcji.
+
+7. Napisz strukturę `Car` z polami `brand` (tablica znaków długości 20) oraz `mileage` (typu `int`). Następnie napisz funkcje i wywołaj każdą z nich co najmniej jeden raz:
+
+a) `initCar` - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.
+b) `showCar` - funkcja, której argumentem jest zmienna w typie `Car`. Funkcja ma wypisać opis przekazanego argumentu (wypisać markę i przebieg na standardowym wyjściu).
+c) `mileageService` - funkcja, której argumentem jest wskaźnik do struktury typu `Car`. Funkcja ma dodać 10000 do przebiegu w przekazanym argumencie.
+
+Stwórz przypadek testowy dla każdej z funkcji.
+
+8. Napisz strukturę `Book` z polami `title` (tablica znaków długości 50) oraz `page_count` (typu `int`). Następnie napisz funkcje i wywołaj każdą z nich co najmniej jeden raz:
+
+a) `initBook` - funkcja przyjmuje dwa argumenty: tytuł i liczbę stron, i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.
+b) `showBook` - funkcja, której argumentem jest zmienna w typie `Book`. Funkcja ma wypisać opis przekazanego argumentu (wypisać tytuł i liczbę stron na standardowym wyjściu).
+c) `addPages` - funkcja, której argumentem jest wskaźnik do struktury typu `Book`. Funkcja ma dodać 10 do liczby stron w przekazanym argumencie.
+
+
+
+Stwórz przypadek testowy dla każdej z funkcji.
+
+9. Napisz strukturę `Laptop` z polami `model` (tablica znaków długości 30) oraz `price` (typu `float`). Następnie napisz funkcje i wywołaj każdą z nich co najmniej jeden raz:
+
+a) `initLaptop` - funkcja przyjmuje dwa argumenty: model i cenę, i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.
+b) `showLaptop` - funkcja, której argumentem jest zmienna w typie `Laptop`. Funkcja ma wypisać opis przekazanego argumentu (wypisać model i cenę na standardowym wyjściu).
+c) `reducePrice` - funkcja, której argumentem jest wskaźnik do struktury typu `Laptop`. Funkcja ma obniżyć cenę o 5% w przekazanym argumencie.
+
+Stwórz przypadek testowy dla każdej z funkcji.
+
+10. Stwórz strukturę `Airplane` o dwóch polach `model` (napis) oraz `number_of_engines` (dowolny typ całkowity). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur `Airplane` oraz rozmiar tablicy. Funkcja ma zwrócić najmniejszą liczbę silników. Stwórz przypadek testowy.
+
+11. Stwórz strukturę `Computer` o dwóch polach `brand` (napis) oraz `number_of_cores` (dowolny typ całkowity). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur `Computer` oraz rozmiar tablicy. Funkcja ma zwrócić największą liczbę rdzeni. Stwórz przypadek testowy.
+
+12. Stwórz strukturę `Book` o dwóch polach: `title` (napis) i `page_count` (`int`). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur `Book` oraz rozmiar tablicy. Funkcja ma zwrócić książkę (jako strukturę) z największą liczbę stron. W przypadku kilku książek w tablicy z największą liczbą stron, to zwróć ostatnią z możliwych. Stwórz przypadek testowy.

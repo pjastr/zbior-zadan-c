@@ -20,6 +20,7 @@ book:
        - tablice.qmd
        - napisy.qmd
        - tablicewielowymiarowe.qmd
+       - zlozonetypydanych.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd

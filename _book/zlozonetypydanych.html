@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 15&nbsp; Zadanie różne cz.1</title>
+<title>Zbiór zadań - C - 11&nbsp; Złożone typy danych</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./operatorybitowe.html" rel="prev">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./tablicewielowymiarowe.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -112,7 +83,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html">Dodatki</a></li><li class="breadcrumb-item"><a href="./zadaniarozne1.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./zlozonetypydanych.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -219,7 +190,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zlozonetypydanych.html" class="sidebar-item-text sidebar-link">
+  <a href="./zlozonetypydanych.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></span></a>
   </div>
 </li>
@@ -254,7 +225,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./zadaniarozne1.html" class="sidebar-item-text sidebar-link active">
+  <a href="./zadaniarozne1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></span></a>
   </div>
 </li>
@@ -283,9 +254,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./printf-formatowanieliczb.html">Dodatki</a></li><li class="breadcrumb-item"><a href="./zadaniarozne1.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./zlozonetypydanych.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Zadanie różne cz.1</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></h1>
 </div>
 
 
@@ -302,90 +273,53 @@ window.Quarto = {
 </header>
 
 
+<p>W poniższych zadaniach o ile nie zaznaczono inaczej pojęcia nazwa i alias struktury można używać zamiennie.</p>
 <ol type="1">
-<li>Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> oraz liczbę wymierną <span class="math inline">\(x\)</span>. Funkcja ma zwrócić jako liczbę wartość wyrażenia będącego sumą szeregu:</li>
+<li><p>Zdefiniuj strukturę <code>Car</code> z polami: <code>brand</code> (napis), <code>model</code> (tablica znaków o rozmiarze 20), <code>year</code> (liczba całkowita) i <code>isAvailable</code> (wartość 0 lub 1), która reprezentuje informację o dostępności samochodu na sprzedaż. W <code>main</code> stwórz kilka zmiennych w typie <code>Car</code>.</p></li>
+<li><p>Utwórz strukturę <code>Student</code>, która zawiera: <code>firstName</code> (łańcuch znaków), <code>lastName</code> (łańcuch znaków), <code>id</code> (liczba całkowita) oraz <code>gpa</code> (liczba zmiennoprzecinkowa), reprezentującą średnią ocen studenta. W <code>main</code> stwórz trzy zmienne w typie <code>Student</code>. Następnie z tych trzech zmiennych stwórz tablicę.</p></li>
+<li><p>Zaplanuj strukturę <code>Rectangle</code>, mającą pola: <code>width</code> (liczba zmiennoprzecinkowa), <code>height</code> (liczba zmiennoprzecinkowa) i <code>color</code> (łańcuch znaków), która ma służyć do przechowywania informacji o wymiarach i kolorze prostokąta. W <code>main</code> stwórz 4-elementową tablicę zmiennych typu <code>Rectangle</code>.</p></li>
+<li><p>Stwórz strukturę <code>WeatherInfo</code> zawierającą: <code>temperature</code> (liczba zmiennoprzecinkowa), <code>humidity</code> (liczba zmiennoprzecinkowa) i <code>windSpeed</code> (liczba zmiennoprzecinkowa), która będzie używana do przechowywania danych meteorologicznych. W <code>main</code> stwórz kilka zmiennych w typie <code>WeatherInfo</code>.</p></li>
+<li><p>Zaprojektuj strukturę <code>Book</code> z polami: <code>title</code> (łańcuch znaków), <code>author</code> (łańcuch znaków), <code>publishedYear</code> (liczba całkowita) i <code>pages</code> (liczba całkowita), która ma opisywać podstawowe informacje o książce. W <code>main</code> stwórz 5-elementową tablicę zmiennych typu <code>Book</code>.</p></li>
+<li><p>Napisz strukturę <code>Person</code> z polami <code>name</code> (tablica znaków długości 20) oraz <code>age</code> (typu <code>int</code>). Następnie napisz funkcje i wywołają każdą z nich co najmniej jeden raz:</p></li>
 </ol>
-<p><span class="math display">\[\frac{x}{1!}+\frac{x^2}{2!}+\ldots+\frac{x^n}{n!}.\]</span></p>
-<p>W zadaniu nie korzystaj z wbudowanych funkcji matematycznych. Stwórz przypadek testowy dla funkcji.</p>
-<ol start="2" type="1">
-<li>Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> oraz liczbę wymierną <span class="math inline">\(x\)</span>. Funkcja ma zwrócić jako liczbę wartość wyrażenia będącego sumą szeregu:</li>
+<ol type="a">
+<li><code>initPerson</code> - funkcja przyjmuje dwa argumentem imię i wiek i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.</li>
+<li><code>showPerson</code> - funkcja, której argumentem jest zmienna w typie <code>Person</code>. Funkcja ma wypisać opis przekazanego argumentu (wpisać wiek i imię na standardowym wyjściu).</li>
+<li><code>birthday</code> - funkcja, której argumentem jest wskaźnik do struktury typu <code>Person</code>. Funkcja ma powiększyć wiek o 1 w przekazanym argumencie.</li>
 </ol>
-<p><span class="math display">\[(x+1)+(x^2+2)+\ldots+(x^n+n).\]</span></p>
-<p>W zadaniu nie korzystaj z funkcji matematycznych. Stwórz przypadek testowy dla funkcji.</p>
-<ol start="3" type="1">
-<li>Napisz rekurencyjną funkcję, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwracać sumę:</li>
-</ol>
-<p><span class="math display">\[5+55+555+\ldots+\underbrace{5\ldots5}_{n \ razy}.\]</span></p>
-<p>Stwórz przypadek testowy.</p>
-<ol start="4" type="1">
-<li><p>Napisz funkcję rekurencyjną, która wypisze wszystkie liczby naturalne od <span class="math inline">\(n\)</span> do <span class="math inline">\(2n\)</span> (włącznie) dla pewnej dodatniej liczby całkowitej <span class="math inline">\(n\)</span>. Możesz samodzielnie ustalić liczbę i typ argumentów pamiętając, że funkcja ma być rekurencyjna. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję, która ma dwa argumenty: dodatnią liczbę całkowitą <span class="math inline">\(n\)</span> oraz dodatnią liczbę wymierną <span class="math inline">\(x\)</span>. Funkcja ma zwrócić obliczoną wartość wyrażenia:</p></li>
-</ol>
-<p><span class="math display">\[1+x+\frac{x^2}{2!}+ \frac{x^3}{3!} +\ldots + \frac{x^n}{n!}\]</span></p>
-<p>W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych. Stwórz przypadek testowy.</p>
-<ol start="6" type="1">
-<li>Napisz funkcję, której argumentem jest jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma wyświetlać wszystkie możliwe liczby Nivena mniejsze lub równe <span class="math inline">\(n\)</span> (bez rozkładów). Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.</li>
-</ol>
-<p>Liczby Nivena – liczby naturalne, które są podzielne przez sumę tworzących je cyfr. Początkowe liczby Nivena: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 18, 20, 21, 24, 27, 30, 36, 40.</p>
+<p>Stwórz przypadek testowy dla każdej z funkcji.</p>
 <ol start="7" type="1">
-<li>Napisz funkcję, której argumentem są dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(n\)</span> jest automorficzna. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na string/wektor. Stwórz przypadek testowy.</li>
+<li>Napisz strukturę <code>Car</code> z polami <code>brand</code> (tablica znaków długości 20) oraz <code>mileage</code> (typu <code>int</code>). Następnie napisz funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
 </ol>
-<p>Liczba automorficzna – liczba, która podniesiona do kwadratu zawierają w końcówce same siebie. Np. <span class="math inline">\(76 \cdot 76=5776\)</span>.</p>
-<p>Przykłady: 0, 1, 5, 6, 25, 76, 376, 625.</p>
+<ol type="a">
+<li><code>initCar</code> - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.</li>
+<li><code>showCar</code> - funkcja, której argumentem jest zmienna w typie <code>Car</code>. Funkcja ma wypisać opis przekazanego argumentu (wypisać markę i przebieg na standardowym wyjściu).</li>
+<li><code>mileageService</code> - funkcja, której argumentem jest wskaźnik do struktury typu <code>Car</code>. Funkcja ma dodać 10000 do przebiegu w przekazanym argumencie.</li>
+</ol>
+<p>Stwórz przypadek testowy dla każdej z funkcji.</p>
 <ol start="8" type="1">
-<li>Napisz funkcję, której argumentem są dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(n\)</span> jest wesoła. Stwórz przypadek testowy.</li>
+<li>Napisz strukturę <code>Book</code> z polami <code>title</code> (tablica znaków długości 50) oraz <code>page_count</code> (typu <code>int</code>). Następnie napisz funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
 </ol>
-<p>Liczba wesoła – liczba naturalna zdefiniowana jako obliczanie sumy kwadratów cyfr składających się na liczbę. Powtarzamy tę operację dla kolejnych wyników tak długo, aż uzyskamy liczbę 1 lub wyniki zaczną się powtarzać. Jeżeli w wyniku procesu otrzymaliśmy 1, pierwotna liczba jest liczbą wesołą. W przeciwnym przypadku jest liczbą niewesołą.</p>
-<p>Przykładowo 7 jest liczbą wesołą:</p>
-<p><span class="math display">\[7^2 = 49,\quad  4^2 + 9^2 = 97,\quad  9^2 + 7^2 = 130\]</span> <span class="math display">\[1^2 + 3^2 + 0^2 = 10, \quad 1^2 + 0^2 = 1.\]</span> Przykładowo 85 jest liczbą niewesołą:</p>
-<p><span class="math display">\[8^2 + 5^2 = 89, \quad
-8^2 + 9^2 = 145, \quad
-1^2 + 4^2 + 5^2 = 42, \quad
-4^2 + 2^2 = 20\]</span> <span class="math display">\[2^2 + 0^2 = 4, \quad
-4^2 = 16, \quad
-1^2 + 6^2 = 37, \quad
-3^2 + 7^2 = 58, \quad
-5^2 + 8^2 = 89\]</span></p>
+<ol type="a">
+<li><code>initBook</code> - funkcja przyjmuje dwa argumenty: tytuł i liczbę stron, i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.</li>
+<li><code>showBook</code> - funkcja, której argumentem jest zmienna w typie <code>Book</code>. Funkcja ma wypisać opis przekazanego argumentu (wypisać tytuł i liczbę stron na standardowym wyjściu).</li>
+<li><code>addPages</code> - funkcja, której argumentem jest wskaźnik do struktury typu <code>Book</code>. Funkcja ma dodać 10 do liczby stron w przekazanym argumencie.</li>
+</ol>
+<p>Stwórz przypadek testowy dla każdej z funkcji.</p>
 <ol start="9" type="1">
-<li>Napisz funkcję, której argumentem są dodatnia liczba całkowita <span class="math inline">\(a\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(a\)</span> jest narcystyczna. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na string/wektor. Stwórz przypadek testowy.</li>
+<li>Napisz strukturę <code>Laptop</code> z polami <code>model</code> (tablica znaków długości 30) oraz <code>price</code> (typu <code>float</code>). Następnie napisz funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
 </ol>
-<p>Liczba narcystyczna - <span class="math inline">\(n\)</span>-cyfrowa liczba naturalna, która jest sumą swoich cyfr podniesionych do potęgi <span class="math inline">\(n\)</span>.</p>
-<p>Przykład: 153 jest liczbą narcystyczną. 3 to liczba cyfr oraz <span class="math inline">\(153=1^3+5^3+3^3\)</span>.</p>
+<ol type="a">
+<li><code>initLaptop</code> - funkcja przyjmuje dwa argumenty: model i cenę, i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.</li>
+<li><code>showLaptop</code> - funkcja, której argumentem jest zmienna w typie <code>Laptop</code>. Funkcja ma wypisać opis przekazanego argumentu (wypisać model i cenę na standardowym wyjściu).</li>
+<li><code>reducePrice</code> - funkcja, której argumentem jest wskaźnik do struktury typu <code>Laptop</code>. Funkcja ma obniżyć cenę o 5% w przekazanym argumencie.</li>
+</ol>
+<p>Stwórz przypadek testowy dla każdej z funkcji.</p>
 <ol start="10" type="1">
-<li><p>Napisz funkcję, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić ile cyfr 1 występuje w zapisie dziesiętnym tej liczby. W zadaniu nie korzystaj z konwersji liczby na napis. Stwórz przypadek testowy dla funkcji</p></li>
-<li><p>Napisz funkcję, która ma dwa argumenty: dwie dodatnie liczby całkowite <span class="math inline">\(m\)</span> i <span class="math inline">\(n\)</span> (<span class="math inline">\(n&gt;1\)</span>). Funkcja ma zwrócić wartość wyrażenia:</p></li>
+<li><p>Stwórz strukturę <code>Airplane</code> o dwóch polach <code>model</code> (napis) oraz <code>number_of_engines</code> (dowolny typ całkowity). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur <code>Airplane</code> oraz rozmiar tablicy. Funkcja ma zwrócić najmniejszą liczbę silników. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz strukturę <code>Computer</code> o dwóch polach <code>brand</code> (napis) oraz <code>number_of_cores</code> (dowolny typ całkowity). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur <code>Computer</code> oraz rozmiar tablicy. Funkcja ma zwrócić największą liczbę rdzeni. Stwórz przypadek testowy.</p></li>
+<li><p>Stwórz strukturę <code>Book</code> o dwóch polach: <code>title</code> (napis) i <code>page_count</code> (<code>int</code>). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur <code>Book</code> oraz rozmiar tablicy. Funkcja ma zwrócić książkę (jako strukturę) z największą liczbę stron. W przypadku kilku książek w tablicy z największą liczbą stron, to zwróć ostatnią z możliwych. Stwórz przypadek testowy.</p></li>
 </ol>
-<p><span class="math inline">\(f(m,n) = \lfloor \sqrt[n]{m} \rfloor\)</span></p>
-<p>Symbol <span class="math inline">\(\lfloor x \rfloor\)</span> - oznacza część całkowitą z <span class="math inline">\(x\)</span>. Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.</p>
-<ol start="12" type="1">
-<li>Napisz funkcję, której argumentem są dwie dodatnie liczby całkowite <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span>. Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) z informacją czy liczby <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span> są swoim lustrzanym odbiciem. Nie korzystaj ze wbudowanych funkcji poza instrukcjami wejścia/wyjścia oraz nie korzystaj z konwersji na napis. Stwórz przypadek testowy.</li>
-</ol>
-<p>Dwie liczby <span class="math inline">\(a\)</span> i <span class="math inline">\(b\)</span> są swoim lustrzanym odbicie, jeśli jedna z liczb powstaje poprzez odwrócenie kolejności cyfr z drugiej liczby. Przykład 345 i 543 są swoim lustrzanym odbicie.</p>
-<ol start="13" type="1">
-<li><p>Napisz program dokonujący rozkładu danej dodatniej liczby naturalnej <span class="math inline">\(n\)</span> na czynniki pierwsze. Na przykład dla <span class="math inline">\(n = 24\)</span> sa to czynniki 2 2 2 3. Liczba <span class="math inline">\(n\)</span> ma być pobrana ze standardowego wejścia, rozkład wyświetlony na standardowym wyjściu.</p></li>
-<li><p>Napisz program obliczający tzw. jednocyfrową sumę cyfr liczby <span class="math inline">\(n\)</span>. Na początku oblicza się sumę cyfr liczby <span class="math inline">\(n\)</span>; jeśli wynikiem jest liczba wielocyfrowa, to znowu oblicza się sumę cyfr tej poprzedniej sumy i tak powtarza, aż do uzyskania liczby jednocyfrowej, która jest wynikiem końcowym. Na przykład dla <span class="math inline">\(n = 48\)</span> suma jednocyfrowa wynosi 3. Liczba <span class="math inline">\(n\)</span> ma być pobrana ze standardowego wejścia, wynik końcowy wyświetlony na standardowym wyjściu.</p></li>
-<li><p>Napisz funkcję, której argumentem jest jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma wyświetlać wszystkie możliwe liczby Armstronga mniejsze lub równe <span class="math inline">\(n\)</span> (bez rozkładów). Stwórz przypadek testowy dla funkcji. W zadaniu nie korzystaj ze wbudowanych funkcji matematycznych.</p></li>
-</ol>
-<p>Liczba Armstronga to dodatnia liczba naturalna, której suma sześcianów poszczególnych cyfr jest równa tej liczbie. Przykładowo: <span class="math inline">\(153=1^3+5^3+3^3\)</span>.</p>
-<ol start="16" type="1">
-<li>Napisz funkcję, której argumentem jest dodatnia liczba całkowita <span class="math inline">\(n\)</span>. Funkcja ma zwrócić ile liczb całkowitych dodatnich mniejszych lub równych <span class="math inline">\(n\)</span> ma cyfry, które stanowią palindrom. Stwórz przypadek testowy. W zadaniu nie korzystaj z konwersji na napis.</li>
-</ol>
-<p>Przykłady:</p>
-<ul>
-<li>liczba 12321 jest palindromem</li>
-<li>liczby jednocyfrowe są palindromami</li>
-<li>liczba 4556 nie jest palindromem</li>
-<li>liczba 44 jest palindromem</li>
-</ul>
-<ol start="17" type="1">
-<li><p>Napisz funkcję, która ma dwa argumenty: dwie dodatnie liczby całkowite <span class="math inline">\(m\)</span> i <span class="math inline">\(n\)</span> (<span class="math inline">\(m&lt;n\)</span>). Funkcja ma zwrócić ile liczb pierwszych jest w przedziale <span class="math inline">\([2m, 3n]\)</span>. Stwórz przypadek testowy dla funkcji.</p></li>
-<li><p>Napisz funkcję <code>czyBliskie</code>, której argumentami są trzy liczby wymierne <span class="math inline">\(x,y,\varepsilon.\)</span> Funkcja ma zwrócić odpowiednią wartość logiczną (zero lub jeden) po sprawdzeniu czy wartość bezwzględna różnicy <span class="math inline">\(x\)</span> i <span class="math inline">\(y\)</span> jest mniejsza od <span class="math inline">\(\varepsilon\)</span>. Następnie pobierz od użytkownika 5 liczb wymiernych i wyświetl informację, ile z nich jest bliskich spośród wprowadzonych wzajemnie między sobą dla <span class="math inline">\(\varepsilon=2\)</span>. Przykładowy komunikat na koniec:</p></li>
-</ol>
-<pre><code>Liczba 1: ... Ile liczb bliskich: ..
-Liczba 2: ... Ile liczb bliskich: ..
-Liczba 3: ... Ile liczb bliskich: ..
-Liczba 4: ... Ile liczb bliskich: ..
-Liczba 5: ... Ile liczb bliskich: ..</code></pre>
 
 
 
@@ -945,13 +879,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./operatorybitowe.html" class="pagination-link" aria-label="Operatory bitowe">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Operatory bitowe</span></span>
+      <a href="./tablicewielowymiarowe.html" class="pagination-link" aria-label="Tablice wielowymiarowe">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="Bibliografia i inne zbiory zadań">
-        <span class="nav-page-text">Bibliografia i inne zbiory zadań</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

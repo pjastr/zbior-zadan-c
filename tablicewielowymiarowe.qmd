@@ -51,7 +51,7 @@ o elementach typu `int` o wymiarach $n\times n$. Funkcja ma transponować elemen
 16. Napisz funkcję `evenSum`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n, n>1$ i $m, m>1$. Funkcja powinna zwrócić sumę elementów stojących na parzystych indeksach (zarówno indeksy wierszy jak i kolumn są parzyste). Stwórz przypadek testowy.
 
 
-17. Napisz funkcję `swap2nd`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$. Funkcja ma zamienić miejscami drugi wiersz z przedostatnim. Jeśli tablica ma mniej niż cztery wiersze, funkcja ma nic nie robić. Stwórz przypadek testowy.
+17. Napisz funkcję `swap2nd`, której argumentem jest dwuwymiarowa tablica tablic (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$. Funkcja ma zamienić miejscami wiersz o indeksie 1 z przedostatnim. Jeśli tablica ma mniej niż cztery wiersze, funkcja ma nic nie robić. Stwórz przypadek testowy.
 
 Przykład:
 

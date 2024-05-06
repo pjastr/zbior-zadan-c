@@ -14,7 +14,7 @@ W poniższych zadaniach o ile nie zaznaczono inaczej pojęcia nazwa i alias stru
 
 6. Napisz strukturę `Person` z polami `name` (tablica znaków długości 20) oraz `age` (typu `int`). Następnie napisz funkcje i wywołają każdą z nich co najmniej jeden raz:
 
-a) `initPerson` - funkcja przyjmuje dwa argumentem imię i wiek i zwraca nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.
+a) `initPerson` - funkcja przyjmuje dwa argumentem imię i wiek i zwraca wskaźnik na nowo-utworzoną strukturę ustawiającą składowe z przekazanych argumentów.
 b) `showPerson` - funkcja, której argumentem jest zmienna w typie `Person`. Funkcja ma wypisać opis przekazanego argumentu (wpisać wiek i imię na standardowym wyjściu).
 c) `birthday` - funkcja, której argumentem jest wskaźnik do struktury typu `Person`. Funkcja ma powiększyć wiek o 1 w przekazanym argumencie.
 

@@ -57,7 +57,7 @@ Przykład:
 
 $$\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 11 \\ -2 & 8 & 23\end{array}\right] \longrightarrow\left[\begin{array}{ccc} 2 & 3 & -3\\ -3 & -6 & 11 \\ 1 & 4 & 7 \\ -2 & 8 & 23\end{array}\right]$$
 
-18. Napisz funkcję `flipDiag`, której argumentem są dwie dodatnie liczby całkowite $n$ i $m$ oraz dwuwymiarowa tablica elementów (zawierająca zmienne typu int) wymiaru $n\times m$. Funkcja ma zamienić kolejność elementów leżących na głównej przekątnej. Funkcja powinna działać tylko dla macierzy kwadratowych, w przeciwnym przypadku nie powinna nic robić. Stwórz przypadek testowy.
+18. Napisz funkcję `flipDiag`, której argumentami są dwie dodatnie liczby całkowite $n$ i $m$ oraz dwuwymiarowa tablica elementów (zawierająca zmienne typu int) wymiaru $n\times m$. Funkcja ma zamienić kolejność elementów leżących na głównej przekątnej. Funkcja powinna działać tylko dla macierzy kwadratowych, w przeciwnym przypadku nie powinna nic robić. Stwórz przypadek testowy.
 
 Przykład:
 
@@ -66,7 +66,7 @@ $$\left[\begin{array}{ccc} 2 & 3 & -3\\ 1 & 4 & 7 \\ -3 & -6 & 11 \end{array}\ri
 
 19. Napisz funkcję `swapColumns`, która przyjmuje jako argumenty dwuwymiarową tablicę tablic liczb całkowitych, jej wymiary oraz dwa indeksy kolumn do zamiany miejscami. Funkcja powinna przestawić wskazane kolumny i zwrócić zmodyfikowaną tablicę. Uwzględnij sytuację, jeśli podane indeksy są nieprawidłowe - wtedy funkcja ma nic nie robić. Stwórz przypadek testowy dla funkcji.
 
-20. Napisz funkcję `revOddCol`, której argumentem jest dwuwymiarowa tablica elementów (zawierająca zmienne typu `int`) oraz jej wymiary $n$ i $m$. Funkcja ma odwrócić kolejność elementów w kolumnach o nieparzystych indeksach. Stwórz przypadek testowy.
+20. Napisz funkcję `revOddCol`, której argumentami są dwie dodatnie liczby całkowite $n$ i $m$ oraz dwuwymiarowa tablica elementów (zawierająca zmienne typu int) wymiaru $n\times m$. Funkcja ma odwrócić kolejność elementów w kolumnach o nieparzystych indeksach. Stwórz przypadek testowy.
 
 Przykład.
 

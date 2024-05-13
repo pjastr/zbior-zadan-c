@@ -322,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Napisz strukturę <code>Car</code> z polami <code>brand</code> (tablica znaków długości 50) oraz <code>mileage</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</p></li>
 </ol>
 <ol type="a">
-<li><code>initCar</code> - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając składowe z przekazanych argumentów. Dodatkowo funkcja powinna sprawdzić, aby marka była napisem długości co najmniej 2 i przebieg był większy niż 0. W przypadku nie spełnienia jednego z warunków, funkcja powinna zwracać NULL.</li>
+<li><code>initCar</code> - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając składowe z przekazanych argumentów. Dodatkowo funkcja powinna sprawdzić, aby marka była napisem długości co najmniej 2 i przebieg był większy niż 0. W przypadku nie spełnienia co najmniej jednego z warunków, funkcja powinna zwracać NULL.</li>
 <li><code>increaseMileage</code> - funkcja, której argumentem jest wskaźnik do struktury typu <code>Car</code>. Funkcja ma dodać 1000 do przebiegu w przekazanym argumencie.</li>
 </ol>
 <p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
@@ -330,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Napisz strukturę <code>Bike</code> z polami <code>model</code> (tablica znaków długości 40) oraz <code>distance_travelled</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
 </ol>
 <ol type="a">
-<li><code>initBike</code> - funkcja przyjmuje dwa argumenty: model roweru i odległość przejechaną, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna dodatkowo sprawdzać, czy model jest napisem o długości co najmniej 3 i odległość przejechana jest większa od 0. W przypadku nie spełnienia jednego z warunków, funkcja powinna zwracać NULL.</li>
+<li><code>initBike</code> - funkcja przyjmuje dwa argumenty: model roweru i odległość przejechaną, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna dodatkowo sprawdzać, czy model jest napisem o długości co najmniej 3 i odległość przejechana jest większa od 0. W przypadku nie spełnienia co najmniej jednego z warunków, funkcja powinna zwracać NULL.</li>
 <li><code>increaseDistance</code> - funkcja, której argumentem jest wskaźnik do struktury <code>Bike</code>. Funkcja powinna dodać 500 do przejechanej odległości.</li>
 </ol>
 <p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
@@ -338,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Napisz strukturę <code>Computer</code> z polami <code>manufacturer</code> (tablica znaków długości 30) oraz <code>usage_hours</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
 </ol>
 <ol type="a">
-<li><code>initComputer</code> - funkcja przyjmuje dwa argumenty: producenta i liczbę godzin używania, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna także sprawdzać, czy nazwa producenta ma co najmniej 2 znaki i liczba godzin jest większa od 0. Jeśli warunki nie są spełnione, funkcja powinna zwracać NULL.</li>
+<li><code>initComputer</code> - funkcja przyjmuje dwa argumenty: producenta i liczbę godzin używania, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna także sprawdzać, czy nazwa producenta ma co najmniej 2 znaki i liczba godzin jest większa od 0. Jeśli oba warunki nie są spełnione łącznie, funkcja powinna zwracać NULL.</li>
 <li><code>increaseUsage</code> - funkcja, której argumentem jest wskaźnik do struktury <code>Computer</code>. Funkcja powinna dodać 100 do liczby godzin użytkowania.</li>
 </ol>
 <p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
@@ -346,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Napisz strukturę <code>Apartment</code> z polami <code>address</code> (tablica znaków długości 100) oraz <code>number_of_residents</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
 </ol>
 <ol type="a">
-<li><code>initApartment</code> - funkcja przyjmuje dwa argumenty: adres i liczbę mieszkańców, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna sprawdzać, czy adres ma co najmniej 5 znaków i liczba mieszkańców jest większa niż 0. W przypadku nie spełnienia warunków, funkcja powinna zwracać NULL.</li>
+<li><code>initApartment</code> - funkcja przyjmuje dwa argumenty: adres i liczbę mieszkańców, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna sprawdzać, czy adres ma co najmniej 5 znaków i liczba mieszkańców jest większa niż 0. W przypadku nie spełnienia obu warunków łącznie, funkcja powinna zwracać NULL.</li>
 <li><code>increaseResidents</code> - funkcja, której argumentem jest wskaźnik do struktury <code>Apartment</code>. Funkcja powinna dodać 2 do liczby mieszkańców.</li>
 </ol>
 <p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>

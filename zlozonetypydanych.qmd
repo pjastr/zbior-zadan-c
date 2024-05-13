@@ -54,28 +54,28 @@ Stwórz przypadek testowy dla każdej z funkcji.
 
 13. Napisz strukturę `Car` z polami `brand` (tablica znaków długości 50) oraz `mileage` (typu `int`). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:
 
-a) `initCar` - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając składowe z przekazanych argumentów. Dodatkowo funkcja powinna sprawdzić, aby marka była napisem długości co najmniej 2 i przebieg był większy niż 0. W przypadku nie spełnienia jednego z warunków, funkcja powinna zwracać NULL.
+a) `initCar` - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając składowe z przekazanych argumentów. Dodatkowo funkcja powinna sprawdzić, aby marka była napisem długości co najmniej 2 i przebieg był większy niż 0. W przypadku nie spełnienia co najmniej jednego z warunków, funkcja powinna zwracać NULL.
 b) `increaseMileage` - funkcja, której argumentem jest wskaźnik do struktury typu `Car`. Funkcja ma dodać 1000 do przebiegu w przekazanym argumencie.
 
 Upewnij się, że drugą funkcję możesz wywołać w `main`.
 
 14. Napisz strukturę `Bike` z polami `model` (tablica znaków długości 40) oraz `distance_travelled` (typu `int`). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:
 
-a) `initBike` - funkcja przyjmuje dwa argumenty: model roweru i odległość przejechaną, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna dodatkowo sprawdzać, czy model jest napisem o długości co najmniej 3 i odległość przejechana jest większa od 0. W przypadku nie spełnienia jednego z warunków, funkcja powinna zwracać NULL.
+a) `initBike` - funkcja przyjmuje dwa argumenty: model roweru i odległość przejechaną, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna dodatkowo sprawdzać, czy model jest napisem o długości co najmniej 3 i odległość przejechana jest większa od 0. W przypadku nie spełnienia co najmniej jednego z warunków, funkcja powinna zwracać NULL.
 b) `increaseDistance` - funkcja, której argumentem jest wskaźnik do struktury `Bike`. Funkcja powinna dodać 500 do przejechanej odległości.
 
 Upewnij się, że drugą funkcję możesz wywołać w `main`.
 
 15.  Napisz strukturę `Computer` z polami `manufacturer` (tablica znaków długości 30) oraz `usage_hours` (typu `int`). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:
 
-a) `initComputer` - funkcja przyjmuje dwa argumenty: producenta i liczbę godzin używania, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna także sprawdzać, czy nazwa producenta ma co najmniej 2 znaki i liczba godzin jest większa od 0. Jeśli warunki nie są spełnione, funkcja powinna zwracać NULL.
+a) `initComputer` - funkcja przyjmuje dwa argumenty: producenta i liczbę godzin używania, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna także sprawdzać, czy nazwa producenta ma co najmniej 2 znaki i liczba godzin jest większa od 0. Jeśli oba warunki nie są spełnione łącznie, funkcja powinna zwracać NULL.
 b) `increaseUsage` - funkcja, której argumentem jest wskaźnik do struktury `Computer`. Funkcja powinna dodać 100 do liczby godzin użytkowania.
 
 Upewnij się, że drugą funkcję możesz wywołać w `main`.
 
 16. Napisz strukturę `Apartment` z polami `address` (tablica znaków długości 100) oraz `number_of_residents` (typu `int`). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:
 
-a) `initApartment` - funkcja przyjmuje dwa argumenty: adres i liczbę mieszkańców, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna sprawdzać, czy adres ma co najmniej 5 znaków i liczba mieszkańców jest większa niż 0. W przypadku nie spełnienia warunków, funkcja powinna zwracać NULL.
+a) `initApartment` - funkcja przyjmuje dwa argumenty: adres i liczbę mieszkańców, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna sprawdzać, czy adres ma co najmniej 5 znaków i liczba mieszkańców jest większa niż 0. W przypadku nie spełnienia obu warunków łącznie, funkcja powinna zwracać NULL.
 b) `increaseResidents` - funkcja, której argumentem jest wskaźnik do struktury `Apartment`. Funkcja powinna dodać 2 do liczby mieszkańców.
 
 Upewnij się, że drugą funkcję możesz wywołać w `main`.

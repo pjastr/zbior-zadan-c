@@ -319,6 +319,42 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Stwórz strukturę <code>Airplane</code> o dwóch polach <code>model</code> (napis) oraz <code>number_of_engines</code> (dowolny typ całkowity). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur <code>Airplane</code> oraz rozmiar tablicy. Funkcja ma zwrócić najmniejszą liczbę silników. Stwórz przypadek testowy.</p></li>
 <li><p>Stwórz strukturę <code>Computer</code> o dwóch polach <code>brand</code> (napis) oraz <code>number_of_cores</code> (dowolny typ całkowity). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur <code>Computer</code> oraz rozmiar tablicy. Funkcja ma zwrócić największą liczbę rdzeni. Stwórz przypadek testowy.</p></li>
 <li><p>Stwórz strukturę <code>Book</code> o dwóch polach: <code>title</code> (napis) i <code>page_count</code> (<code>int</code>). Następnie stwórz funkcję, której argumentami jest niepusta tablica struktur <code>Book</code> oraz rozmiar tablicy. Funkcja ma zwrócić książkę (jako strukturę) z największą liczbę stron. W przypadku kilku książek w tablicy z największą liczbą stron, to zwróć ostatnią z możliwych. Stwórz przypadek testowy.</p></li>
+<li><p>Napisz strukturę <code>Car</code> z polami <code>brand</code> (tablica znaków długości 50) oraz <code>mileage</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</p></li>
+</ol>
+<ol type="a">
+<li><code>initCar</code> - funkcja przyjmuje dwa argumenty: markę i przebieg, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając składowe z przekazanych argumentów. Dodatkowo funkcja powinna sprawdzić, aby marka była napisem długości co najmniej 2 i przebieg był większy niż 0. W przypadku nie spełnienia jednego z warunków, funkcja powinna zwracać NULL.</li>
+<li><code>increaseMileage</code> - funkcja, której argumentem jest wskaźnik do struktury typu <code>Car</code>. Funkcja ma dodać 1000 do przebiegu w przekazanym argumencie.</li>
+</ol>
+<p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
+<ol start="14" type="1">
+<li>Napisz strukturę <code>Bike</code> z polami <code>model</code> (tablica znaków długości 40) oraz <code>distance_travelled</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
+</ol>
+<ol type="a">
+<li><code>initBike</code> - funkcja przyjmuje dwa argumenty: model roweru i odległość przejechaną, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna dodatkowo sprawdzać, czy model jest napisem o długości co najmniej 3 i odległość przejechana jest większa od 0. W przypadku nie spełnienia jednego z warunków, funkcja powinna zwracać NULL.</li>
+<li><code>increaseDistance</code> - funkcja, której argumentem jest wskaźnik do struktury <code>Bike</code>. Funkcja powinna dodać 500 do przejechanej odległości.</li>
+</ol>
+<p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
+<ol start="15" type="1">
+<li>Napisz strukturę <code>Computer</code> z polami <code>manufacturer</code> (tablica znaków długości 30) oraz <code>usage_hours</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
+</ol>
+<ol type="a">
+<li><code>initComputer</code> - funkcja przyjmuje dwa argumenty: producenta i liczbę godzin używania, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna także sprawdzać, czy nazwa producenta ma co najmniej 2 znaki i liczba godzin jest większa od 0. Jeśli warunki nie są spełnione, funkcja powinna zwracać NULL.</li>
+<li><code>increaseUsage</code> - funkcja, której argumentem jest wskaźnik do struktury <code>Computer</code>. Funkcja powinna dodać 100 do liczby godzin użytkowania.</li>
+</ol>
+<p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
+<ol start="16" type="1">
+<li>Napisz strukturę <code>Apartment</code> z polami <code>address</code> (tablica znaków długości 100) oraz <code>number_of_residents</code> (typu <code>int</code>). Następnie napisz dwie funkcje i wywołaj każdą z nich co najmniej jeden raz:</li>
+</ol>
+<ol type="a">
+<li><code>initApartment</code> - funkcja przyjmuje dwa argumenty: adres i liczbę mieszkańców, i zwraca wskaźnik na nowo utworzoną strukturę, ustawiając wartości zgodnie z przekazanymi argumentami. Funkcja powinna sprawdzać, czy adres ma co najmniej 5 znaków i liczba mieszkańców jest większa niż 0. W przypadku nie spełnienia warunków, funkcja powinna zwracać NULL.</li>
+<li><code>increaseResidents</code> - funkcja, której argumentem jest wskaźnik do struktury <code>Apartment</code>. Funkcja powinna dodać 2 do liczby mieszkańców.</li>
+</ol>
+<p>Upewnij się, że drugą funkcję możesz wywołać w <code>main</code>.</p>
+<ol start="17" type="1">
+<li><p>Utwórz typ wyliczeniowy <code>Month</code> reprezentujący miesiące. Napisz funkcję <code>days_in_month()</code>, która przyjmuje jako argument wartość typu <code>Month</code> i zwraca liczbę dni w danym miesiącu. Pomiń problem roku przestępnego w tym zadaniu. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Utwórz typ wyliczeniowy <code>Day</code> reprezentujący dni tygodnia. Napisz funkcję <code>print_days()</code>, która przyjmuje jako argumenty wartość typu <code>Day</code> i liczbę <code>n</code>. Funkcja powinna wydrukować bieżący dzień tygodnia, a następnie rekurencyjnie wywołać siebie z następnym dniem tygodnia, dekrementując <code>n</code> przy każdym wywołaniu, aż <code>n</code> spadnie do 0. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Stwórz unię <code>Number</code>, która umożliwia jednoczesne przechowywanie liczby całkowitej i wymiernej. Następnie “opakuj” unię w strukturę i stwórz funkcję, które umożliwiają zainicjowanie pól unii ze standardowego wejścia. Stwórz przypadek testowy dla funkcji.</p></li>
+<li><p>Stwórz strukturę <code>element</code> o dwóch polach: <code>i</code> typu <code>int</code> oraz <code>next</code> będące wskaźnikiem na zdefiniowaną strukturę. Stwórz w <code>main</code> kilka zmiennych strukturalnych.</p></li>
 </ol>
 
 

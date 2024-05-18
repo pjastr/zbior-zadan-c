@@ -21,6 +21,7 @@ book:
        - napisy.qmd
        - tablicewielowymiarowe.qmd
        - zlozonetypydanych.qmd
+       - listyjednokierunkowe.qmd
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd

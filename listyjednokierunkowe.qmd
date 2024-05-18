@@ -1,0 +1,162 @@
+# Listy jednokierunkowe
+
+Wykorzystaj z zadaniach konwencją omawianą na wykładzie.
+
+## Bez funkcji
+
+1. W `main` stwórz listę bez głowy o trzech elementach 4,5,-12. Następnie w kolejnych wierszach wyświetl elementy znajdujące się na liście. Wykorzystaj strukturę:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+2. W `main` stwórz listę z głową o trzech elementach 4,5,-12. Następnie w kolejnych wierszach wyświetl elementy znajdujące się na liście. Wykorzystaj strukturę:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+## Wyświetlanie
+
+3. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma wyświetlić kolejne elementy listy w kolejnych wierszach lub wyświetlić komunikat, że lista jest pusta. Stwórz przypadek testowy.
+
+4. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma wyświetlić kolejne elementy listy w kolejnych wierszach lub wyświetlić komunikat, że lista jest pusta. Stwórz przypadek testowy.
+
+5. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma wyświetlić te elementy listy, które są dodatnie. Stwórz przypadek testowy.
+
+6. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma wyświetlić te elementy listy, które są nieparzyste. Stwórz przypadek testowy.
+
+## Tworzenie listy
+
+7. Napisz bez-argumentową funkcję, która zwraca wskaźnik na nowo-utworzoną listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+8. Napisz bez-argumentową funkcję, która zwraca wskaźnik na nowo-utworzoną listę z głową. Stwórz przypadek testowy. Wykorzystaj strukturę:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+## Dodawanie na początek
+
+
+9. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma dodać na początek listy nowy element o wartości `a`. Stwórz przypadek testowy.
+
+10. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma dodać na początek listy nowy element o wartości `a`. Stwórz przypadek testowy.
+
+## Dodawanie na koniec
+
+11. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma dodać na koniec listy nowy element o wartości `a`. Stwórz przypadek testowy.
+
+12. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma dodać na koniec listy nowy element o wartości `a`. Stwórz przypadek testowy.
+
+## Wyszukiwanie/liczniki
+
+13. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy `a` oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.
+
+14. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+oraz liczbę całkowitą `a`. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy `a` oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.

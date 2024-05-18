@@ -19,3 +19,5 @@
 * 25.04.2024- dodano część: Tablice wielowymiarowe
 
 * 5.05.2024- dodano część: Złożone typy danych
+
+* 18.05.2024 - dodano część: Listy jednokierunkowe

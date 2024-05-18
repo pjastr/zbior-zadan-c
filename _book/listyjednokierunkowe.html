@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C - 5&nbsp; Wskaźniki</title>
+<title>Zbiór zadań - C - 12&nbsp; Listy jednokierunkowe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./wskaznikinafunkcje.html" rel="next">
-<link href="./funkcje.html" rel="prev">
+<link href="./printf-formatowanieliczb.html" rel="next">
+<link href="./zlozonetypydanych.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./wskazniki.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./listyjednokierunkowe.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -188,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./wskazniki.html" class="sidebar-item-text sidebar-link active">
+  <a href="./wskazniki.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></span></a>
   </div>
 </li>
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./listyjednokierunkowe.html" class="sidebar-item-text sidebar-link">
+  <a href="./listyjednokierunkowe.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></span></a>
   </div>
 </li>
@@ -289,14 +289,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Spis treści</h2>
+   
+  <ul>
+  <li><a href="#bez-funkcji" id="toc-bez-funkcji" class="nav-link active" data-scroll-target="#bez-funkcji"><span class="header-section-number">12.1</span> Bez funkcji</a></li>
+  <li><a href="#wyświetlanie" id="toc-wyświetlanie" class="nav-link" data-scroll-target="#wyświetlanie"><span class="header-section-number">12.2</span> Wyświetlanie</a></li>
+  <li><a href="#tworzenie-listy" id="toc-tworzenie-listy" class="nav-link" data-scroll-target="#tworzenie-listy"><span class="header-section-number">12.3</span> Tworzenie listy</a></li>
+  <li><a href="#dodawanie-na-początek" id="toc-dodawanie-na-początek" class="nav-link" data-scroll-target="#dodawanie-na-początek"><span class="header-section-number">12.4</span> Dodawanie na początek</a></li>
+  <li><a href="#dodawanie-na-koniec" id="toc-dodawanie-na-koniec" class="nav-link" data-scroll-target="#dodawanie-na-koniec"><span class="header-section-number">12.5</span> Dodawanie na koniec</a></li>
+  <li><a href="#wyszukiwanieliczniki" id="toc-wyszukiwanieliczniki" class="nav-link" data-scroll-target="#wyszukiwanieliczniki"><span class="header-section-number">12.6</span> Wyszukiwanie/liczniki</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./wskazniki.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./listyjednokierunkowe.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></h1>
 </div>
 
 
@@ -313,46 +324,135 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Zadania należy rozwiązać bez interpretacji wskaźników jako tablic.</p>
+<p>Wykorzystaj z zadaniach konwencją omawianą na wykładzie.</p>
+<section id="bez-funkcji" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="bez-funkcji"><span class="header-section-number">12.1</span> Bez funkcji</h2>
 <ol type="1">
-<li>Skopiuj lub przepisz kod i sprawdź wyniki na standardowym wyjściu:</li>
+<li>W <code>main</code> stwórz listę bez głowy o trzech elementach 4,5,-12. Następnie w kolejnych wierszach wyświetl elementy znajdujące się na liście. Wykorzystaj strukturę:</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdlib.h&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">"%Iu</span><span class="sc">\n</span><span class="st">"</span><span class="op">,</span> <span class="kw">sizeof</span><span class="op">(</span><span class="dt">int</span><span class="op">));</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">"%Iu</span><span class="sc">\n</span><span class="st">"</span><span class="op">,</span> <span class="kw">sizeof</span><span class="op">(</span><span class="dt">int</span><span class="op">*));</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
-<li>W jednym pliku wykonaj czynności:</li>
+<li>W <code>main</code> stwórz listę z głową o trzech elementach 4,5,-12. Następnie w kolejnych wierszach wyświetl elementy znajdujące się na liście. Wykorzystaj strukturę:</li>
 </ol>
-<ul>
-<li><p>Napisz funkcję <code>sum</code> z dwoma argumentami typu <code>int</code>. Funkcja ma zwracać sumę wartości przekazanych przez argumenty. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>sumVals</code> z dwoma argumentami, które są wskaźnikami do zmiennych typu <code>int</code>. Funkcja powinna zwracać sumę wartości, na które wskazują te argumenty. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>addPtr</code> z trzema argumentami, które są wskaźnikami do zmiennych typu <code>int</code>. Funkcja ma być procedurą (typ zwracany <code>void</code>). Funkcja ma ustawić wartość zmiennej wskazywanej przez trzeci argument funkcji jako sumę wartości wskazywanych przez dwa wcześniejsze argumenty. Utwórz przypadek testowy.</p></li>
-</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="wyświetlanie" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="wyświetlanie"><span class="header-section-number">12.2</span> Wyświetlanie</h2>
 <ol start="3" type="1">
-<li><p>Napisz funkcję <code>copyInt</code> z argumentami: <code>x</code> typu <code>int</code> oraz <code>w</code>, który jest wskaźnikiem do <code>int</code>. Funkcja ma przepisać wartość <code>x</code> do zmiennej wskazywanej przez <code>w</code>. Stwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>findMax</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>double</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>double</code>. Funkcja ma zwracać większą wartość spośród tych, na które wskazują <code>num1</code> i <code>num2</code>. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>initInts</code>, która nie przyjmuje argumentów i rezerwuje blok trzech zmiennych typu <code>int</code>, ustawiając ich wartości kolejno na 5, -12, 33. Funkcja zwraca wskaźnik na środkową zmienną. Utwórz przypadek testowy w funkcji <code>main</code>, który wyświetla wartości z bloku stworzonego przez funkcję.</p></li>
-<li><p>Napisz funkcję <code>initFloats</code>, która nie przyjmuje argumentów i rezerwuje blok trzech zmiennych typu <code>float</code>, ustawiając ich wartości kolejno na 4.5, 2.3, -4.2. Funkcja zwraca wskaźnik na początkową ze zmiennych w bloku. Utwórz przypadek testowy w funkcji <code>main</code>, który wyświetla wartości z bloku stworzonego przez funkcję.</p></li>
-<li><p>Napisz funkcję <code>initFlts</code>, która nie przyjmuje argumentów i rezerwuje blok czterech zmiennych typu <code>float</code>, ustawiając ich wartości kolejno na 0.5, 1.5, 2.5, i 3.5. Funkcja zwraca wskaźnik na ostatnią zmienną w bloku. Utwórz przypadek testowy w <code>main</code>, aby wyświetlić wartości z bloku stworzonego przez funkcję.</p></li>
-<li><p>Napisz funkcję <code>sumToPtr</code> z trzema argumentami: dwoma wskaźnikami na stałe typu <code>int</code> i wskaźnikiem na zmienną typu <code>int</code>. Funkcja ma przepisać do zmiennej wskazywanej przez trzeci argument sumę wartości stałych wskazywanych przez pierwszy i drugi argument. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>sqrCopy</code> z dwoma argumentami: wskaźnikiem na stałą typu <code>int</code> i wskaźnikiem na zmienną typu <code>int</code>. Funkcja ma przepisać kwadrat wartości stałej do zmiennej wskazywanej przez drugi argument. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>subPtrs</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>double</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>double</code>. Funkcja ma zwracać różnicę wartości, na które wskazują <code>num1</code> i <code>num2</code>. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>sumSqrs</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>int</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>int</code>. Funkcja ma zwracać sumę kwadratów wartości wskazywanych przez <code>num1</code> i <code>num2</code>. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>linFuncVal</code> z trzema argumentami: wskaźnikiem <code>a</code> na stałą wartość typu <code>float</code>, stałym wskaźnikiem <code>b</code> na zmienną typu <code>float</code>, i wskaźnikiem <code>x</code> na stałą wartość typu <code>float</code>. Funkcja ma obliczać i zwracać wartość funkcji liniowej <code>y=ax+b</code> dla argumentu <code>x</code>, gdzie <code>a</code> i <code>b</code> są wskazywane przez odpowiednie wskaźniki. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>minPtr</code> z trzema argumentami, które są wskaźnikami na zmienne typu <code>int</code>. Funkcja zwraca wskaźnik na zmienną o najmniejszej wartości spośród tych, na które wskazują argumenty. Utwórz przypadek testowy w <code>main</code>, aby wyświetlić najmniejszą wartość spośród trzech zmiennych.</p></li>
-<li><p>Napisz funkcję <code>multPtrs</code> z dwoma argumentami: wskaźnikiem <code>num1</code> na stałą wartość typu <code>double</code> i stałym wskaźnikiem <code>num2</code> na zmienną typu <code>double</code>. Funkcja zwraca iloczyn wartości wskazywanych przez te wskaźniki. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>absVal</code> z jednym argumentem, którym jest wskaźnik na zmienną typu <code>int</code>. Funkcja oblicza wartość bezwzględną zmiennej wskazywanej przez wskaźnik i aktualizuje tę zmienną. Utwórz przypadek testowy w <code>main</code>, aby wyświetlić wartość zaktualizowanej zmiennej.</p></li>
-<li><p>Napisz funkcję <code>swap</code> z dwoma argumentami: wskaźnikiem <code>ptr1</code> na zmienną typu <code>int</code> i wskaźnikiem <code>ptr2</code> na inną zmienną tego samego typu. Funkcja zamienia miejscami wartości wskazywane przez wskaźniki. Utwórz przypadek testowy.</p></li>
-<li><p>Napisz funkcję <code>swapSign</code> z dwoma argumentami: wskaźnikiem <code>ptr1</code> na zmienną typu <code>double</code> i wskaźnikiem <code>ptr2</code> na inną zmienną tego samego typu. Funkcja zamienia miejscami wartości wskazywane przez wskaźniki, jeśli mają one różne znaki. W przeciwnym razie nie robi nic. Utwórz przypadek testowy.</p></li>
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma wyświetlić kolejne elementy listy w kolejnych wierszach lub wyświetlić komunikat, że lista jest pusta. Stwórz przypadek testowy.</p>
+<ol start="4" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma wyświetlić kolejne elementy listy w kolejnych wierszach lub wyświetlić komunikat, że lista jest pusta. Stwórz przypadek testowy.</p>
+<ol start="5" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma wyświetlić te elementy listy, które są dodatnie. Stwórz przypadek testowy.</p>
+<ol start="6" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma wyświetlić te elementy listy, które są nieparzyste. Stwórz przypadek testowy.</p>
+</section>
+<section id="tworzenie-listy" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="tworzenie-listy"><span class="header-section-number">12.3</span> Tworzenie listy</h2>
+<ol start="7" type="1">
+<li>Napisz bez-argumentową funkcję, która zwraca wskaźnik na nowo-utworzoną listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:</li>
+</ol>
+<div class="sourceCode" id="cb7"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="8" type="1">
+<li>Napisz bez-argumentową funkcję, która zwraca wskaźnik na nowo-utworzoną listę z głową. Stwórz przypadek testowy. Wykorzystaj strukturę:</li>
+</ol>
+<div class="sourceCode" id="cb8"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="dodawanie-na-początek" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="dodawanie-na-początek"><span class="header-section-number">12.4</span> Dodawanie na początek</h2>
+<ol start="9" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb9"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>oraz liczbę całkowitą <code>a</code>. Funkcja ma dodać na początek listy nowy element o wartości <code>a</code>. Stwórz przypadek testowy.</p>
+<ol start="10" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb10"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>oraz liczbę całkowitą <code>a</code>. Funkcja ma dodać na początek listy nowy element o wartości <code>a</code>. Stwórz przypadek testowy.</p>
+</section>
+<section id="dodawanie-na-koniec" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="dodawanie-na-koniec"><span class="header-section-number">12.5</span> Dodawanie na koniec</h2>
+<ol start="11" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb11"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>oraz liczbę całkowitą <code>a</code>. Funkcja ma dodać na koniec listy nowy element o wartości <code>a</code>. Stwórz przypadek testowy.</p>
+<ol start="12" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>oraz liczbę całkowitą <code>a</code>. Funkcja ma dodać na koniec listy nowy element o wartości <code>a</code>. Stwórz przypadek testowy.</p>
+</section>
+<section id="wyszukiwanieliczniki" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="wyszukiwanieliczniki"><span class="header-section-number">12.6</span> Wyszukiwanie/liczniki</h2>
+<ol start="13" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb13"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>oraz liczbę całkowitą <code>a</code>. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy <code>a</code> oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.</p>
+<ol start="14" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>oraz liczbę całkowitą <code>a</code>. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy <code>a</code> oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -910,13 +1010,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./funkcje.html" class="pagination-link" aria-label="Funkcje">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></span>
+      <a href="./zlozonetypydanych.html" class="pagination-link" aria-label="Złożone typy danych">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wskaznikinafunkcje.html" class="pagination-link" aria-label="Wskaźniki na funkcję">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Wskaźniki na funkcję</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -925,4 +1025,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></div></div></footer></body></html>

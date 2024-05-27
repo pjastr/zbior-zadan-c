@@ -201,7 +201,40 @@
     "href": "listyjednokierunkowe.html#wyszukiwanieliczniki",
     "title": "12  Listy jednokierunkowe",
     "section": "12.6 Wyszukiwanie/liczniki",
-    "text": "12.6 Wyszukiwanie/liczniki\n\nNapisz funkcję find, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\noraz liczbę całkowitą a. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy a oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.\n\nNapisz funkcję find, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\noraz liczbę całkowitą a. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy a oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.",
+    "text": "12.6 Wyszukiwanie/liczniki\n\nNapisz funkcję find, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\noraz liczbę całkowitą a. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy a oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.\n\nNapisz funkcję find, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\noraz liczbę całkowitą a. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy a oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma zwrócić sumę elementów nieparzystych znajdujących się na liście. Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma zwrócić sumę elementów ujemnych znajdujących się na liście. Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma zwrócić adres ostatniego elementu parzystego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma zwrócić adres ostatniego elementu dodatniego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.",
+    "crumbs": [
+      "Podstawy języka C",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Listy jednokierunkowe</span>"
+    ]
+  },
+  {
+    "objectID": "listyjednokierunkowe.html#usuwanie-pojedynczych-elementów",
+    "href": "listyjednokierunkowe.html#usuwanie-pojedynczych-elementów",
+    "title": "12  Listy jednokierunkowe",
+    "section": "12.7 Usuwanie pojedynczych elementów",
+    "text": "12.7 Usuwanie pojedynczych elementów\n\nNapisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.",
+    "crumbs": [
+      "Podstawy języka C",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Listy jednokierunkowe</span>"
+    ]
+  },
+  {
+    "objectID": "listyjednokierunkowe.html#usuwanie-całej-listy",
+    "href": "listyjednokierunkowe.html#usuwanie-całej-listy",
+    "title": "12  Listy jednokierunkowe",
+    "section": "12.8 Usuwanie całej listy",
+    "text": "12.8 Usuwanie całej listy\n\nNapisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.\n\nNapisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:\n\nstruct element {\n    int x;\n    struct element * next;\n};\nFunkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.",
+    "crumbs": [
+      "Podstawy języka C",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Listy jednokierunkowe</span>"
+    ]
+  },
+  {
+    "objectID": "listyjednokierunkowe.html#zadania-różne",
+    "href": "listyjednokierunkowe.html#zadania-różne",
+    "title": "12  Listy jednokierunkowe",
+    "section": "12.9 Zadania różne",
+    "text": "12.9 Zadania różne\nTo do.",
     "crumbs": [
       "Podstawy języka C",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Listy jednokierunkowe</span>"

@@ -160,3 +160,143 @@ struct element {
 ```
 
 oraz liczbę całkowitą `a`. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy `a` oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.
+
+15. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma zwrócić sumę elementów nieparzystych znajdujących się na liście. Stwórz przypadek testowy.
+
+16. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma zwrócić sumę elementów ujemnych znajdujących się na liście. Stwórz przypadek testowy.
+
+17. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma zwrócić adres ostatniego elementu parzystego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.
+
+18. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma zwrócić adres ostatniego elementu dodatniego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.
+
+## Usuwanie pojedynczych elementów
+
+19. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
+
+20. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
+
+21. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
+
+22. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
+
+23. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.
+
+24. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.
+
+## Usuwanie całej listy
+
+25. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.
+
+26. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct element {
+    int x;
+    struct element * next;
+};
+```
+
+Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.
+
+## Zadania różne
+
+To do.

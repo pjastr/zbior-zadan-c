@@ -299,6 +299,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#dodawanie-na-początek" id="toc-dodawanie-na-początek" class="nav-link" data-scroll-target="#dodawanie-na-początek"><span class="header-section-number">12.4</span> Dodawanie na początek</a></li>
   <li><a href="#dodawanie-na-koniec" id="toc-dodawanie-na-koniec" class="nav-link" data-scroll-target="#dodawanie-na-koniec"><span class="header-section-number">12.5</span> Dodawanie na koniec</a></li>
   <li><a href="#wyszukiwanieliczniki" id="toc-wyszukiwanieliczniki" class="nav-link" data-scroll-target="#wyszukiwanieliczniki"><span class="header-section-number">12.6</span> Wyszukiwanie/liczniki</a></li>
+  <li><a href="#usuwanie-pojedynczych-elementów" id="toc-usuwanie-pojedynczych-elementów" class="nav-link" data-scroll-target="#usuwanie-pojedynczych-elementów"><span class="header-section-number">12.7</span> Usuwanie pojedynczych elementów</a></li>
+  <li><a href="#usuwanie-całej-listy" id="toc-usuwanie-całej-listy" class="nav-link" data-scroll-target="#usuwanie-całej-listy"><span class="header-section-number">12.8</span> Usuwanie całej listy</a></li>
+  <li><a href="#zadania-różne" id="toc-zadania-różne" class="nav-link" data-scroll-target="#zadania-różne"><span class="header-section-number">12.9</span> Zadania różne</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></nav>
     </div>
@@ -450,6 +453,112 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>oraz liczbę całkowitą <code>a</code>. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy <code>a</code> oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.</p>
+<ol start="15" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma zwrócić sumę elementów nieparzystych znajdujących się na liście. Stwórz przypadek testowy.</p>
+<ol start="16" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma zwrócić sumę elementów ujemnych znajdujących się na liście. Stwórz przypadek testowy.</p>
+<ol start="17" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb17"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma zwrócić adres ostatniego elementu parzystego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.</p>
+<ol start="18" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb18"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma zwrócić adres ostatniego elementu dodatniego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.</p>
+</section>
+<section id="usuwanie-pojedynczych-elementów" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="usuwanie-pojedynczych-elementów"><span class="header-section-number">12.7</span> Usuwanie pojedynczych elementów</h2>
+<ol start="19" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb19"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.</p>
+<ol start="20" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.</p>
+<ol start="21" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb21"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.</p>
+<ol start="22" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb22"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.</p>
+<ol start="23" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb23"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.</p>
+<ol start="24" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb24"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.</p>
+</section>
+<section id="usuwanie-całej-listy" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="usuwanie-całej-listy"><span class="header-section-number">12.8</span> Usuwanie całej listy</h2>
+<ol start="25" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb25"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.</p>
+<ol start="26" type="1">
+<li>Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:</li>
+</ol>
+<div class="sourceCode" id="cb26"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> element <span class="op">{</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">;</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.</p>
+</section>
+<section id="zadania-różne" class="level2" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="zadania-różne"><span class="header-section-number">12.9</span> Zadania różne</h2>
+<p>To do.</p>
 
 
 </section>

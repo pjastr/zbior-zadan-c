@@ -299,4 +299,177 @@ Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu
 
 ## Zadania różne
 
-To do.
+27. Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:
+
+```c
+struct node {
+    int i;
+    struct node * next;
+};
+```
+
+Funkcja ma wyświetlić na konsoli w kolejnych wierszach wartości elementów na liście będących kwadratami liczb całkowitych. Stwórz przypadek testowy.
+
+Przykład. Jeśli lista składa się z elementów 4,5,6,-34,0,25,11, to ma być wyświetlone w kolejnych wierszach: 4,0,25.
+
+28. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+```c
+struct node {
+    double x;
+    struct node * next;
+};
+```
+
+i zwraca najmniejszą z liczb znajdujących się na liście. W przypadku pustej listy, funkcja ma zwrócić zero. Stwórz jeden przypadek testowy.
+
+
+29. Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct node {
+    int i;
+    struct node * next;
+};
+```
+
+Funkcja ma zdublować wartość ostatniego elementu, o ile lista jest nie pusta. W przypadku pustej listy, funkcja ma nic nie robić. Stwórz przypadek testowy.
+
+Przykład: Dla listy 3,4,5 ma być zdublowana 5, więc po modyfikacji lista ma być postaci 3,4,5,5.
+
+
+30. Napisz funkcję, która otrzymuje jako argument listę z głową o elementach typu:
+
+``` c
+struct elem {
+    int a;
+    struct elem * next;
+};
+```
+
+Funkcja ma zdublować wartość ostatniego elementu, o ile lista jest nie pusta. W przypadku pustej listy, funkcja ma nic nie robić. Stwórz przypadek testowy.
+
+Przykład: Dla listy 3,4,5 ma być zdublowana 5, więc po modyfikacji lista ma być postaci 3,4,5,5.
+
+31. Napisz funkcję, która porównuje dwie listy z głową o elementach typu:
+
+```c
+struct node {
+    int i;
+    struct node * next;
+};
+```
+i zwraca 1 jeśli ostatnie elementy na liście są równe oraz 0 w pozostałych przypadkach (także wtedy gdy któraś z list lub obie są puste). Stwórz jeden przypadek testowy.
+
+
+32. Napisz funkcję, która porównuje dwie listy bez głowy o elementach typu:
+
+```c
+struct node {
+    int a;
+    struct node * next;
+};
+```
+i zwraca 1 jeśli listy są takiej samej długości oraz 0 w pozostałych przypadkach (także wtedy, gdy któraś z list lub obie są puste). Stwórz przypadek testowy.
+
+
+33. Napisz funkcję, która przyjmuje dwie listy z głową o elementach typu:
+
+```c
+struct node {
+    int value;
+    struct node * next;
+};
+```
+i zwraca 1 jeśli suma wszystkich elementów nieparzystych w obu listach jest taka sama oraz 0 w przeciwnym przypadku (także wtedy, gdy któraś z list lub obie są puste). Stwórz przypadek testowy.
+
+
+34. Napisz funkcję, która przyjmuje dwie listy bez głowy o elementach typu:
+
+```c
+struct node {
+    int w;
+    struct node * next;
+};
+```
+i zwraca 1 jeśli suma wszystkich elementów parzystych w obu listach jest taka sama oraz 0 w przeciwnym przypadku (także wtedy, gdy któraś z list lub obie są puste). Stwórz przypadek testowy.
+
+35. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct node {
+    int x;
+    struct node * next;
+};
+```
+
+Funkcja ma zwrócić sumę elementów nieparzystych z listy. Stwórz jeden przypadek testowy.
+
+36. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct elem {
+    int x;
+    struct elem * next;
+};
+```
+
+Funkcja ma podwoić wszystkie elementy dodatnie na liście (o ile istnieją). Stwórz jeden przypadek testowy.
+
+37. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+``` c
+struct node {
+    int y;
+    struct node * next;
+};
+```
+
+oraz dwie liczby całkowite `a` i `b`. Funkcja ma dodać na początek listy dwa nowe elementy i ich wartości ustawić odpowiednio z podanych argumentów. Stwórz jeden przypadek testowy.
+
+38. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct node {
+    int a;
+    struct node * next;
+};
+```
+
+oraz dwie liczby całkowite `a` i `b`. Funkcja ma dodać na początek listy dwa nowe elementy i ich wartości ustawić odpowiednio z podanych argumentów. Stwórz jeden przypadek testowy.
+
+
+39. Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:
+
+``` c
+struct element {
+    float value;
+    struct element * next;
+};
+```
+
+Funkcja ma zamienić wartości każdego elementu na jego wartość bezwzględną. Dla listy pustej funkcja ma nic nie robić. Stwórz przypadek testowy.
+
+
+40. Napisz funkcję, która otrzymuje jako argument listę z głową o elementach typu:
+
+``` c
+struct node {
+    int val;
+    struct node * next;
+};
+```
+
+Funkcja ma zamienić wartości każdego elementu na jego wartość bezwzględną. Dla listy pustej funkcja ma nic nie robić. Stwórz przypadek testowy.
+
+
+41. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+
+```c
+struct node {
+    int x;
+    struct node * next;
+};
+```
+
+oraz liczbę całkowitą `d`. Funkcja ma zwrócić ile na liście jest elementów równych `d`. Stwórz jeden przypadek testowy.

@@ -168,7 +168,7 @@
     "href": "listyjednokierunkowe.html#tworzenie-listy",
     "title": "12  Listy jednokierunkowe",
     "section": "12.3 Tworzenie listy",
-    "text": "12.3 Tworzenie listy\n\nNapisz bez-argumentową funkcję createNoHead, która zwraca wskaźnik na nowo-utworzoną listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:\n\nstruct element {\n    int x;\n    struct element * next;\n};\n\nNapisz bez-argumentową funkcję createWithHead, która zwraca wskaźnik na nowo-utworzoną listę z głową. Stwórz przypadek testowy. Wykorzystaj strukturę:\n\nstruct element {\n    int x;\n    struct element * next;\n};",
+    "text": "12.3 Tworzenie listy\n\nNapisz bez-argumentową funkcję createNoHead, która zwraca wskaźnik na “nowo-utworzoną” pustą listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:\n\nstruct element {\n    int x;\n    struct element * next;\n};\n\nNapisz bez-argumentową funkcję createWithHead, która zwraca wskaźnik na “nowo-utworzoną” pustą listę z głową. Stwórz przypadek testowy. Wykorzystaj strukturę:\n\nstruct element {\n    int x;\n    struct element * next;\n};",
     "crumbs": [
       "Podstawy języka C",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Listy jednokierunkowe</span>"

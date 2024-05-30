@@ -70,7 +70,7 @@ Funkcja ma wyświetlić te elementy listy, które są nieparzyste. Stwórz przyp
 
 ## Tworzenie listy
 
-7. Napisz bez-argumentową funkcję `createNoHead`, która zwraca wskaźnik na nowo-utworzoną listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:
+7. Napisz bez-argumentową funkcję `createNoHead`, która zwraca wskaźnik na "nowo-utworzoną" pustą listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:
 
 ``` c
 struct element {
@@ -79,7 +79,7 @@ struct element {
 };
 ```
 
-8. Napisz bez-argumentową funkcję `createWithHead`, która zwraca wskaźnik na nowo-utworzoną listę z głową. Stwórz przypadek testowy. Wykorzystaj strukturę:
+8. Napisz bez-argumentową funkcję `createWithHead`, która zwraca wskaźnik na "nowo-utworzoną" pustą listę z głową. Stwórz przypadek testowy. Wykorzystaj strukturę:
 
 ``` c
 struct element {

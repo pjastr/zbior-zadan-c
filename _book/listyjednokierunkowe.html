@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.40">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zbiór zadań - C – 12&nbsp; Listy jednokierunkowe</title>
+<title>14&nbsp; Listy jednokierunkowe – Zbiór zadań - C</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,12 +71,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-23cb75b8abeab2f8ee81319b9c29001b.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./listyjednokierunkowe.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./listyjednokierunkowe.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Przełącz pasek boczny" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Szukaj" onclick="window.quartoOpenSearch();">
@@ -170,68 +170,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./operatoryarytmetyczne.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Operatory arytmetyczne</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./operatorybitowe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operatory bitowe</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intrukcjewarunkowe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Instrukcje warunkowe, operator warunkowy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./petle.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Pętle</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pętle</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./funkcje.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funkcje</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Funkcje</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wskazniki.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Wskaźniki</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Wskaźniki</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wskaznikinafunkcje.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Wskaźniki na funkcję</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Wskaźniki na funkcję</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./debugowanie.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Debugowanie</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Debugowanie</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tablice.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice jednowymiarowe</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./napisy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Napisy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Napisy</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./tablicewielowymiarowe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Tablice wielowymiarowe</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./zlozonetypydanych.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./listyjednokierunkowe.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></span></a>
   </div>
 </li>
       </ul>
@@ -248,19 +260,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./printf-formatowanieliczb.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./operatoryarytmetyczne.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Operatory arytmetyczne</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./operatorybitowe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Operatory bitowe</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -293,24 +293,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Spis treści</h2>
    
   <ul>
-  <li><a href="#bez-funkcji" id="toc-bez-funkcji" class="nav-link active" data-scroll-target="#bez-funkcji"><span class="header-section-number">12.1</span> Bez funkcji</a></li>
-  <li><a href="#wyświetlanie" id="toc-wyświetlanie" class="nav-link" data-scroll-target="#wyświetlanie"><span class="header-section-number">12.2</span> Wyświetlanie</a></li>
-  <li><a href="#tworzenie-listy" id="toc-tworzenie-listy" class="nav-link" data-scroll-target="#tworzenie-listy"><span class="header-section-number">12.3</span> Tworzenie listy</a></li>
-  <li><a href="#dodawanie-na-początek" id="toc-dodawanie-na-początek" class="nav-link" data-scroll-target="#dodawanie-na-początek"><span class="header-section-number">12.4</span> Dodawanie na początek</a></li>
-  <li><a href="#dodawanie-na-koniec" id="toc-dodawanie-na-koniec" class="nav-link" data-scroll-target="#dodawanie-na-koniec"><span class="header-section-number">12.5</span> Dodawanie na koniec</a></li>
-  <li><a href="#wyszukiwanieliczniki" id="toc-wyszukiwanieliczniki" class="nav-link" data-scroll-target="#wyszukiwanieliczniki"><span class="header-section-number">12.6</span> Wyszukiwanie/liczniki</a></li>
-  <li><a href="#usuwanie-pojedynczych-elementów" id="toc-usuwanie-pojedynczych-elementów" class="nav-link" data-scroll-target="#usuwanie-pojedynczych-elementów"><span class="header-section-number">12.7</span> Usuwanie pojedynczych elementów</a></li>
-  <li><a href="#usuwanie-całej-listy" id="toc-usuwanie-całej-listy" class="nav-link" data-scroll-target="#usuwanie-całej-listy"><span class="header-section-number">12.8</span> Usuwanie całej listy</a></li>
-  <li><a href="#zadania-różne" id="toc-zadania-różne" class="nav-link" data-scroll-target="#zadania-różne"><span class="header-section-number">12.9</span> Zadania różne</a></li>
+  <li><a href="#bez-funkcji" id="toc-bez-funkcji" class="nav-link active" data-scroll-target="#bez-funkcji"><span class="header-section-number">14.1</span> Bez funkcji</a></li>
+  <li><a href="#wyświetlanie" id="toc-wyświetlanie" class="nav-link" data-scroll-target="#wyświetlanie"><span class="header-section-number">14.2</span> Wyświetlanie</a></li>
+  <li><a href="#tworzenie-listy" id="toc-tworzenie-listy" class="nav-link" data-scroll-target="#tworzenie-listy"><span class="header-section-number">14.3</span> Tworzenie listy</a></li>
+  <li><a href="#dodawanie-na-początek" id="toc-dodawanie-na-początek" class="nav-link" data-scroll-target="#dodawanie-na-początek"><span class="header-section-number">14.4</span> Dodawanie na początek</a></li>
+  <li><a href="#dodawanie-na-koniec" id="toc-dodawanie-na-koniec" class="nav-link" data-scroll-target="#dodawanie-na-koniec"><span class="header-section-number">14.5</span> Dodawanie na koniec</a></li>
+  <li><a href="#wyszukiwanieliczniki" id="toc-wyszukiwanieliczniki" class="nav-link" data-scroll-target="#wyszukiwanieliczniki"><span class="header-section-number">14.6</span> Wyszukiwanie/liczniki</a></li>
+  <li><a href="#usuwanie-pojedynczych-elementów" id="toc-usuwanie-pojedynczych-elementów" class="nav-link" data-scroll-target="#usuwanie-pojedynczych-elementów"><span class="header-section-number">14.7</span> Usuwanie pojedynczych elementów</a></li>
+  <li><a href="#usuwanie-całej-listy" id="toc-usuwanie-całej-listy" class="nav-link" data-scroll-target="#usuwanie-całej-listy"><span class="header-section-number">14.8</span> Usuwanie całej listy</a></li>
+  <li><a href="#zadania-różne" id="toc-zadania-różne" class="nav-link" data-scroll-target="#zadania-różne"><span class="header-section-number">14.9</span> Zadania różne</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/pjastr/zbior-zadan-c/issues/new" class="toc-action"><i class="bi bi-github"></i>Zgłoś problem</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./listyjednokierunkowe.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./operacjewejsciawyjscia.html">Podstawy języka C</a></li><li class="breadcrumb-item"><a href="./listyjednokierunkowe.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></h1>
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Listy jednokierunkowe</span></h1>
 </div>
 
 
@@ -328,8 +328,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Wykorzystaj z zadaniach konwencją omawianą na wykładzie.</p>
-<section id="bez-funkcji" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="bez-funkcji"><span class="header-section-number">12.1</span> Bez funkcji</h2>
+<section id="bez-funkcji" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="bez-funkcji"><span class="header-section-number">14.1</span> Bez funkcji</h2>
 <ol type="1">
 <li>W <code>main</code> stwórz listę bez głowy o trzech elementach 4,5,-12. Następnie w kolejnych wierszach wyświetl elementy znajdujące się na liście. Wykorzystaj strukturę:</li>
 </ol>
@@ -345,8 +345,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="wyświetlanie" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="wyświetlanie"><span class="header-section-number">12.2</span> Wyświetlanie</h2>
+<section id="wyświetlanie" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="wyświetlanie"><span class="header-section-number">14.2</span> Wyświetlanie</h2>
 <ol start="3" type="1">
 <li>Napisz funkcję <code>printListWithoutHead</code>, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -380,8 +380,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Funkcja ma wyświetlić te elementy listy, które są nieparzyste. Stwórz przypadek testowy.</p>
 </section>
-<section id="tworzenie-listy" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="tworzenie-listy"><span class="header-section-number">12.3</span> Tworzenie listy</h2>
+<section id="tworzenie-listy" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="tworzenie-listy"><span class="header-section-number">14.3</span> Tworzenie listy</h2>
 <ol start="7" type="1">
 <li>Napisz bez-argumentową funkcję <code>createNoHead</code>, która zwraca wskaźnik na “nowo-utworzoną” pustą listę bez głowy. Stwórz przypadek testowy. Wykorzystaj strukturę:</li>
 </ol>
@@ -397,8 +397,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> element <span class="op">*</span> next<span class="op">;</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="dodawanie-na-początek" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="dodawanie-na-początek"><span class="header-section-number">12.4</span> Dodawanie na początek</h2>
+<section id="dodawanie-na-początek" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="dodawanie-na-początek"><span class="header-section-number">14.4</span> Dodawanie na początek</h2>
 <ol start="9" type="1">
 <li>Napisz funkcję <code>addFirst</code>, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -416,8 +416,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>oraz liczbę całkowitą <code>a</code>. Funkcja ma dodać na początek listy nowy element o wartości <code>a</code>. Stwórz przypadek testowy.</p>
 </section>
-<section id="dodawanie-na-koniec" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="dodawanie-na-koniec"><span class="header-section-number">12.5</span> Dodawanie na koniec</h2>
+<section id="dodawanie-na-koniec" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="dodawanie-na-koniec"><span class="header-section-number">14.5</span> Dodawanie na koniec</h2>
 <ol start="11" type="1">
 <li>Napisz funkcję <code>addLast</code>, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -435,8 +435,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>oraz liczbę całkowitą <code>a</code>. Funkcja ma dodać na koniec listy nowy element o wartości <code>a</code>. Stwórz przypadek testowy.</p>
 </section>
-<section id="wyszukiwanieliczniki" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="wyszukiwanieliczniki"><span class="header-section-number">12.6</span> Wyszukiwanie/liczniki</h2>
+<section id="wyszukiwanieliczniki" class="level2" data-number="14.6">
+<h2 data-number="14.6" class="anchored" data-anchor-id="wyszukiwanieliczniki"><span class="header-section-number">14.6</span> Wyszukiwanie/liczniki</h2>
 <ol start="13" type="1">
 <li>Napisz funkcję <code>find</code>, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -486,8 +486,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Funkcja ma zwrócić adres ostatniego elementu dodatniego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.</p>
 </section>
-<section id="usuwanie-pojedynczych-elementów" class="level2" data-number="12.7">
-<h2 data-number="12.7" class="anchored" data-anchor-id="usuwanie-pojedynczych-elementów"><span class="header-section-number">12.7</span> Usuwanie pojedynczych elementów</h2>
+<section id="usuwanie-pojedynczych-elementów" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="usuwanie-pojedynczych-elementów"><span class="header-section-number">14.7</span> Usuwanie pojedynczych elementów</h2>
 <ol start="19" type="1">
 <li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -537,8 +537,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.</p>
 </section>
-<section id="usuwanie-całej-listy" class="level2" data-number="12.8">
-<h2 data-number="12.8" class="anchored" data-anchor-id="usuwanie-całej-listy"><span class="header-section-number">12.8</span> Usuwanie całej listy</h2>
+<section id="usuwanie-całej-listy" class="level2" data-number="14.8">
+<h2 data-number="14.8" class="anchored" data-anchor-id="usuwanie-całej-listy"><span class="header-section-number">14.8</span> Usuwanie całej listy</h2>
 <ol start="25" type="1">
 <li>Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -556,8 +556,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span></code><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.</p>
 </section>
-<section id="zadania-różne" class="level2" data-number="12.9">
-<h2 data-number="12.9" class="anchored" data-anchor-id="zadania-różne"><span class="header-section-number">12.9</span> Zadania różne</h2>
+<section id="zadania-różne" class="level2" data-number="14.9">
+<h2 data-number="14.9" class="anchored" data-anchor-id="zadania-różne"><span class="header-section-number">14.9</span> Zadania różne</h2>
 <ol start="27" type="1">
 <li>Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:</li>
 </ol>
@@ -912,8 +912,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1024,7 +1022,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1253,12 +1250,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./zlozonetypydanych.html" class="pagination-link" aria-label="Złożone typy danych">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Złożone typy danych</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./printf-formatowanieliczb.html" class="pagination-link" aria-label="Formatowanie zmiennych liczbowych w `printf`">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Formatowanie zmiennych liczbowych w <code>printf</code></span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -11,6 +11,8 @@ book:
     - part: "Podstawy języka C"
       chapters: 
        - operacjewejsciawyjscia.qmd
+       - operatoryarytmetyczne.qmd
+       - operatorybitowe.qmd
        - intrukcjewarunkowe.qmd
        - petle.qmd
        - funkcje.qmd
@@ -25,8 +27,6 @@ book:
     - part: "Dodatki"
       chapters: 
         - printf-formatowanieliczb.qmd
-        - operatoryarytmetyczne.qmd
-        - operatorybitowe.qmd
         - zadaniarozne1.qmd
     - references.qmd
     - changelog.qmd

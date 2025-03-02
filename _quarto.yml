@@ -12,8 +12,8 @@ book:
       chapters: 
        - operacjewejsciawyjscia.qmd
        - operatoryarytmetyczne.qmd
-       - operatorybitowe.qmd
        - intrukcjewarunkowe.qmd
+       - operatorybitowe.qmd
        - petle.qmd
        - funkcje.qmd
        - wskazniki.qmd

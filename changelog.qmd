@@ -23,3 +23,5 @@
 * 18.05.2024 - dodano część: Listy jednokierunkowe
 
 * 23.02.2025 - odświeżenie styli
+
+* 2.03.2025 - drobne poprawki

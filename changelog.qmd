@@ -25,3 +25,5 @@
 * 23.02.2025 - odświeżenie styli
 
 * 2.03.2025 - drobne poprawki
+
+* 6.03.2025 - drobne poprawki

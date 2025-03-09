@@ -14,11 +14,11 @@ book:
        - operatoryarytmetyczne.qmd
        - intrukcjewarunkowe.qmd
        - operatorybitowe.qmd
+       - debugowanie.qmd
        - petle.qmd
        - funkcje.qmd
        - wskazniki.qmd
        - wskaznikinafunkcje.qmd
-       - debugowanie.qmd
        - tablice.qmd
        - napisy.qmd
        - tablicewielowymiarowe.qmd

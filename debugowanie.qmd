@@ -1,4 +1,4 @@
-# Debugowanie
+# Debugowanie - podstawy
 
 1. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
 
@@ -42,6 +42,90 @@ int main() {
     a = b & c;  // a = , b = , c =
     c = a ^ b;  // a = , b = , c =
     b = ~c;     // a = , b = , c =
+    return 0;
+}
+```
+
+3. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+int main() {
+    int x = 7;    // x = , y = , z = 
+    int y = 3;    // x = , y = , z = 
+    int z = 12;   // x = , y = , z = 
+    x = x * 2;    // x = , y = , z = 
+    y = y + x;    // x = , y = , z = 
+    z = z - y;    // x = , y = , z = 
+    x = z / 2;    // x = , y = , z = 
+    y = x % 3;    // x = , y = , z = 
+    z = x + y;    // x = , y = , z = 
+    x = z++;      // x = , y = , z = 
+    y = ++x;      // x = , y = , z = 
+    z = y--;      // x = , y = , z = 
+    return 0;
+}
+```
+
+4. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+int main() {
+    int p = 15;   // p = , q = , r = 
+    int q = 6;    // p = , q = , r = 
+    int r = 1;    // p = , q = , r = 
+    p = p | q;    // p = , q = , r = 
+    q = p & 10;   // p = , q = , r = 
+    r = r << 3;   // p = , q = , r = 
+    p = p ^ r;    // p = , q = , r = 
+    q = q >> 1;   // p = , q = , r = 
+    r = ~p;       // p = , q = , r = 
+    p = q | r;    // p = , q = , r = 
+    q = p & r;    // p = , q = , r = 
+    r = r ^ q;    // p = , q = , r = 
+    return 0;
+}
+```
+
+5. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+int main() {
+    float a = 10.5;  // a = , b = , c = 
+    float b = 2.0;   // a = , b = , c = 
+    float c = 0.5;   // a = , b = , c = 
+    a = a / b;       // a = , b = , c = 
+    b = b * 3;       // a = , b = , c = 
+    c = a + b;       // a = , b = , c = 
+    a = c - a;       // a = , b = , c = 
+    b = b / 2;       // a = , b = , c = 
+    c = a * b;       // a = , b = , c = 
+    a = c + 0.5;     // a = , b = , c = 
+    b = a - c;       // a = , b = , c = 
+    c = a / b;       // a = , b = , c = 
+    return 0;
+}
+```
+
+6. Poniżej znajduje się kod w języku C. W niektórych linijkach są komentarze. Twoim zadaniem jest wpisanie wartości odpowiednich zmiennych po wykonaniu konkretnej linii kodu. Dopisanie nowych linijek czy zaburzenie struktury kodu oznacza złe wykonanie polecenia.
+
+```c
+#include <stdio.h>
+int main() {
+    int m = 20;   // m = , n = , k = 
+    int n = 4;    // m = , n = , k = 
+    int k = 2;    // m = , n = , k = 
+    m += n;       // m = , n = , k = 
+    n -= k;       // m = , n = , k = 
+    k *= 3;       // m = , n = , k = 
+    m /= 2;       // m = , n = , k = 
+    n += m;       // m = , n = , k = 
+    k %= n;       // m = , n = , k = 
+    m <<= 1;      // m = , n = , k = 
+    n >>= 2;      // m = , n = , k = 
+    k ^= m;       // m = , n = , k = 
     return 0;
 }
 ```

@@ -1,6 +1,6 @@
 # Pętle
 
-Zadania należy rozwiązać bez tablic, napisów, wskaźników, napisów, wbudowanych funkcji matematycznych. Nie twórz samodzielnie też własnych funkcji.
+Zadania należy rozwiązać bez tablic, napisów, wskaźników, wbudowanych funkcji matematycznych. Nie twórz samodzielnie też własnych funkcji.
 
 1. Napisz program, który wyświetla wszystkie liczby całkowite od 1 do 100, używając pętli `for`.
 

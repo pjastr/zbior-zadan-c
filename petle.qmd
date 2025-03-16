@@ -19,3 +19,21 @@ Zadania należy rozwiązać bez tablic, napisów, wskaźników, wbudowanych funk
 8. Napisz program, który prosi użytkownika o wprowadzenie 10 dodatnich liczb całkowitych i ustawia je w ciąg $a_1, \ldots, a_{10}$. Oblicz i wyświetl ile elementów ciągu spełnia nierówność $a_k < \frac{a_{k-1}+a_{k+1}}{2}$ dla $1<k<10$.
 
 9. Napisz program, który prosi użytkownika o wprowadzenie dodatniej liczby całkowitej $n$, a następnie $n$ dodatnich liczb całkowitych i ustawia je w ciąg $a_1, \ldots, a_n$. Oblicz i wyświetl ile elementów ciągu spełnia nierówność $a_k < \frac{a_{k-1}+a_{k+1}}{2}$ dla $1<k<n$.
+
+10. Napisz program, który sprawdza podzielność liczby n przez wszystkie liczby od 2 do n/2. Program powinien wypisać wszystkie dzielniki tej liczby. Wczytaj wartość n od użytkownika.
+
+11. Napisz program, który wczytuje liczbę całkowitą n i wypisuje wszystkie jej cyfry od końca (od cyfry jedności) oraz oblicza ich sumę. 
+
+12. Napisz program realizujący algorytm Euklidesa w wersji iteracyjnej z odejmowaniem. Program powinien wczytać dwie liczby naturalne a i b, a następnie wypisać ich największy wspólny dzielnik.
+
+12. Napisz program realizujący algorytm Euklidesa w wersji iteracyjnej z dzieleniem. Program powinien wczytać dwie liczby naturalne a i b, a następnie wypisać ich największy wspólny dzielnik.
+
+13. Napisz program, który sprawdza, czy dana liczba n jest liczbą pierwszą. Program powinien sprawdzić wszystkie potencjalne dzielniki od 2 do pierwiastka z n (wykorzystaj pętlę do obliczenia pierwiastka). Wypisz odpowiedni komunikat.
+
+14. Napisz program symulujący wydawanie reszty. Program powinien wczytać kwotę do wydania i wypisać, ile monet o nominałach 5, 2 i 1 należy wydać, aby użyć jak najmniejszej liczby monet. Wypisz liczbę monet każdego typu.
+
+15. Napisz program, który wyznacza przybliżoną wartość pierwiastka kwadratowego z liczby a metodą Newtona (iteracyjną). Początkowe przybliżenie `x₀ = a/2`, a kolejne obliczamy ze wzoru `x_{i+1} = (x_i + a/x_i)/2`. Wykonaj 10 iteracji algorytmu i wypisz końcowy wynik.
+
+16. Napisz program, który wczytuje od użytkownika stopień wielomianu, współczynniki (od najwyższej potęgi do wyrazu wolnego) oraz wartość x.
+Oblicz wartość wielomianu za pomocą schematu Hornera, wykorzystując pętlę.
+Wyświetl wynik obliczeń.

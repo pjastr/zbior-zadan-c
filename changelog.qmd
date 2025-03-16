@@ -29,3 +29,5 @@
 * 6.03.2025 - drobne poprawki
 
 * 9.03.2025 - dodanie nowych zadań w podstaw debugowania
+
+* 16.03.2025 - dodane nowe zadania dot. pętli i zastosowania wybranych algorytmów liczbowych

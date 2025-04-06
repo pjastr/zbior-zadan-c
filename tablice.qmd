@@ -1,6 +1,6 @@
 # Tablice jednowymiarowe
 
-Zadania należy rozwiązać bez konwersji liczb na napisy. W zadaniach nie należy używać podwójnych wskaźników i odpowiednik tablic wielowymiarowych - składania ma być wykonana na jednym wymiarze. W zadaniach nie należy uwzlędniać tablicy o rozmiarze zero, bo argumenty związane z rozmiarem są dodatnie.
+Zadania należy rozwiązać bez konwersji liczb na napisy. W zadaniach nie należy używać podwójnych wskaźników i odpowiednik tablic wielowymiarowych - składnia ma być wykonana na jednym wymiarze. W zadaniach nie należy uwzlędniać tablicy o rozmiarze zero, bo argumenty związane z rozmiarem są dodatnie.
 
 1. Napisz funkcję `findMaxValue`, która przyjmuje jako argumenty tablicę liczb całkowitych `numbers` oraz jej rozmiar `size` (dodatnia liczba całkowita). Funkcja powinna przeszukać tablicę i wyświetlić maksymalną wartość znalezioną w tej tablicy. Stwórz przypadek testowy.
 

@@ -33,3 +33,5 @@
 * 16.03.2025 - dodane nowe zadania dot. pętli i zastosowania wybranych algorytmów liczbowych
 
 * 3.04.2025 - dodanie nowych zadań dot. wskaźników na funkcję
+
+* 6.04.2025 - dobre poprawki w zadaniach z tablicami

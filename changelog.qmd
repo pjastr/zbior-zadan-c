@@ -35,3 +35,5 @@
 * 3.04.2025 - dodanie nowych zadań dot. wskaźników na funkcję
 
 * 6.04.2025 - dobre poprawki w zadaniach z tablicami
+
+* 28.04.2025 - dodano dwa nowe zadania dot. napisów

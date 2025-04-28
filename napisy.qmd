@@ -43,3 +43,7 @@ Przykład: Dla napisu `"ABCXYZ"` funkcja powinna zwrócić `"AX"`.
 19. Napisz funkcję `indexLower`, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje pierwsza od lewej mała litera. W przypadku pustego napisu lub braku małych liter, funkcja powinna zwracać zero. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy.
 
 20. Napisz funkcję `countOdds`, której argumentem jest napis. Funkcja ma zwrócić liczbę znaków cyfr nieparzystych występujących w napisie. Stwórz przypadek testowy.
+
+21. Napisz funkcję `toLowerNew`, która przyjmuje jako argument wskaźnik do napisu typu `const char*` i zwraca wskaźnik do nowego napisu, w którym wszystkie duże litery zostały zamienione na małe. Oryginalna tablica znaków pozostaje niezmieniona. Pamiętaj o alokacji pamięci dla nowego napisu. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia i funkcji alokacji pamięci. Stwórz przypadek testowy dla tej funkcji.
+
+22. Napisz funkcję `toUpperNew`, która przyjmuje jako argument wskaźnik do napisu typu `const char*` i zwraca wskaźnik do nowego napisu, w którym wszystkie małe litery zostały zamienione na duże. Oryginalna tablica znaków pozostaje niezmieniona. Pamiętaj o alokacji pamięci dla nowego napisu. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia i funkcji alokacji pamięci. Stwórz przypadek testowy dla tej funkcji.

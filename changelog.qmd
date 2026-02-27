@@ -37,3 +37,5 @@
 * 6.04.2025 - dobre poprawki w zadaniach z tablicami
 
 * 28.04.2025 - dodano dwa nowe zadania dot. napisów
+
+* 27.02.2026 - drobne poprawki

@@ -6,7 +6,7 @@ Zadania należy rozwiązać bez tablic, napisów, wskaźników, wbudowanych funk
 
 2. Utwórz program, który prosi użytkownika o wprowadzenie liczby całkowitej `n`, a następnie wyświetla sumę wszystkich liczb całkowitych od 1 do `n` używając pętli `while`.
 
-3. Napisz program, który czyta od użytkownika liczby całkowite do momentu wprowadzenia zera i następnie wyświetla sumę wszystkich wprowadzonych liczb pozytywnych oraz sumę wszystkich liczb negatywnych, używając pętli `do-while`.
+3. Napisz program, który czyta od użytkownika liczby całkowite do momentu wprowadzenia zera i następnie wyświetla sumę wszystkich wprowadzonych liczb dodatnich oraz sumę wszystkich liczb ujemnych (osobno), używając pętli `do-while`.
 
 4. Stwórz program, który oblicza i wyświetla silnię podanej przez użytkownika nieujemnej liczby całkowitej, używając pętli `for`.
 

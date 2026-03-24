@@ -10,8 +10,8 @@ Zadania należy rozwiązać bez interpretacji wskaźników jako tablic.
 
 int main()
 {
-    printf("%Iu\n", sizeof(int));
-    printf("%Iu\n", sizeof(int*));
+    printf("%zu\n", sizeof(int));
+    printf("%zu\n", sizeof(int*));
     return 0;
 }
 ```
@@ -53,3 +53,14 @@ int main()
 16. Napisz funkcję `swap` z dwoma argumentami: wskaźnikiem `ptr1` na zmienną typu `int` i wskaźnikiem `ptr2` na inną zmienną tego samego typu. Funkcja zamienia miejscami wartości wskazywane przez wskaźniki. Utwórz przypadek testowy.
 
 17. Napisz funkcję `swapSign` z dwoma argumentami: wskaźnikiem `ptr1` na zmienną typu `double` i wskaźnikiem `ptr2` na inną zmienną tego samego typu. Funkcja zamienia miejscami wartości wskazywane przez wskaźniki, jeśli mają one różne znaki. W przeciwnym razie nie robi nic. Utwórz przypadek testowy.
+
+18. Napisz funkcję `swapIfGreater`, która ma dwa argumenty. Pierwszym argumentem jest wskaźnik `ptr1` na zmienną typu `int`, a drugim argumentem jest wskaźnik `ptr2` na zmienną typu `int`. Funkcja ma zamienić wartości wskazywane przez te wskaźniki miejscami, ale tylko wtedy, gdy wartość wskazywana przez pierwszy wskaźnik jest większa od wartości wskazywanej przez drugi wskaźnik. Funkcja nie zwraca żadnej wartości. Stwórz przypadek testowy dla funkcji.
+
+19. Napisz funkcję `swapMaxMiddle`, która przyjmuje jako argumenty trzy wskaźniki na zmienne typu `int`. Funkcja powinna zamienić miejscami wartości największej i środkowej (pod względem wartości w porządku niemalejącym) ze zmiennych wskazywanych przez wskaźniki. Stwórz przypadek testowy w `main` tak, aby wyświetlić na konsoli wartości zmiennych przed i po zamianie.
+
+20. Napisz funkcję `swapFirstPositive`, która przyjmuje jako argumenty trzy wskaźniki na zmienne typu `int`. Funkcja powinna zamienić miejscami wartości początkowej i pierwszej dodatniej ze zmiennych wskazywanych przez wskaźniki. Jeśli nie ma zmiennej dodatniej, funkcja nie powinna dokonywać żadnych zmian. Stwórz przypadek testowy w `main` tak, aby wyświetlić na konsoli wartości zmiennych przed i po zamianie.
+
+21. Napisz funkcję `swapOddEven`, która przyjmuje jako argumenty cztery wskaźniki na zmienne typu `int`. Funkcja powinna zamienić miejscami wartości zmiennych tak, aby wszystkie parzyste wartości były na początku, a nieparzyste na końcu (kolejność wewnątrz grup nie ma znaczenia). Stwórz przypadek testowy w `main` tak, aby wyświetlić na konsoli wartości zmiennych przed i po zamianie.
+
+22. Napisz funkcję `modifyThroughPtr` z dwoma argumentami: wskaźnikiem na zmienną typu `int` oraz wartością typu `int`. Funkcja ma wykonać następujące operacje: jeśli wartość druga jest dodatnia — zwiększyć wartość zmiennej wskazywanej przez pierwszy argument o tę wartość; jeśli druga wartość jest ujemna — zmniejszyć wartość pierwszej zmiennej o wartość bezwzględną drugiego argumentu; a jeśli druga wartość wynosi 0 — nie zmieniać wartości. Funkcja zwraca adres zmodyfikowanej zmiennej. Utwórz przypadek testowy.
+

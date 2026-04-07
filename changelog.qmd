@@ -42,3 +42,5 @@
 
 * 24.03.2026 - dodanie wersji epub, dodatkowe zadania dotyczące wskaźników
 
+* 7.04.2026 - dodanowo więcej różnorodnych zadań dotyczących tablic
+

@@ -1,6 +1,6 @@
 # Tablice jednowymiarowe
 
-Zadania należy rozwiązać bez konwersji liczb na napisy. W zadaniach nie należy używać podwójnych wskaźników i odpowiednik tablic wielowymiarowych - składnia ma być wykonana na jednym wymiarze. W zadaniach nie należy uwzlędniać tablicy o rozmiarze zero, bo argumenty związane z rozmiarem są dodatnie.
+Zadania należy rozwiązać bez konwersji liczb na napisy. W zadaniach nie należy używać podwójnych wskaźników i odpowiednik tablic wielowymiarowych - składnia ma być wykonana na jednym wymiarze. W zadaniach nie należy uwzględnić tablicy o rozmiarze zero, bo argumenty związane z rozmiarem są dodatnie.
 
 1. Napisz funkcję `findMaxValue`, która przyjmuje jako argumenty tablicę liczb całkowitych `numbers` oraz jej rozmiar `size` (dodatnia liczba całkowita). Funkcja powinna przeszukać tablicę i wyświetlić maksymalną wartość znalezioną w tej tablicy. Stwórz przypadek testowy.
 
@@ -88,24 +88,69 @@ int main()
 
 18. Napisz funkcję `findWithCondition`, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy oraz wskaźnik na funkcję `condition`. Funkcja `condition` przyjmuje jako argument liczbę całkowitą i zwraca wartość typu 0 lub 1, oznaczającą odpowiednio, czy liczba spełnia określony warunek. Funkcja `findWithCondition` powinna przeszukać tablicę w celu znalezienia ostatniej liczby spełniającej warunek określony przez funkcję `condition`, a następnie zwrócić indeks tego elementu w tablicy lub `-1`, jeśli taki element nie istnieje. Stwórz przypadek testowy dla funkcji `findWithCondition`.
 
-19. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić wartość `1`, gdy tablica `tab` jest symetryczna (tzn. czy początkowy element jest równy ostatniemu, kolejny przedostatniemu itd.) oraz zwróćić zero w pozostałych przypadkach. Stwórz przypadek testowy dla funkcji.
+19. Napisz funkcję `isSymmetric`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić wartość `1`, gdy tablica `tab` jest symetryczna (tzn. czy początkowy element jest równy ostatniemu, kolejny przedostatniemu itd.) oraz zwróćić zero w pozostałych przypadkach. Stwórz przypadek testowy dla funkcji.
 
 
-20. Napisz funkcję, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą $n$ oraz dwie $n$-elementowe tablice `tab1` i `tab2` o elementach typu `int`. Funkcja powinna sprawdzić, czy obie tablice są identyczne. Jeśli tak, funkcja powinna zwrócić 1, w przeciwnym razie zwrócić 0. Stwórz przypadek testowy dla funkcji.
+20. Napisz funkcję `areArraysEqual`, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą $n$ oraz dwie $n$-elementowe tablice `tab1` i `tab2` o elementach typu `int`. Funkcja powinna sprawdzić, czy obie tablice są identyczne. Jeśli tak, funkcja powinna zwrócić 1, w przeciwnym razie zwrócić 0. Stwórz przypadek testowy dla funkcji.
 
-21. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int` i zwraca indeks pierwszego wystąpienia największej wartości bezwzględnej elementów przechowywanych w tablicy `tab`. Stwórz przypadek testowy dla funkcji.
+21. Napisz funkcję `indexOfMaxAbs`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int` i zwraca indeks pierwszego wystąpienia największej wartości bezwzględnej elementów przechowywanych w tablicy `tab`. Stwórz przypadek testowy dla funkcji.
 
-22. Napisz funkcję, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` ($n>3$) oraz `n`-elementową tablicę `tab` o elementach typu `double` i 
+22. Napisz funkcję `rotateLeftByTwo`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` ($n>3$) oraz `n`-elementową tablicę `tab` o elementach typu `double` i 
 przesuwa o dwa w lewo wszystkie elementy tablicy (tak, żeby wartość elementu o indeksie `n-1` znalazła się w elemencie o indeksie `n-3`, wartość elementu o indeksie `n-2` znalazła się w elemencie o indeksie `n-4`, zaś wartość elementu o indeksie `0` w elemencie o indeksie `n-2`, a wartość elementu o indeksie `1` w elemencie o indeksie `n-1`). Stwórz przypadek testowy dla funkcji.
 
-23. Napisz funkcję, która otrzymuje cztery argumenty: dodatnią liczbę całkowitą `n`, `n`-elementowe tablice `tab1` i `tab2` oraz `n`-elementową tablicę `tab3` o elementach typu `double`. Funkcja powinna obliczać iloczyn elementów tablic `tab1` i `tab2` o tych samych indeksach i zapisywać wyniki do tablicy `tab3`. Stwórz przypadek testowy dla funkcji.
+23. Napisz funkcję `multiplyElementwise`, która otrzymuje cztery argumenty: dodatnią liczbę całkowitą `n`, `n`-elementowe tablice `tab1` i `tab2` oraz `n`-elementową tablicę `tab3` o elementach typu `double`. Funkcja powinna obliczać iloczyn elementów tablic `tab1` i `tab2` o tych samych indeksach i zapisywać wyniki do tablicy `tab3`. Stwórz przypadek testowy dla funkcji.
 
-24. Napisz funkcję `sum_odd_indices`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić sumę elementów znajdujących się na nieparzystych indeksach. Stwórz przypadek testowy.
+24. Napisz funkcję `sumOddIndices`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić sumę elementów znajdujących się na nieparzystych indeksach. Stwórz przypadek testowy.
 
-25. Napisz funkcję `count_positive_elements`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić liczbę dodatnich elementów w tablicy. Stwórz przypadek testowy.
+25. Napisz funkcję `countPositiveElements`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić liczbę dodatnich elementów w tablicy. Stwórz przypadek testowy.
 
 Przykład. Dla tablicy zawierającej elementy 3,-4,5 powinno być zwrócone 2.
 
-26. Napisz funkcję `double_odd_elements`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma podwoić elementy nieparzyste znajdujące się w tablicy. Stwórz przypadek testowy.
+26. Napisz funkcję `doubleOddElements`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma podwoić elementy nieparzyste znajdujące się w tablicy. Stwórz przypadek testowy.
 
-27. Napisz funkcję `increase_by_index`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwiększyć wartość każdego elementu tablicy o jego indeks. Stwórz przypadek testowy.
+27. Napisz funkcję `increaseByIndex`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą $n$ oraz $n$-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwiększyć wartość każdego elementu tablicy o jego indeks. Stwórz przypadek testowy.
+
+28. Napisz funkcję `multiplyElementwise`, która otrzymuje cztery argumenty: dodatnią liczbę całkowitą `n`, `n`-elementowe tablice `tab1` i `tab2` oraz `n`-elementową tablicę `tab3` o elementach typu `double`. Funkcja powinna obliczać iloczyn elementów tablic `tab1` i `tab2` o tych samych indeksach i zapisywać wyniki do tablicy `tab3`. Stwórz przypadek testowy dla funkcji.
+
+29. Napisz funkcję `sumAboveThreshold`, która otrzymuje trzy argumenty: liczbę całkowitą `k`, dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `arr` o elementach typu `int`. Funkcja ma zwrócić sumę wszystkich elementów tablicy `arr` większych od liczby `k`. Stwórz dwa przypadki testowe. Przykład: dla `k=10`, `n=6` oraz tablicy `4,12,3,15,8,25` funkcja powinna zwrócić 52.
+
+30. Napisz funkcję `findFirstDivisibleIndex`, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą `p`, dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `numbers` o elementach typu `int`. Funkcja ma zwrócić indeks pierwszego wystąpienia liczby podzielnej przez `p` w tablicy `numbers`. Jeśli żaden element nie jest podzielny przez `p`, funkcja powinna zwrócić -1. Stwórz dwa przypadki testowe. Przykład: dla `p=3`, `n=7` oraz tablicy `5,11,9,2,4,7,6` funkcja powinna zwrócić 2.
+
+4. Napisz funkcję `countInRange`, która otrzymuje trzy argumenty: liczbę całkowitą `a`, liczbę całkowitą `b` oraz dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `data` o elementach typu `int`. Funkcja ma policzyć ile elementów tablicy `data` znajduje się w przedziale `[a,b]` (włącznie z `a` i `b`). Stwórz dwa przypadki testowe. Przykład: dla `a=5`, `b=15`, `n=8` oraz tablicy `3,7,22,10,5,18,9,4` funkcja powinna zwrócić 4.
+
+5. Napisz funkcję `sumDivisibleBy3`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić sumę elementów podzielnych przez 3 oraz zero gdy takich elementów nie ma. Stwórz przypadek testowy. Przykład: dla tablicy `7,9,2,6,5` funkcja powinna zwrócić 15.
+
+6. Napisz funkcję `productEven`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić iloczyn elementów o parzystych wartościach oraz 1 gdy takich elementów nie ma. Stwórz przypadek testowy. Przykład: dla tablicy `3,4,5,2,7` funkcja powinna zwrócić 8.
+
+7. Napisz funkcję `countNegInd`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić liczbę elementów ujemnych, które znajdują się na indeksach parzystych tablicy. Jeśli takich elementów nie ma, funkcja powinna zwrócić 0. Stwórz przypadek testowy. Przykład: dla tablicy `-2,4,-5,-7,6` funkcja powinna zwrócić 2.
+
+8. Napisz funkcję `minArrays`, która otrzymuje cztery argumenty: dodatnią liczbę całkowitą `n`, `n`-elementowe tablice `tabA`, `tabB` i `tabC` o elementach typu `int`. Funkcja powinna wybierać minimalną wartość z elementów tablic `tabA` i `tabB` o tych samych indeksach i zapisywać wyniki do tablicy `tabC`. Stwórz przypadek testowy. Przykład: `tabA` = {7,-2,14}, `tabB` = {9,6,-3} → `tabC` = {7,-2,-3}.
+
+9. Napisz funkcję `sumArrays`, która otrzymuje cztery argumenty: dodatnią liczbę całkowitą `m`, `m`-elementowe tablice `array1`, `array2` i `arrayResult` o elementach typu `double`. Funkcja powinna sumować odpowiadające sobie elementy tablic `array1` i `array2`, a następnie zapisywać wyniki do tablicy `arrayResult`. Stwórz przypadek testowy.
+
+10. Napisz funkcję `sumOdd`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić sumę elementów o nieparzystych wartościach oraz 0 gdy takich elementów nie ma. Stwórz przypadek testowy. Przykład: dla tablicy `2,7,4,9,3` funkcja powinna zwrócić 19.
+
+11. Napisz funkcję `multiplyByPosition`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja modyfikuje tablicę, mnożąc każdy element przez jego indeks zwiększony o 1 (element o indeksie 0 jest mnożony przez 1, element o indeksie 1 przez 2 itd.). Stwórz przypadek testowy. Przykład: tablica `{2,3,4}` → `{2,6,12}`.
+
+12. Napisz funkcję `decreaseBySquare`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zmniejszyć wartość każdego elementu tablicy o kwadrat jego indeksu. Stwórz przypadek testowy. Przykład: tablica `{5,10,15,20}` → `{5,9,11,11}`.
+
+13. Napisz funkcję `replaceWithPower`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zastąpić wartość każdego elementu tablicy wartością tego elementu podniesioną do potęgi równej jego indeksowi. Dla indeksu 0 element pozostaje bez zmian. Stwórz przypadek testowy. Przykład: tablica `{2,3,4,-3,-2}` → `{2,3,16,-27,16}`.
+
+14. Napisz funkcję `sumOddIndex`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja powinna zwrócić sumę elementów na pozycjach nieparzystych oraz zero gdy takich elementów nie ma. Stwórz przypadek testowy. Przykład: dla tablicy `3,-4,5,7,3` funkcja powinna zwrócić 3, bo na indeksach nieparzystych są -4 i 7.
+
+15. Napisz funkcję `countMatching`, która przyjmuje jako argumenty tablicę liczb całkowitych, rozmiar tablicy oraz wskaźnik na funkcję `predicate`. Funkcja `predicate` przyjmuje jako argument liczbę całkowitą i zwraca wartość 0 lub 1 oznaczającą, czy liczba spełnia określony warunek. Funkcja `countMatching` powinna policzyć i zwrócić liczbę elementów w tablicy spełniających warunek. Stwórz przypadek testowy. Przykład: dla funkcji f(x)=1 dla parzystych, f(x)=0 dla nieparzystych i tablicy `{2,7,8,3,10}` funkcja powinna zwrócić 3.
+
+16. Napisz funkcję `productPositive`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić iloczyn wszystkich elementów dodatnich w tablicy. Jeśli tablica nie zawiera elementów dodatnich, funkcja ma zwrócić 1. Stwórz przypadek testowy. Przykład: dla tablicy `{3,-2,5,0,-1,4}` funkcja powinna zwrócić 60.
+
+17. Napisz funkcję `countDivisible`, która otrzymuje trzy argumenty: dodatnią liczbę całkowitą `n`, `n`-elementową tablicę `tab` o elementach typu `int` oraz dodatnią liczbę całkowitą `divisor`. Funkcja ma zwrócić liczbę elementów tablicy, które są podzielne przez `divisor`. Stwórz przypadek testowy. Przykład: dla tablicy `{12,7,-9,15,4,21}` oraz `divisor=3` funkcja powinna zwrócić 4.
+
+18. Napisz funkcję `replaceWithFactorial`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zastąpić wartość każdego elementu tablicy silnią wartości bezwzględnej tego elementu. Dla wartości większych niż 12 element ma zostać zastąpiony wartością -1. Stwórz przypadek testowy. Przykład: tablica `{3,-4,0,5,15}` → `{6,24,1,120,-1}`.
+
+19. Napisz funkcję `getMaximumValue`, która przyjmuje jako argumenty niepustą tablicę liczb całkowitych, rozmiar tablicy oraz wskaźnik na funkcję `isValid`. Funkcja `isValid` przyjmuje liczbę całkowitą i zwraca 0 lub 1. Funkcja `getMaximumValue` powinna znaleźć największą wartość wśród elementów tablicy spełniających warunek i ją zwrócić. Jeśli żaden element nie spełnia warunku, funkcja powinna zwrócić 0. Stwórz przypadek testowy. Przykład: dla f(x)=1 gdy x%3==0 i tablicy `{7,9,4,12,6}` funkcja powinna zwrócić 12.
+
+20. Napisz funkcję `sumOfDivisors`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zastąpić wartość każdego elementu tablicy sumą wszystkich dodatnich dzielników wartości bezwzględnej tego elementu (łącznie z samą liczbą). Stwórz przypadek testowy. Przykład: tablica `{6,-12,1,7,-8}` → `{12,28,1,8,15}`.
+
+21. Napisz funkcję `sumEvenIndices`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zwrócić sumę elementów znajdujących się na pozycjach o parzystych indeksach (0, 2, 4, ...). Stwórz przypadek testowy. Przykład: dla tablicy `{10,3,7,-2,5,8}` funkcja powinna zwrócić 22.
+
+22. Napisz funkcję `multiplyByDigitSum`, która otrzymuje dwa argumenty: dodatnią liczbę całkowitą `n` oraz `n`-elementową tablicę `tab` o elementach typu `int`. Funkcja ma zastąpić wartość każdego elementu tablicy iloczynem tej wartości i sumy cyfr wartości bezwzględnej tego elementu. Stwórz przypadek testowy. Przykład: tablica `{12,-34,5,100,-7}` → `{36,-238,25,100,-49}`.
+

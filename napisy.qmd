@@ -47,3 +47,27 @@ Przykład: Dla napisu `"ABCXYZ"` funkcja powinna zwrócić `"AX"`.
 21. Napisz funkcję `toLowerNew`, która przyjmuje jako argument wskaźnik do napisu typu `const char*` i zwraca wskaźnik do nowego napisu, w którym wszystkie duże litery zostały zamienione na małe. Oryginalna tablica znaków pozostaje niezmieniona. Pamiętaj o alokacji pamięci dla nowego napisu. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia i funkcji alokacji pamięci. Stwórz przypadek testowy dla tej funkcji.
 
 22. Napisz funkcję `toUpperNew`, która przyjmuje jako argument wskaźnik do napisu typu `const char*` i zwraca wskaźnik do nowego napisu, w którym wszystkie małe litery zostały zamienione na duże. Oryginalna tablica znaków pozostaje niezmieniona. Pamiętaj o alokacji pamięci dla nowego napisu. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia i funkcji alokacji pamięci. Stwórz przypadek testowy dla tej funkcji.
+
+23. Napisz funkcję `countSpaces`, której argumentem jest napis. Funkcja ma zwrócić liczbę znaków spacji występujących w napisie. Stwórz przypadek testowy. Przykład: dla napisu `"abcD"` funkcja ma zwrócić 0, dla napisu `"ABC def"` ma zwrócić 1.
+
+24. Napisz funkcję `lowercaseOdd`, której argumentem jest napis. Funkcja ma za zadanie zamienić znaki o nieparzystych indeksach na małe litery (o ile na tym miejscu jest znak wielkiej litery). Stwórz przypadek testowy. Przykład: Wejście: `"123ABC"`, Wyjście: `"123aBc"`.
+
+25. Napisz funkcję `strDig`, która dostaje w argumencie napis. Funkcja ma zwrócić długość napisu, gdy napis nie zawiera cyfr. Jeśli napis zawiera cyfrę, to za każdą cyfrę należy dodać 1 do długości napisu i to zwrócić. Stwórz przypadek testowy. Przykład: dla napisu `"jdET"` funkcja ma zwrócić 4, dla napisu `"abc3334"` ma zwrócić 11, dla napisu `"12"` ma zwrócić 4.
+
+26. Napisz funkcję `capitalizeEven`, której argumentem jest napis. Funkcja ma za zadanie zamienić znaki o parzystych indeksach na wielkie litery (o ile na tym miejscu jest znak małej litery). Stwórz przypadek testowy. Przykład 1: Wejście: `"Python"`, Wyjście: `"PyThOn"`. Przykład 2: Wejście: `"programming"`, Wyjście: `"pRoGrAmMiNg"`.
+
+27. Napisz funkcję `indexUpperCase`, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje ostatnia wielka litera. W przypadku pustego napisu lub braku wielkich liter, funkcja powinna zwracać -1. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: Dla napisu `"AbcdR"` funkcja powinna zwrócić 5. Dla napisu `"ala ma kota"` funkcja powinna zwrócić -1.
+
+28. Napisz funkcję `indexLastDigit`, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje ostatnia cyfra występująca w napisie. W przypadku pustego napisu lub braku cyfry w napisie, funkcja powinna zwracać -1. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu `"abc6D"` funkcja ma zwrócić 3, dla napisu `"ABC def"` ma zwrócić -1.
+
+29. Napisz funkcję `removeLastDigit`, której argumentem jest tablica znaków. Funkcja usuwa ostatni znak cyfry występującej w tej tablicy znaków. W przypadku pustego napisu lub braku cyfry w napisie, funkcja nie powinna nic robić. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla tablicy znaków `"a2bc6D"` funkcja ma zmienić na `"a2bcD"`.
+
+30. Napisz funkcję `countDigits`, której argumentem jest napis. Funkcja ma za zadanie zwrócić liczbę znaków, które są cyframi od 5 do 9. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu `"ab57cD"` funkcja ma zwrócić 2, dla napisu `"ABC def"` ma zwrócić 0.
+
+31. Napisz funkcję `hexLen`, która dostaje w argumencie napis. Funkcja ma zwrócić długość napisu, gdy napis nie zawiera cyfr w systemie szesnastkowym (w przypadku liter uwzględnij małe i duże litery). Jeśli napis zawiera taką cyfrę, to za każdą cyfrę należy odjąć 1 do długości napisu i to zwrócić. Stwórz przypadek testowy. Przykład: dla napisu `"ABXYZ4"` funkcja powinna zwrócić $6-3=3$.
+
+32. Napisz funkcję `countHexDigit`, której argumentem jest napis. Funkcja ma za zadanie zwrócić liczbę znaków, które są cyframi z systemu szesnastkowego (w przypadku liter policz tylko małe litery). W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu `"ABC6xyza"` funkcja powinna zwrócić 2.
+
+33. Napisz funkcję `hexLen`, która dostaje w argumencie napis. Funkcja ma zwrócić długość napisu, gdy napis nie zawiera cyfr w systemie szesnastkowym (w przypadku liter uwzględnij małe i duże litery). Jeśli napis zawiera taką cyfrę, to za każdą cyfrę należy dodać 1 do długości napisu i to zwrócić. Stwórz przypadek testowy. Przykład: dla napisu `"ABXYZ4"` funkcja powinna zwrócić $6+3=9$.
+
+34. Napisz funkcję `countHexDigit`, której argumentem jest napis. Funkcja ma za zadanie zwrócić liczbę znaków, które są cyframi z systemu szesnastkowego (w przypadku liter policz tylko duże litery). W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu `"ABC6xyza"` funkcja powinna zwrócić 4.

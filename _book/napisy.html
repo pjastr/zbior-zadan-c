@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.35">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -77,6 +77,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -490,6 +519,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Napisz funkcję <code>countOdds</code>, której argumentem jest napis. Funkcja ma zwrócić liczbę znaków cyfr nieparzystych występujących w napisie. Stwórz przypadek testowy.</p></li>
 <li><p>Napisz funkcję <code>toLowerNew</code>, która przyjmuje jako argument wskaźnik do napisu typu <code>const char*</code> i zwraca wskaźnik do nowego napisu, w którym wszystkie duże litery zostały zamienione na małe. Oryginalna tablica znaków pozostaje niezmieniona. Pamiętaj o alokacji pamięci dla nowego napisu. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia i funkcji alokacji pamięci. Stwórz przypadek testowy dla tej funkcji.</p></li>
 <li><p>Napisz funkcję <code>toUpperNew</code>, która przyjmuje jako argument wskaźnik do napisu typu <code>const char*</code> i zwraca wskaźnik do nowego napisu, w którym wszystkie małe litery zostały zamienione na duże. Oryginalna tablica znaków pozostaje niezmieniona. Pamiętaj o alokacji pamięci dla nowego napisu. Nie korzystaj ze wbudowanych funkcji języka oprócz operacji wejścia/wyjścia i funkcji alokacji pamięci. Stwórz przypadek testowy dla tej funkcji.</p></li>
+<li><p>Napisz funkcję <code>countSpaces</code>, której argumentem jest napis. Funkcja ma zwrócić liczbę znaków spacji występujących w napisie. Stwórz przypadek testowy. Przykład: dla napisu <code>"abcD"</code> funkcja ma zwrócić 0, dla napisu <code>"ABC def"</code> ma zwrócić 1.</p></li>
+<li><p>Napisz funkcję <code>lowercaseOdd</code>, której argumentem jest napis. Funkcja ma za zadanie zamienić znaki o nieparzystych indeksach na małe litery (o ile na tym miejscu jest znak wielkiej litery). Stwórz przypadek testowy. Przykład: Wejście: <code>"123ABC"</code>, Wyjście: <code>"123aBc"</code>.</p></li>
+<li><p>Napisz funkcję <code>strDig</code>, która dostaje w argumencie napis. Funkcja ma zwrócić długość napisu, gdy napis nie zawiera cyfr. Jeśli napis zawiera cyfrę, to za każdą cyfrę należy dodać 1 do długości napisu i to zwrócić. Stwórz przypadek testowy. Przykład: dla napisu <code>"jdET"</code> funkcja ma zwrócić 4, dla napisu <code>"abc3334"</code> ma zwrócić 11, dla napisu <code>"12"</code> ma zwrócić 4.</p></li>
+<li><p>Napisz funkcję <code>capitalizeEven</code>, której argumentem jest napis. Funkcja ma za zadanie zamienić znaki o parzystych indeksach na wielkie litery (o ile na tym miejscu jest znak małej litery). Stwórz przypadek testowy. Przykład 1: Wejście: <code>"Python"</code>, Wyjście: <code>"PyThOn"</code>. Przykład 2: Wejście: <code>"programming"</code>, Wyjście: <code>"pRoGrAmMiNg"</code>.</p></li>
+<li><p>Napisz funkcję <code>indexUpperCase</code>, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje ostatnia wielka litera. W przypadku pustego napisu lub braku wielkich liter, funkcja powinna zwracać -1. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: Dla napisu <code>"AbcdR"</code> funkcja powinna zwrócić 5. Dla napisu <code>"ala ma kota"</code> funkcja powinna zwrócić -1.</p></li>
+<li><p>Napisz funkcję <code>indexLastDigit</code>, której argumentem jest napis. Funkcja zwraca numer indeksu, na którym występuje ostatnia cyfra występująca w napisie. W przypadku pustego napisu lub braku cyfry w napisie, funkcja powinna zwracać -1. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu <code>"abc6D"</code> funkcja ma zwrócić 3, dla napisu <code>"ABC def"</code> ma zwrócić -1.</p></li>
+<li><p>Napisz funkcję <code>removeLastDigit</code>, której argumentem jest tablica znaków. Funkcja usuwa ostatni znak cyfry występującej w tej tablicy znaków. W przypadku pustego napisu lub braku cyfry w napisie, funkcja nie powinna nic robić. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla tablicy znaków <code>"a2bc6D"</code> funkcja ma zmienić na <code>"a2bcD"</code>.</p></li>
+<li><p>Napisz funkcję <code>countDigits</code>, której argumentem jest napis. Funkcja ma za zadanie zwrócić liczbę znaków, które są cyframi od 5 do 9. W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu <code>"ab57cD"</code> funkcja ma zwrócić 2, dla napisu <code>"ABC def"</code> ma zwrócić 0.</p></li>
+<li><p>Napisz funkcję <code>hexLen</code>, która dostaje w argumencie napis. Funkcja ma zwrócić długość napisu, gdy napis nie zawiera cyfr w systemie szesnastkowym (w przypadku liter uwzględnij małe i duże litery). Jeśli napis zawiera taką cyfrę, to za każdą cyfrę należy odjąć 1 do długości napisu i to zwrócić. Stwórz przypadek testowy. Przykład: dla napisu <code>"ABXYZ4"</code> funkcja powinna zwrócić <span class="math inline">\(6-3=3\)</span>.</p></li>
+<li><p>Napisz funkcję <code>countHexDigit</code>, której argumentem jest napis. Funkcja ma za zadanie zwrócić liczbę znaków, które są cyframi z systemu szesnastkowego (w przypadku liter policz tylko małe litery). W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu <code>"ABC6xyza"</code> funkcja powinna zwrócić 2.</p></li>
+<li><p>Napisz funkcję <code>hexLen</code>, która dostaje w argumencie napis. Funkcja ma zwrócić długość napisu, gdy napis nie zawiera cyfr w systemie szesnastkowym (w przypadku liter uwzględnij małe i duże litery). Jeśli napis zawiera taką cyfrę, to za każdą cyfrę należy dodać 1 do długości napisu i to zwrócić. Stwórz przypadek testowy. Przykład: dla napisu <code>"ABXYZ4"</code> funkcja powinna zwrócić <span class="math inline">\(6+3=9\)</span>.</p></li>
+<li><p>Napisz funkcję <code>countHexDigit</code>, której argumentem jest napis. Funkcja ma za zadanie zwrócić liczbę znaków, które są cyframi z systemu szesnastkowego (w przypadku liter policz tylko duże litery). W zadaniu nie korzystaj z funkcji bibliotecznych poza instrukcjami wejścia/wyjścia. Stwórz przypadek testowy. Przykład: dla napisu <code>"ABC6xyza"</code> funkcja powinna zwrócić 4.</p></li>
 </ol>
 
 

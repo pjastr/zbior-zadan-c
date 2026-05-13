@@ -188,3 +188,83 @@ ma być wyświetlone dokładnie:
 ```bash
 1 2 3 8 -2 4 5 -3 9 0 -5 8
 ```
+
+30. Napisz funkcję `rotateRight`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz dwuwymiarową tablicę tablic o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach $m\times n$ powstałą z przekazanego argumentu poprzez obrót o 90 stopni w prawo (zgodnie z ruchem wskazówek zegara). Stwórz przypadek testowy dla funkcji.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+0 & -5 & 8 \\
+9 & 8 & -2 \\
+-3 & 5 & 4
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+-3 & 9 & 0 & 1\\
+5 & 8 & -5 & 2 \\
+4 & -2 & 8 & 3
+\end{bmatrix}$$
+
+31. Napisz funkcję `mulMat`, która dostaje jako argumenty trzy dodatnie liczby całkowite `n`, `m` i `p` oraz dwie dwuwymiarowe tablice tablic o elementach typu `int`: pierwszą o wymiarach $n\times m$ oraz drugą o wymiarach $m\times p$. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach $n\times p$ będącą iloczynem macierzowym obu tablic. Stwórz przypadek testowy dla funkcji.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2 \\
+3 & 4 \\
+-1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+2 & 0 & 1\\
+1 & -1 & 3
+\end{bmatrix} = \begin{bmatrix}
+4 & -2 & 7\\
+10 & -4 & 15 \\
+-2 & 0 & -1
+\end{bmatrix}$$
+
+32. Napisz funkcję `subMat`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m`, dwuwymiarową tablicę tablic o elementach typu `int` o wymiarach $n\times m$ oraz dwie nieujemne liczby całkowite `r` i `c` ($0\leq r<n$, $0\leq c<m$). Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach $(n-1)\times(m-1)$ powstałą z przekazanej tablicy poprzez usunięcie wiersza o indeksie `r` oraz kolumny o indeksie `c`. Stwórz przypadek testowy dla funkcji.
+
+Przykład (dla $r=1$, $c=2$):
+
+$$\begin{bmatrix}
+1 & 2 & 3 & 4\\
+0 & -5 & 8 & 6\\
+9 & 8 & -2 & 7\\
+-3 & 5 & 4 & 1
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 & 2 & 4\\
+9 & 8 & 7\\
+-3 & 5 & 1
+\end{bmatrix}$$
+
+33. Napisz funkcję `mergeHoriz`, która dostaje jako argumenty trzy dodatnie liczby całkowite `n`, `m1` i `m2` oraz dwie dwuwymiarowe tablice tablic o elementach typu `int`: pierwszą o wymiarach $n\times m_1$ oraz drugą o wymiarach $n\times m_2$. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach $n\times (m_1+m_2)$ powstałą poprzez sklejenie obu tablic poziomo (druga tablica dostawiona z prawej strony pierwszej). Stwórz przypadek testowy dla funkcji.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2\\
+3 & 4\\
+5 & 6
+\end{bmatrix},\quad \begin{bmatrix}
+-1 & 0 & 7\\
+8 & 9 & -2\\
+3 & 3 & 3
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 & 2 & -1 & 0 & 7\\
+3 & 4 & 8 & 9 & -2\\
+5 & 6 & 3 & 3 & 3
+\end{bmatrix}$$
+
+34. Napisz funkcję `borderFrame`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz dwuwymiarową tablicę tablic o elementach typu `int` o wymiarach $n\times m$. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach $(n+2)\times(m+2)$ powstałą poprzez otoczenie przekazanej tablicy ramką z zer. Stwórz przypadek testowy dla funkcji.
+
+Przykład:
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+4 & 5 & 6
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+0 & 0 & 0 & 0 & 0\\
+0 & 1 & 2 & 3 & 0\\
+0 & 4 & 5 & 6 & 0\\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}$$
+

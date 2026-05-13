@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.35">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -76,9 +76,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-22b4aaf4c2978829df3684e8f2c068db.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -649,6 +649,80 @@ window.Quarto = {
 \end{bmatrix}\]</span></p>
 <p>ma być wyświetlone dokładnie:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span> 2 3 8 <span class="at">-2</span> 4 5 <span class="at">-3</span> 9 0 <span class="at">-5</span> 8</span></code></pre></div><button title="Kopiuj do schowka" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="30" type="1">
+<li>Napisz funkcję <code>rotateRight</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach <span class="math inline">\(m\times n\)</span> powstałą z przekazanego argumentu poprzez obrót o 90 stopni w prawo (zgodnie z ruchem wskazówek zegara). Stwórz przypadek testowy dla funkcji.</li>
+</ol>
+<p>Przykład:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 2 &amp; 3\\
+0 &amp; -5 &amp; 8 \\
+9 &amp; 8 &amp; -2 \\
+-3 &amp; 5 &amp; 4
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+-3 &amp; 9 &amp; 0 &amp; 1\\
+5 &amp; 8 &amp; -5 &amp; 2 \\
+4 &amp; -2 &amp; 8 &amp; 3
+\end{bmatrix}\]</span></p>
+<ol start="31" type="1">
+<li>Napisz funkcję <code>mulMat</code>, która dostaje jako argumenty trzy dodatnie liczby całkowite <code>n</code>, <code>m</code> i <code>p</code> oraz dwie dwuwymiarowe tablice tablic o elementach typu <code>int</code>: pierwszą o wymiarach <span class="math inline">\(n\times m\)</span> oraz drugą o wymiarach <span class="math inline">\(m\times p\)</span>. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach <span class="math inline">\(n\times p\)</span> będącą iloczynem macierzowym obu tablic. Stwórz przypadek testowy dla funkcji.</li>
+</ol>
+<p>Przykład:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 2 \\
+3 &amp; 4 \\
+-1 &amp; 0
+\end{bmatrix} \cdot \begin{bmatrix}
+2 &amp; 0 &amp; 1\\
+1 &amp; -1 &amp; 3
+\end{bmatrix} = \begin{bmatrix}
+4 &amp; -2 &amp; 7\\
+10 &amp; -4 &amp; 15 \\
+-2 &amp; 0 &amp; -1
+\end{bmatrix}\]</span></p>
+<ol start="32" type="1">
+<li>Napisz funkcję <code>subMat</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code>, dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span> oraz dwie nieujemne liczby całkowite <code>r</code> i <code>c</code> (<span class="math inline">\(0\leq r&lt;n\)</span>, <span class="math inline">\(0\leq c&lt;m\)</span>). Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach <span class="math inline">\((n-1)\times(m-1)\)</span> powstałą z przekazanej tablicy poprzez usunięcie wiersza o indeksie <code>r</code> oraz kolumny o indeksie <code>c</code>. Stwórz przypadek testowy dla funkcji.</li>
+</ol>
+<p>Przykład (dla <span class="math inline">\(r=1\)</span>, <span class="math inline">\(c=2\)</span>):</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 2 &amp; 3 &amp; 4\\
+0 &amp; -5 &amp; 8 &amp; 6\\
+9 &amp; 8 &amp; -2 &amp; 7\\
+-3 &amp; 5 &amp; 4 &amp; 1
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 &amp; 2 &amp; 4\\
+9 &amp; 8 &amp; 7\\
+-3 &amp; 5 &amp; 1
+\end{bmatrix}\]</span></p>
+<ol start="33" type="1">
+<li>Napisz funkcję <code>mergeHoriz</code>, która dostaje jako argumenty trzy dodatnie liczby całkowite <code>n</code>, <code>m1</code> i <code>m2</code> oraz dwie dwuwymiarowe tablice tablic o elementach typu <code>int</code>: pierwszą o wymiarach <span class="math inline">\(n\times m_1\)</span> oraz drugą o wymiarach <span class="math inline">\(n\times m_2\)</span>. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach <span class="math inline">\(n\times (m_1+m_2)\)</span> powstałą poprzez sklejenie obu tablic poziomo (druga tablica dostawiona z prawej strony pierwszej). Stwórz przypadek testowy dla funkcji.</li>
+</ol>
+<p>Przykład:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 2\\
+3 &amp; 4\\
+5 &amp; 6
+\end{bmatrix},\quad \begin{bmatrix}
+-1 &amp; 0 &amp; 7\\
+8 &amp; 9 &amp; -2\\
+3 &amp; 3 &amp; 3
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+1 &amp; 2 &amp; -1 &amp; 0 &amp; 7\\
+3 &amp; 4 &amp; 8 &amp; 9 &amp; -2\\
+5 &amp; 6 &amp; 3 &amp; 3 &amp; 3
+\end{bmatrix}\]</span></p>
+<ol start="34" type="1">
+<li>Napisz funkcję <code>borderFrame</code>, która dostaje jako argumenty dwie dodatnie liczby całkowite <code>n</code> i <code>m</code> oraz dwuwymiarową tablicę tablic o elementach typu <code>int</code> o wymiarach <span class="math inline">\(n\times m\)</span>. Funkcja ma zwrócić wskaźnik na nowo-utworzoną dynamiczną dwuwymiarową tablicę o wymiarach <span class="math inline">\((n+2)\times(m+2)\)</span> powstałą poprzez otoczenie przekazanej tablicy ramką z zer. Stwórz przypadek testowy dla funkcji.</li>
+</ol>
+<p>Przykład:</p>
+<p><span class="math display">\[\begin{bmatrix}
+1 &amp; 2 &amp; 3\\
+4 &amp; 5 &amp; 6
+\end{bmatrix} \longrightarrow \begin{bmatrix}
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+0 &amp; 1 &amp; 2 &amp; 3 &amp; 0\\
+0 &amp; 4 &amp; 5 &amp; 6 &amp; 0\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{bmatrix}\]</span></p>
 
 
 

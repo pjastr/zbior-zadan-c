@@ -166,7 +166,7 @@ struct element {
 
 oraz liczbę całkowitą `a`. Funkcja ma zwrócić 1, jeśli co najmniej jeden element listy jest równy `a` oraz ma zwrócić 0 w pozostałych wypadkach. Stwórz przypadek testowy.
 
-15. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+15. Napisz funkcję `sumOddWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -177,7 +177,7 @@ struct element {
 
 Funkcja ma zwrócić sumę elementów nieparzystych znajdujących się na liście. Stwórz przypadek testowy.
 
-16. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+16. Napisz funkcję `sumNegativeWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct element {
@@ -188,7 +188,7 @@ struct element {
 
 Funkcja ma zwrócić sumę elementów ujemnych znajdujących się na liście. Stwórz przypadek testowy.
 
-17. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+17. Napisz funkcję `lastEvenWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -199,7 +199,7 @@ struct element {
 
 Funkcja ma zwrócić adres ostatniego elementu parzystego lub NULL gdy takie elementu nie ma lub lista jest pusta. Stwórz przypadek testowy.
 
-18. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+18. Napisz funkcję `lastPositiveWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct element {
@@ -212,7 +212,7 @@ Funkcja ma zwrócić adres ostatniego elementu dodatniego lub NULL gdy takie ele
 
 ## Usuwanie pojedynczych elementów
 
-19. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+19. Napisz funkcję `removeFirstWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -223,7 +223,7 @@ struct element {
 
 Funkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
 
-20. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+20. Napisz funkcję `removeFirstWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct element {
@@ -234,7 +234,7 @@ struct element {
 
 Funkcja ma usunąć początkowy element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
 
-21. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+21. Napisz funkcję `removeLastWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -245,7 +245,7 @@ struct element {
 
 Funkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
 
-22. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+22. Napisz funkcję `removeLastWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct element {
@@ -256,7 +256,7 @@ struct element {
 
 Funkcja ma usunąć ostatni element na liście (o ile lista nie jest pusta). Stwórz przypadek testowy.
 
-23. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+23. Napisz funkcję `removeSecondLastWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -267,7 +267,7 @@ struct element {
 
 Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej dwa elementy). Stwórz przypadek testowy.
 
-24. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+24. Napisz funkcję `removeSecondLastWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct element {
@@ -280,7 +280,7 @@ Funkcja ma usunąć przedostatni element na liście (o ile lista ma co najmniej 
 
 ## Usuwanie całej listy
 
-25. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+25. Napisz funkcję `removeAllWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -291,7 +291,7 @@ struct element {
 
 Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu upewnij się, że lista jest pusta zgodnie z konwencją. Stwórz przypadek testowy.
 
-26. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+26. Napisz funkcję `removeAllWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct element {
@@ -304,7 +304,7 @@ Funkcja ma usunąć całą listę (ręcznie element za elementem). Po usunięciu
 
 ## Zadania różne
 
-27. Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:
+27. Napisz funkcję `printPerfectSquares`, która otrzymuje jako argument listę bez głowy o elementach typu:
 
 ```c
 struct node {
@@ -317,7 +317,7 @@ Funkcja ma wyświetlić na konsoli w kolejnych wierszach wartości elementów na
 
 Przykład. Jeśli lista składa się z elementów 4,5,6,-34,0,25,11, to ma być wyświetlone w kolejnych wierszach: 4,0,25.
 
-28. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+28. Napisz funkcję `findMin`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ```c
 struct node {
@@ -329,7 +329,7 @@ struct node {
 i zwraca najmniejszą z liczb znajdujących się na liście. W przypadku pustej listy, funkcja ma zwrócić zero. Stwórz jeden przypadek testowy.
 
 
-29. Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:
+29. Napisz funkcję `duplicateLastWithoutHead`, która otrzymuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct node {
@@ -343,7 +343,7 @@ Funkcja ma zdublować wartość ostatniego elementu, o ile lista jest nie pusta.
 Przykład: Dla listy 3,4,5 ma być zdublowana 5, więc po modyfikacji lista ma być postaci 3,4,5,5.
 
 
-30. Napisz funkcję, która otrzymuje jako argument listę z głową o elementach typu:
+30. Napisz funkcję `duplicateLastWithHead`, która otrzymuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct elem {
@@ -356,7 +356,7 @@ Funkcja ma zdublować wartość ostatniego elementu, o ile lista jest nie pusta.
 
 Przykład: Dla listy 3,4,5 ma być zdublowana 5, więc po modyfikacji lista ma być postaci 3,4,5,5.
 
-31. Napisz funkcję, która porównuje dwie listy z głową o elementach typu:
+31. Napisz funkcję `equalLast`, która porównuje dwie listy z głową o elementach typu:
 
 ```c
 struct node {
@@ -367,7 +367,7 @@ struct node {
 i zwraca 1 jeśli ostatnie elementy na liście są równe oraz 0 w pozostałych przypadkach (także wtedy gdy któraś z list lub obie są puste). Stwórz jeden przypadek testowy.
 
 
-32. Napisz funkcję, która porównuje dwie listy bez głowy o elementach typu:
+32. Napisz funkcję `equalLength`, która porównuje dwie listy bez głowy o elementach typu:
 
 ```c
 struct node {
@@ -378,7 +378,7 @@ struct node {
 i zwraca 1 jeśli listy są takiej samej długości oraz 0 w pozostałych przypadkach (także wtedy, gdy któraś z list lub obie są puste). Stwórz przypadek testowy.
 
 
-33. Napisz funkcję, która przyjmuje dwie listy z głową o elementach typu:
+33. Napisz funkcję `equalOddSum`, która przyjmuje dwie listy z głową o elementach typu:
 
 ```c
 struct node {
@@ -389,7 +389,7 @@ struct node {
 i zwraca 1 jeśli suma wszystkich elementów nieparzystych w obu listach jest taka sama oraz 0 w przeciwnym przypadku (także wtedy, gdy któraś z list lub obie są puste). Stwórz przypadek testowy.
 
 
-34. Napisz funkcję, która przyjmuje dwie listy bez głowy o elementach typu:
+34. Napisz funkcję `equalEvenSum`, która przyjmuje dwie listy bez głowy o elementach typu:
 
 ```c
 struct node {
@@ -399,7 +399,7 @@ struct node {
 ```
 i zwraca 1 jeśli suma wszystkich elementów parzystych w obu listach jest taka sama oraz 0 w przeciwnym przypadku (także wtedy, gdy któraś z list lub obie są puste). Stwórz przypadek testowy.
 
-35. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+35. Napisz funkcję `sumOddWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct node {
@@ -410,7 +410,7 @@ struct node {
 
 Funkcja ma zwrócić sumę elementów nieparzystych z listy. Stwórz jeden przypadek testowy.
 
-36. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+36. Napisz funkcję `doublePositive`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct elem {
@@ -421,7 +421,7 @@ struct elem {
 
 Funkcja ma podwoić wszystkie elementy dodatnie na liście (o ile istnieją). Stwórz jeden przypadek testowy.
 
-37. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+37. Napisz funkcję `addTwoFirstWithHead`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct node {
@@ -432,7 +432,7 @@ struct node {
 
 oraz dwie liczby całkowite `a` i `b`. Funkcja ma dodać na początek listy dwa nowe elementy i ich wartości ustawić odpowiednio z podanych argumentów. Stwórz jeden przypadek testowy.
 
-38. Napisz funkcję, która przyjmuje jako argument listę bez głowy o elementach typu:
+38. Napisz funkcję `addTwoFirstWithoutHead`, która przyjmuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct node {
@@ -444,7 +444,7 @@ struct node {
 oraz dwie liczby całkowite `a` i `b`. Funkcja ma dodać na początek listy dwa nowe elementy i ich wartości ustawić odpowiednio z podanych argumentów. Stwórz jeden przypadek testowy.
 
 
-39. Napisz funkcję, która otrzymuje jako argument listę bez głowy o elementach typu:
+39. Napisz funkcję `absAllWithoutHead`, która otrzymuje jako argument listę bez głowy o elementach typu:
 
 ``` c
 struct element {
@@ -456,7 +456,7 @@ struct element {
 Funkcja ma zamienić wartości każdego elementu na jego wartość bezwzględną. Dla listy pustej funkcja ma nic nie robić. Stwórz przypadek testowy.
 
 
-40. Napisz funkcję, która otrzymuje jako argument listę z głową o elementach typu:
+40. Napisz funkcję `absAllWithHead`, która otrzymuje jako argument listę z głową o elementach typu:
 
 ``` c
 struct node {
@@ -468,7 +468,7 @@ struct node {
 Funkcja ma zamienić wartości każdego elementu na jego wartość bezwzględną. Dla listy pustej funkcja ma nic nie robić. Stwórz przypadek testowy.
 
 
-41. Napisz funkcję, która przyjmuje jako argument listę z głową o elementach typu:
+41. Napisz funkcję `countEqual`, która przyjmuje jako argument listę z głową o elementach typu:
 
 ```c
 struct node {

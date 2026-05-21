@@ -44,3 +44,4 @@
 
 * 7.04.2026 - dodanowo więcej różnorodnych zadań dotyczących tablic
 
+* 21.05.2026 - poprawki w zadaniach dot. list

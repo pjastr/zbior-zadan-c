@@ -1,5 +1,7 @@
 # Tablice wielowymiarowe
 
+W tym dziale samo słowa tablica (lub tablica elementów) dotyczy notacji definiowania tablic przez "nawiasy kwadratowe". W przypadku określenia tablica tablic - powinny być zadeklarowane jako podwójny wskaźnik.
+
 1. Napisz funkcję `sumMatrix`, która dostaje jako argumenty dwie dodatnie liczby całkowite `n` i `m` oraz  dwuwymiarową tablicę
 o elementach typu `int` o wymiarach $n\times m$  i zwraca jako
 wartość sumę wartości elementów tablicy. Stwórz przypadek testowy dla funkcji.

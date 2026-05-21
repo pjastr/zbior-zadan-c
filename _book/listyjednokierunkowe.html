@@ -112,6 +112,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -514,6 +543,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Wykorzystaj z zadaniach konwencją omawianą na wykładzie.</p>
+<p>Lista bez głowy to konstrukcja, w elementy znajdują się od samego początku listy. Jeśli lista bez głowy ma <span class="math inline">\(n\)</span> elementów, to do jej stworzenia potrzeba <span class="math inline">\(n\)</span> struktur. Pusta lista bez głowy to <code>NULL</code>. Lista w <code>main</code> powinna być przechowywana jako wskaźnik do struktury.</p>
+<p>Lista z głową to konstrukcja, w której na początku znajduje się struktura (tzw. głowa) z niezainicjowaną wartością. Pusta lista z głową zawiera samą jedną strukturę, której następnik jest <code>NULL</code>. Przyjmuje się, że głowa zawsze istnieje, więc nie trzeba sprawdzać czy jest NULLem. Jeśli lista z głową ma <span class="math inline">\(n\)</span> elementów, to do jej stworzenia potrzeba <span class="math inline">\(n+1\)</span> struktur. Lista w <code>main</code> powinna być przechowywana jako wskaźnik do struktury.</p>
 <section id="bez-funkcji" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="bez-funkcji"><span class="header-section-number">14.1</span> Bez funkcji</h2>
 <ol type="1">

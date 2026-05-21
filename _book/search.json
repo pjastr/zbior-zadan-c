@@ -157,7 +157,7 @@
     "href": "listyjednokierunkowe.html",
     "title": "14  Listy jednokierunkowe",
     "section": "",
-    "text": "14.1 Bez funkcji\nWykorzystaj z zadaniach konwencją omawianą na wykładzie.",
+    "text": "14.1 Bez funkcji\nWykorzystaj z zadaniach konwencją omawianą na wykładzie.\nLista bez głowy to konstrukcja, w elementy znajdują się od samego początku listy. Jeśli lista bez głowy ma \\(n\\) elementów, to do jej stworzenia potrzeba \\(n\\) struktur. Pusta lista bez głowy to NULL. Lista w main powinna być przechowywana jako wskaźnik do struktury.\nLista z głową to konstrukcja, w której na początku znajduje się struktura (tzw. głowa) z niezainicjowaną wartością. Pusta lista z głową zawiera samą jedną strukturę, której następnik jest NULL. Przyjmuje się, że głowa zawsze istnieje, więc nie trzeba sprawdzać czy jest NULLem. Jeśli lista z głową ma \\(n\\) elementów, to do jej stworzenia potrzeba \\(n+1\\) struktur. Lista w main powinna być przechowywana jako wskaźnik do struktury.",
     "crumbs": [
       "Podstawy języka C",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Listy jednokierunkowe</span>"

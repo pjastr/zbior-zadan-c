@@ -2,6 +2,11 @@
 
 Wykorzystaj z zadaniach konwencją omawianą na wykładzie.
 
+Lista bez głowy to konstrukcja, w elementy znajdują się od samego początku listy. Jeśli lista bez głowy ma $n$ elementów, to do jej stworzenia potrzeba $n$ struktur. Pusta lista bez głowy to `NULL`. Lista w `main` powinna być przechowywana jako wskaźnik do struktury.
+
+Lista z głową to konstrukcja, w której na początku znajduje się struktura (tzw. głowa) z niezainicjowaną wartością. Pusta lista z głową zawiera samą jedną strukturę, której następnik jest `NULL`. Przyjmuje się, że głowa zawsze istnieje, więc nie trzeba sprawdzać czy jest NULLem. Jeśli lista z głową ma $n$ elementów, to do jej stworzenia potrzeba $n+1$ struktur. Lista w `main` powinna być przechowywana jako wskaźnik do struktury.
+
+
 ## Bez funkcji
 
 1. W `main` stwórz listę bez głowy o trzech elementach 4,5,-12. Następnie w kolejnych wierszach wyświetl elementy znajdujące się na liście. Wykorzystaj strukturę:
